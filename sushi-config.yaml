@@ -1,0 +1,57 @@
+# SUSHI Configuration for SBC FHIR IG
+
+id: sbc-fhir-ig
+canonical: http://example.org/fhir/sbc
+name: SBCFHIRImplementationGuide
+title: Summary of Benefits and Coverage (SBC) FHIR Implementation Guide
+description: FHIR Implementation Guide for representing Summary of Benefits and Coverage (SBC) documents using the InsurancePlan resource
+status: draft
+version: 0.1.0
+fhirVersion: 4.0.1
+copyrightYear: 2025+
+releaseLabel: ci-build
+
+publisher:
+  name: SBC FHIR Project
+  url: http://example.org
+  email: contact@example.org
+
+jurisdiction: urn:iso:std:iso:3166#US
+
+dependencies:
+  hl7.fhir.us.core: 5.0.1
+
+pages:
+  index.md:
+    title: Home
+  mapping.md:
+    title: SBC to FHIR Mapping
+  profiles.md:
+    title: Profiles
+  terminology.md:
+    title: Terminology
+  examples.md:
+    title: Examples
+
+menu:
+  Home: index.html
+  Mapping: mapping.html
+  Artifacts:
+    Profiles: profiles.html
+    Terminology: terminology.html
+    Examples: examples.html
+  FHIR Spec: http://hl7.org/fhir/R4/
+
+parameters:
+  show-inherited-invariants: false
+  path-resource:
+    - input/resources
+    - fsh-generated/resources
+  path-pages:
+    - input/pagecontent
+    - fsh-generated/includes
+  excludettl: true
+  excludemap: true
+
+resources:
+  # Resources will be auto-generated from FSH

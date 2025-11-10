@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:build.fhir.org)",
+      "WebFetch(domain:hl7.org)",
+      "WebFetch(domain:www.hl7.org)",
+      "WebFetch(domain:www.cms.gov)",
+      "Bash(chmod:*)",
+      "WebFetch(domain:github.com)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

@@ -1,0 +1,83 @@
+name: Build and Publish FHIR IG
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:  # Allow manual triggering
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout repository
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Step 2: Setup Node.js for SUSHI
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      # Step 3: Install SUSHI
+      - name: Install SUSHI
+        run: npm install -g fsh-sushi
+
+      # Step 4: Setup Java for IG Publisher
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      # Step 5: Setup Ruby and Jekyll
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+          bundler-cache: false
+
+      - name: Install Jekyll
+        run: gem install jekyll bundler
+
+      # Step 6: Download IG Publisher if needed
+      - name: Download IG Publisher
+        run: |
+          if [ ! -f "input-cache/publisher.jar" ]; then
+            chmod +x _updatePublisher.sh
+            ./_updatePublisher.sh
+          fi
+
+      # Step 7: Run SUSHI
+      - name: Run SUSHI
+        run: sushi .
+
+      # Step 8: Run IG Publisher
+      - name: Run IG Publisher
+        run: java -jar input-cache/publisher.jar -ig .
+
+      # Step 9: Upload artifacts (for all builds)
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: fhir-ig-output
+          path: output/
+          retention-days: 30
+
+      # Step 10: Deploy to GitHub Pages (only on main branch push)
+      - name: Deploy to GitHub Pages
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./output
+          publish_branch: gh-pages
+          force_orphan: true
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          commit_message: 'Deploy FHIR IG to GitHub Pages'

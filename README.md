@@ -2,6 +2,10 @@
 
 A FHIR Implementation Guide for representing Summary of Benefits and Coverage (SBC) documents as structured data using the InsurancePlan resource.
 
+[![Build and Publish FHIR IG](https://github.com/[your-username]/fhir-sbc/actions/workflows/publish.yml/badge.svg)](https://github.com/[your-username]/fhir-sbc/actions/workflows/publish.yml)
+
+**📖 [View Published IG](https://[your-username].github.io/fhir-sbc/)** | **📋 [Deployment Guide](DEPLOYMENT.md)** | **🚀 [Quick Start](#quick-start)**
+
 ## Overview
 
 This FHIR IG defines profiles, extensions, and terminology for converting Summary of Benefits and Coverage documents (required under ACA Section 2715) into machine-readable FHIR format.
@@ -217,6 +221,37 @@ Potential additions in future versions:
 - Network tier distinctions (preferred vs standard)
 - Quantitative benefit limits (e.g., "30 visits per year")
 
+## Deployment
+
+### Publish to GitHub Pages
+
+This IG includes automated GitHub Actions workflow for publishing to GitHub Pages.
+
+**Quick Start:**
+
+1. Create a public GitHub repository
+2. Push this code:
+   ```bash
+   git init
+   git add .
+   git commit -m "Initial commit"
+   git remote add origin https://github.com/[username]/fhir-sbc.git
+   git push -u origin main
+   ```
+3. Configure GitHub Pages in Settings → Pages:
+   - Source: Deploy from a branch
+   - Branch: `gh-pages`
+4. Wait for build to complete (Actions tab)
+5. Access at: `https://[username].github.io/fhir-sbc/`
+
+**Full Instructions:** See [DEPLOYMENT.md](DEPLOYMENT.md)
+
+### Alternative: HL7 Auto-Builder
+
+For continuous integration builds:
+- Install: https://github.com/apps/fhir-ig-builder
+- Builds available at: `https://build.fhir.org/ig/[username]/fhir-sbc/`
+
 ## Contributing
 
 This is a draft IG for demonstrating SBC-to-FHIR mapping. Feedback and contributions are welcome.
@@ -225,10 +260,6 @@ This is a draft IG for demonstrating SBC-to-FHIR mapping. Feedback and contribut
 
 This implementation guide is provided for educational and interoperability purposes. Organizations using this IG remain responsible for compliance with all applicable SBC regulations.
 
-## Contact
-
-For questions or feedback about this IG, please contact the project maintainers.
-
 ## Related Standards
 
 - **FHIR R4**: http://hl7.org/fhir/R4/
@@ -236,4 +267,3 @@ For questions or feedback about this IG, please contact the project maintainers.
 - **Da Vinci PDex Plan Net**: http://hl7.org/fhir/us/davinci-pdex-plan-net/
 - **CARIN Blue Button**: http://hl7.org/fhir/us/carin-bb/
 - **SBC Regulations**: https://www.cms.gov/cciio/resources/forms-reports-and-other-resources/
-# fhir-sbc

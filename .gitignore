@@ -1,0 +1,38 @@
+# FHIR IG Generated/Temporary Folders
+fsh-generated/
+temp/
+template/
+output/
+
+# Input-cache (large files)
+input-cache/*.jar
+input-cache/publisher.jar
+input-cache/schemas/
+input-cache/txcache/*.cache
+!input-cache/package-list.json
+
+# Build artifacts
+*.log
+*.lock
+
+# OS files
+.DS_Store
+.DS_Store?
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+
+# Node
+node_modules/
+package-lock.json
+
+# Backup files
+*~
+*.bak
+~$*.xlsx
