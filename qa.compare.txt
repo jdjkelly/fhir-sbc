@@ -1,0 +1,51 @@
+SBCFHIRImplementationGuide : Validation Results
+=========================================
+
+err = 13, warn = 6, info = 1
+$--
+Generated $--. FHIR version $-- for sbc-fhir-ig#$-- (canonical = http://flexpa.com/fhir/sbc)
+ Build Errors : 1 / 4 / 0
+ /home/runner/work/fhir-sbc/fhir-sbc/fsh-generated/resources/CodeSystem-sbc-benefit-category : 0 / 0 / 1
+ /home/runner/work/fhir-sbc/fhir-sbc/fsh-generated/resources/CodeSystem-sbc-plan-type : 0 / 0 / 1
+ /home/runner/work/fhir-sbc/fhir-sbc/fsh-generated/resources/ImplementationGuide-sbc-fhir-ig : 0 / 1 / 1
+ /home/runner/work/fhir-sbc/fhir-sbc/fsh-generated/resources/InsurancePlan-SBCExampleHMO : 12 / 1 / 1
+ /home/runner/work/fhir-sbc/fhir-sbc/fsh-generated/resources/Organization-ExampleIssuerOrg : 0 / 0 / 1
+ /home/runner/work/fhir-sbc/fhir-sbc/fsh-generated/resources/StructureDefinition-benefit-limitation : 0 / 0 / 1
+ /home/runner/work/fhir-sbc/fhir-sbc/fsh-generated/resources/StructureDefinition-excluded-services : 0 / 0 / 1
+ /home/runner/work/fhir-sbc/fhir-sbc/fsh-generated/resources/StructureDefinition-sbc-insurance-plan : 0 / 0 / 2
+ /home/runner/work/fhir-sbc/fhir-sbc/fsh-generated/resources/StructureDefinition-sbc-metadata : 0 / 0 / 1
+ /home/runner/work/fhir-sbc/fhir-sbc/fsh-generated/resources/ValueSet-sbc-benefit-category : 0 / 0 / 1
+ /home/runner/work/fhir-sbc/fhir-sbc/fsh-generated/resources/ValueSet-sbc-plan-type : 0 / 0 / 1
+</table>
+== n/a ==
+ERROR: ImplementationGuide.definition.parameter[27].value: Supressed messages file not found
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/CodeSystem-sbc-benefit-category.json ==
+== fsh-generated/resources/CodeSystem-sbc-plan-type.json ==
+== fsh-generated/resources/ImplementationGuide-sbc-fhir-ig.json ==
+WARNING: ImplementationGuide/sbc-fhir-ig: ImplementationGuide.dependsOn[2]: The ImplementationGuide uses package hl7.fhir.us.core#5.0.1 released on 2022-06-22, but the most recent appropriate version is 8.0.0. This reference is getting old and the more recent version should be considered
+== fsh-generated/resources/InsurancePlan-SBCExampleHMO.json ==
+WARNING: InsurancePlan/SBCExampleHMO: InsurancePlan.identifier[0].system: No definition could be found for URL value 'https://www.cms.gov/CCIIO/Resources/Data-Resources/hios'
+ERROR: InsurancePlan/SBCExampleHMO: InsurancePlan.plan[0].specificCost[0].benefit[0].cost[0].applicability: No code provided, and a code is required from the value set 'Benefit cost applicability' (http://hl7.org/fhir/ValueSet/insuranceplan-applicability|4.0.1)
+ERROR: InsurancePlan/SBCExampleHMO: InsurancePlan.plan[0].specificCost[0].benefit[0].cost[1].applicability: No code provided, and a code is required from the value set 'Benefit cost applicability' (http://hl7.org/fhir/ValueSet/insuranceplan-applicability|4.0.1)
+ERROR: InsurancePlan/SBCExampleHMO: InsurancePlan.plan[0].specificCost[1].benefit[0].cost[0].applicability: No code provided, and a code is required from the value set 'Benefit cost applicability' (http://hl7.org/fhir/ValueSet/insuranceplan-applicability|4.0.1)
+ERROR: InsurancePlan/SBCExampleHMO: InsurancePlan.plan[0].specificCost[1].benefit[0].cost[1].applicability: No code provided, and a code is required from the value set 'Benefit cost applicability' (http://hl7.org/fhir/ValueSet/insuranceplan-applicability|4.0.1)
+ERROR: InsurancePlan/SBCExampleHMO: InsurancePlan.plan[0].specificCost[2].benefit[0].cost[0].applicability: No code provided, and a code is required from the value set 'Benefit cost applicability' (http://hl7.org/fhir/ValueSet/insuranceplan-applicability|4.0.1)
+ERROR: InsurancePlan/SBCExampleHMO: InsurancePlan.plan[0].specificCost[2].benefit[0].cost[1].applicability: No code provided, and a code is required from the value set 'Benefit cost applicability' (http://hl7.org/fhir/ValueSet/insuranceplan-applicability|4.0.1)
+ERROR: InsurancePlan/SBCExampleHMO: InsurancePlan.plan[0].specificCost[3].benefit[0].cost[0].applicability: No code provided, and a code is required from the value set 'Benefit cost applicability' (http://hl7.org/fhir/ValueSet/insuranceplan-applicability|4.0.1)
+ERROR: InsurancePlan/SBCExampleHMO: InsurancePlan.plan[0].specificCost[3].benefit[0].cost[1].applicability: No code provided, and a code is required from the value set 'Benefit cost applicability' (http://hl7.org/fhir/ValueSet/insuranceplan-applicability|4.0.1)
+ERROR: InsurancePlan/SBCExampleHMO: InsurancePlan.plan[0].specificCost[4].benefit[0].cost[0].applicability: No code provided, and a code is required from the value set 'Benefit cost applicability' (http://hl7.org/fhir/ValueSet/insuranceplan-applicability|4.0.1)
+ERROR: InsurancePlan/SBCExampleHMO: InsurancePlan.plan[0].specificCost[4].benefit[0].cost[1].applicability: No code provided, and a code is required from the value set 'Benefit cost applicability' (http://hl7.org/fhir/ValueSet/insuranceplan-applicability|4.0.1)
+ERROR: InsurancePlan/SBCExampleHMO: InsurancePlan.plan[0].specificCost[5].benefit[0].cost[0].applicability: No code provided, and a code is required from the value set 'Benefit cost applicability' (http://hl7.org/fhir/ValueSet/insuranceplan-applicability|4.0.1)
+ERROR: InsurancePlan/SBCExampleHMO: InsurancePlan.plan[0].specificCost[5].benefit[0].cost[1].applicability: No code provided, and a code is required from the value set 'Benefit cost applicability' (http://hl7.org/fhir/ValueSet/insuranceplan-applicability|4.0.1)
+== fsh-generated/resources/Organization-ExampleIssuerOrg.json ==
+== fsh-generated/resources/StructureDefinition-benefit-limitation.json ==
+== fsh-generated/resources/StructureDefinition-excluded-services.json ==
+== fsh-generated/resources/StructureDefinition-sbc-insurance-plan.json ==
+INFORMATION: StructureDefinition/sbc-insurance-plan: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
+== fsh-generated/resources/StructureDefinition-sbc-metadata.json ==
+== fsh-generated/resources/ValueSet-sbc-benefit-category.json ==
+== fsh-generated/resources/ValueSet-sbc-plan-type.json ==

@@ -1,0 +1,17 @@
+{
+  "resourceType" : "Organization",
+  "id" : "ExampleIssuerOrg",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization ExampleIssuerOrg</b></p><a name=\"ExampleIssuerOrg\"> </a><a name=\"hcExampleIssuerOrg\"> </a><p><b>name</b>: Sample Health Insurance Company</p><p><b>telecom</b>: ph: 1-800-123-4567, <a href=\"https://www.samplehealth.com\">https://www.samplehealth.com</a></p></div>"
+  },
+  "name" : "Sample Health Insurance Company",
+  "telecom" : [{
+    "system" : "phone",
+    "value" : "1-800-123-4567"
+  },
+  {
+    "system" : "url",
+    "value" : "https://www.samplehealth.com"
+  }]
+}

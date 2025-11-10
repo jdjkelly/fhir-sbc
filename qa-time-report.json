@@ -1,0 +1,654 @@
+{
+  "date" : "Mon, 10 Nov, 2025 22:34:05 +0000",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [
+    {
+      "name" : "/fsh-generated/resources/ImplementationGuide-sbc-fhir-ig.json",
+      "size" : 6214,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 66,
+          "length" : 15
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 67,
+          "length" : 14
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 67,
+          "length" : 191
+        },
+        {
+          "activity" : "validate",
+          "start" : 74,
+          "length" : 4507
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 78,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 80,
+          "length" : 88
+        },
+        {
+          "activity" : "generate2",
+          "start" : 83,
+          "length" : 148
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 99,
+          "length" : 4
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 115,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-sbc-benefit-category.json",
+      "size" : 5148,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 66,
+          "length" : 17
+        },
+        {
+          "activity" : "load",
+          "start" : 66,
+          "length" : 21
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 67,
+          "length" : 1
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 67,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 67,
+          "length" : 26
+        },
+        {
+          "activity" : "validate",
+          "start" : 69,
+          "length" : 713
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 78,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 80,
+          "length" : 34
+        },
+        {
+          "activity" : "generate2",
+          "start" : 83,
+          "length" : 592
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 99,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-sbc-plan-type.json",
+      "size" : 1929,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 66,
+          "length" : 19
+        },
+        {
+          "activity" : "load",
+          "start" : 66,
+          "length" : 14
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 67,
+          "length" : 21
+        },
+        {
+          "activity" : "validate",
+          "start" : 70,
+          "length" : 18
+        },
+        {
+          "activity" : "generate1",
+          "start" : 80,
+          "length" : 18
+        },
+        {
+          "activity" : "generate2",
+          "start" : 84,
+          "length" : 53
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 99,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/InsurancePlan-SBCExampleHMO.json",
+      "size" : 14323,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 66,
+          "length" : 23
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 67,
+          "length" : 1
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 67,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 67,
+          "length" : 1264
+        },
+        {
+          "activity" : "validate",
+          "start" : 78,
+          "length" : 1372
+        },
+        {
+          "activity" : "generate1",
+          "start" : 80,
+          "length" : 47
+        },
+        {
+          "activity" : "generate2",
+          "start" : 84,
+          "length" : 60
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Organization-ExampleIssuerOrg.json",
+      "size" : 281,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 66,
+          "length" : 25
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 67,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 68,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 80,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 80,
+          "length" : 13
+        },
+        {
+          "activity" : "generate2",
+          "start" : 84,
+          "length" : 13
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-benefit-limitation.json",
+      "size" : 1678,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 66,
+          "length" : 18
+        },
+        {
+          "activity" : "load",
+          "start" : 66,
+          "length" : 8
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 66,
+          "length" : 15
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 68,
+          "length" : 676
+        },
+        {
+          "activity" : "validate",
+          "start" : 70,
+          "length" : 2850
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 78,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 80,
+          "length" : 45
+        },
+        {
+          "activity" : "generate2",
+          "start" : 84,
+          "length" : 734
+        },
+        {
+          "activity" : "generate2",
+          "start" : 86,
+          "length" : 1347
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 99,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-excluded-services.json",
+      "size" : 3843,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 66,
+          "length" : 15
+        },
+        {
+          "activity" : "load",
+          "start" : 66,
+          "length" : 7
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 66,
+          "length" : 25
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 69,
+          "length" : 47
+        },
+        {
+          "activity" : "validate",
+          "start" : 73,
+          "length" : 359
+        },
+        {
+          "activity" : "generate1",
+          "start" : 80,
+          "length" : 121
+        },
+        {
+          "activity" : "generate2",
+          "start" : 84,
+          "length" : 297
+        },
+        {
+          "activity" : "generate2",
+          "start" : 87,
+          "length" : 194
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 99,
+          "length" : 6
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 115,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-sbc-insurance-plan.json",
+      "size" : 13589,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 66,
+          "length" : 17
+        },
+        {
+          "activity" : "load",
+          "start" : 66,
+          "length" : 12
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 66,
+          "length" : 90
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 69,
+          "length" : 86
+        },
+        {
+          "activity" : "validate",
+          "start" : 73,
+          "length" : 505
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 78,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 80,
+          "length" : 298
+        },
+        {
+          "activity" : "generate2",
+          "start" : 85,
+          "length" : 783
+        },
+        {
+          "activity" : "generate2",
+          "start" : 87,
+          "length" : 584
+        },
+        {
+          "activity" : "makeDependencies",
+          "start" : 89,
+          "length" : 1
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 99,
+          "length" : 19
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 115,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-sbc-metadata.json",
+      "size" : 4717,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 66,
+          "length" : 16
+        },
+        {
+          "activity" : "load",
+          "start" : 66,
+          "length" : 6
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 66,
+          "length" : 26
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 67,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 69,
+          "length" : 33
+        },
+        {
+          "activity" : "validate",
+          "start" : 73,
+          "length" : 330
+        },
+        {
+          "activity" : "generate1",
+          "start" : 80,
+          "length" : 127
+        },
+        {
+          "activity" : "generate2",
+          "start" : 85,
+          "length" : 176
+        },
+        {
+          "activity" : "generate2",
+          "start" : 88,
+          "length" : 148
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 99,
+          "length" : 7
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 115,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-sbc-benefit-category.json",
+      "size" : 523,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 66,
+          "length" : 14
+        },
+        {
+          "activity" : "load",
+          "start" : 66,
+          "length" : 13
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 69,
+          "length" : 43
+        },
+        {
+          "activity" : "validate",
+          "start" : 70,
+          "length" : 18
+        },
+        {
+          "activity" : "generate1",
+          "start" : 81,
+          "length" : 12
+        },
+        {
+          "activity" : "generate2",
+          "start" : 86,
+          "length" : 245
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-sbc-plan-type.json",
+      "size" : 476,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 66,
+          "length" : 14
+        },
+        {
+          "activity" : "load",
+          "start" : 66,
+          "length" : 16
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 67,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 69,
+          "length" : 17
+        },
+        {
+          "activity" : "validate",
+          "start" : 70,
+          "length" : 13
+        },
+        {
+          "activity" : "processProvenanceDetails",
+          "start" : 80,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 81,
+          "length" : 10
+        },
+        {
+          "activity" : "generate2",
+          "start" : 86,
+          "length" : 51
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 99,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "/fsh-generated/includes/fsh-link-references.md",
+      "size" : 553,
+      "processes" : [
+        {
+          "activity" : "generate2",
+          "start" : 86,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "/fsh-generated/includes/menu.xml",
+      "size" : 1499
+    },
+    {
+      "name" : "/input/pagecontent/mapping.md",
+      "size" : 7249
+    },
+    {
+      "name" : "/input/pagecontent/examples.md",
+      "size" : 9031
+    },
+    {
+      "name" : "/input/pagecontent/profiles.md",
+      "size" : 5533
+    },
+    {
+      "name" : "/input/pagecontent/terminology.md",
+      "size" : 10454,
+      "processes" : [
+        {
+          "activity" : "generate2",
+          "start" : 86,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "/input/pagecontent/index.md",
+      "size" : 4675
+    },
+    {
+      "name" : "/input/pagecontent",
+      "size" : 0
+    },
+    {
+      "name" : "/input/pagecontent/mapping.md",
+      "size" : 7249
+    },
+    {
+      "name" : "/input/pagecontent/examples.md",
+      "size" : 9031
+    },
+    {
+      "name" : "/input/pagecontent/profiles.md",
+      "size" : 5533
+    },
+    {
+      "name" : "/input/pagecontent/terminology.md",
+      "size" : 10454,
+      "processes" : [
+        {
+          "activity" : "generate2",
+          "start" : 86,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "/input/pagecontent/index.md",
+      "size" : 4675
+    },
+    {
+      "name" : "/fsh-generated/includes",
+      "size" : 0
+    },
+    {
+      "name" : "/fsh-generated/includes/fsh-link-references.md",
+      "size" : 553
+    },
+    {
+      "name" : "/fsh-generated/includes/menu.xml",
+      "size" : 1499
+    },
+    {
+      "name" : "/template/config",
+      "size" : 0
+    },
+    {
+      "name" : "/template/config/_config.yml",
+      "size" : 140
+    },
+    {
+      "name" : "/temp/pages/_includes/artifacts.xml",
+      "size" : 7100
+    }
+  ]
+}
