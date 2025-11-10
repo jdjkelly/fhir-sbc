@@ -126,7 +126,7 @@ java -jar input-cache/publisher.jar -ig . -proxy WebProxy -no-sushi
 {
   "resourceType": "InsurancePlan",
   "meta": {
-    "profile": ["http://example.org/fhir/sbc/StructureDefinition/sbc-insurance-plan"]
+    "profile": ["http://flexpa.com/fhir/sbc/StructureDefinition/sbc-insurance-plan"]
   },
   "name": "Sample HMO Plan",
   "status": "active",
@@ -137,21 +137,21 @@ java -jar input-cache/publisher.jar -ig . -proxy WebProxy -no-sushi
   "plan": [{
     "type": {
       "coding": [{
-        "system": "http://example.org/fhir/sbc/CodeSystem/sbc-plan-type",
+        "system": "http://flexpa.com/fhir/sbc/CodeSystem/sbc-plan-type",
         "code": "HMO"
       }]
     },
     "specificCost": [{
       "category": {
         "coding": [{
-          "system": "http://example.org/fhir/sbc/CodeSystem/sbc-benefit-category",
+          "system": "http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category",
           "code": "primary-care-visit"
         }]
       },
       "benefit": [{
         "type": {
           "coding": [{
-            "system": "http://example.org/fhir/sbc/CodeSystem/sbc-benefit-category",
+            "system": "http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category",
             "code": "primary-care-visit"
           }]
         },

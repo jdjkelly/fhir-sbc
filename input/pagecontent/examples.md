@@ -86,14 +86,14 @@ Preventive care is typically covered at no cost for in-network services under AC
 {
   "category": {
     "coding": [{
-      "system": "http://example.org/fhir/sbc/CodeSystem/sbc-benefit-category",
+      "system": "http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category",
       "code": "preventive-care"
     }]
   },
   "benefit": [{
     "type": {
       "coding": [{
-        "system": "http://example.org/fhir/sbc/CodeSystem/sbc-benefit-category",
+        "system": "http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category",
         "code": "preventive-care"
       }]
     },
@@ -184,7 +184,7 @@ Use the BenefitLimitation extension for requirements and restrictions:
 {
   "benefit": [{
     "extension": [{
-      "url": "http://example.org/fhir/sbc/StructureDefinition/benefit-limitation",
+      "url": "http://flexpa.com/fhir/sbc/StructureDefinition/benefit-limitation",
       "valueString": "Prior authorization required"
     }]
   }]

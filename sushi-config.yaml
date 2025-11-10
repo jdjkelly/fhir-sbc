@@ -1,7 +1,7 @@
 # SUSHI Configuration for SBC FHIR IG
 
 id: sbc-fhir-ig
-canonical: http://example.org/fhir/sbc
+canonical: http://flexpa.com/fhir/sbc
 name: SBCFHIRImplementationGuide
 title: Summary of Benefits and Coverage (SBC) FHIR Implementation Guide
 description: FHIR Implementation Guide for representing Summary of Benefits and Coverage (SBC) documents using the InsurancePlan resource
@@ -13,8 +13,8 @@ releaseLabel: ci-build
 
 publisher:
   name: SBC FHIR Project
-  url: http://example.org
-  email: contact@example.org
+  url: http://flexpa.com
+  email: contact@flexpa.com
 
 jurisdiction: urn:iso:std:iso:3166#US
 

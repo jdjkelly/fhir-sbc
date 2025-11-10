@@ -2,7 +2,7 @@ CodeSystem: SBCBenefitCategory
 Id: sbc-benefit-category
 Title: "SBC Benefit Category Code System"
 Description: "Code system for the 27 benefit categories required in Summary of Benefits and Coverage (SBC) documents per ACA Section 2715 regulations"
-* ^url = "http://example.org/fhir/sbc/CodeSystem/sbc-benefit-category"
+* ^url = "http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category"
 * ^status = #draft
 * ^experimental = false
 * ^caseSensitive = true

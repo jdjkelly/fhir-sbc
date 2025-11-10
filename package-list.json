@@ -1,13 +1,13 @@
 {
   "package-id": "sbc-fhir-ig",
   "title": "Summary of Benefits and Coverage (SBC) FHIR Implementation Guide",
-  "canonical": "http://example.org/fhir/sbc",
+  "canonical": "http://flexpa.com/fhir/sbc",
   "introduction": "FHIR Implementation Guide for representing Summary of Benefits and Coverage (SBC) documents using the InsurancePlan resource",
   "list": [
     {
       "version": "current",
       "desc": "Continuous Integration Build (latest in version control)",
-      "path": "http://example.org/fhir/sbc",
+      "path": "http://flexpa.com/fhir/sbc",
       "status": "ci-build",
       "current": true
     },
@@ -15,7 +15,7 @@
       "version": "0.1.0",
       "date": "2025-11-09",
       "desc": "Initial draft release",
-      "path": "http://example.org/fhir/sbc/0.1.0",
+      "path": "http://flexpa.com/fhir/sbc/0.1.0",
       "status": "draft",
       "sequence": "Draft",
       "fhirversion": "4.0.1"

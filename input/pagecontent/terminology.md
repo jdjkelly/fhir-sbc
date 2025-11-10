@@ -6,7 +6,7 @@ This page describes the code systems and value sets defined in this implementati
 
 ### SBC Benefit Category Code System
 
-**URL:** `http://example.org/fhir/sbc/CodeSystem/sbc-benefit-category`
+**URL:** `http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category`
 
 **Purpose:** Defines codes for the 27 benefit categories required in Summary of Benefits and Coverage documents per ACA Section 2715 regulations.
 
@@ -57,7 +57,7 @@ This page describes the code systems and value sets defined in this implementati
 
 ### SBC Plan Type Code System
 
-**URL:** `http://example.org/fhir/sbc/CodeSystem/sbc-plan-type`
+**URL:** `http://flexpa.com/fhir/sbc/CodeSystem/sbc-plan-type`
 
 **Purpose:** Defines codes for health insurance plan types displayed in Summary of Benefits and Coverage documents.
 
@@ -87,7 +87,7 @@ This page describes the code systems and value sets defined in this implementati
 
 ### SBC Benefit Category Value Set
 
-**URL:** `http://example.org/fhir/sbc/ValueSet/sbc-benefit-category`
+**URL:** `http://flexpa.com/fhir/sbc/ValueSet/sbc-benefit-category`
 
 **Purpose:** Contains all 27 benefit categories required in Summary of Benefits and Coverage documents.
 
@@ -99,7 +99,7 @@ This page describes the code systems and value sets defined in this implementati
 
 ### SBC Plan Type Value Set
 
-**URL:** `http://example.org/fhir/sbc/ValueSet/sbc-plan-type`
+**URL:** `http://flexpa.com/fhir/sbc/ValueSet/sbc-plan-type`
 
 **Purpose:** Contains health insurance plan types for Summary of Benefits and Coverage documents.
 
@@ -192,11 +192,11 @@ When representing an SBC document:
 2. Example for Primary Care Visit:
 ```
 coverage.benefit[x]
-  .type = http://example.org/fhir/sbc/CodeSystem/sbc-benefit-category#primary-care-visit
+  .type = http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category#primary-care-visit
 
 plan.specificCost[x]
-  .category = http://example.org/fhir/sbc/CodeSystem/sbc-benefit-category#primary-care-visit
-  .benefit.type = http://example.org/fhir/sbc/CodeSystem/sbc-benefit-category#primary-care-visit
+  .category = http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category#primary-care-visit
+  .benefit.type = http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category#primary-care-visit
 ```
 
 ### Translation and Localization

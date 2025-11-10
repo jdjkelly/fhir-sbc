@@ -43,24 +43,24 @@ Usage: #example
 
 // Coverage - Medical Benefits
 * coverage[0].type = http://terminology.hl7.org/CodeSystem/v3-ActCode#HIP "health insurance plan policy"
-* coverage[0].benefit[0].type = http://example.org/fhir/sbc/CodeSystem/sbc-benefit-category#preventive-care
+* coverage[0].benefit[0].type = http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category#preventive-care
 * coverage[0].benefit[0].requirement = "No prior authorization required for in-network preventive services"
 
-* coverage[0].benefit[1].type = http://example.org/fhir/sbc/CodeSystem/sbc-benefit-category#primary-care-visit
+* coverage[0].benefit[1].type = http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category#primary-care-visit
 * coverage[0].benefit[1].requirement = "No referral required"
 
-* coverage[0].benefit[2].type = http://example.org/fhir/sbc/CodeSystem/sbc-benefit-category#specialist-visit
+* coverage[0].benefit[2].type = http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category#specialist-visit
 * coverage[0].benefit[2].requirement = "Referral required from primary care physician"
 * coverage[0].benefit[2].extension[limitation].valueString = "Limited to network specialists only; out-of-network not covered except in emergencies"
 
-* coverage[0].benefit[3].type = http://example.org/fhir/sbc/CodeSystem/sbc-benefit-category#emergency-room-care
+* coverage[0].benefit[3].type = http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category#emergency-room-care
 * coverage[0].benefit[3].extension[limitation].valueString = "Copay waived if admitted to hospital"
 
-* coverage[0].benefit[4].type = http://example.org/fhir/sbc/CodeSystem/sbc-benefit-category#hospital-inpatient
+* coverage[0].benefit[4].type = http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category#hospital-inpatient
 * coverage[0].benefit[4].requirement = "Prior authorization required for non-emergency admissions"
 
 // Plan Details
-* plan[0].type = http://example.org/fhir/sbc/CodeSystem/sbc-plan-type#HMO
+* plan[0].type = http://flexpa.com/fhir/sbc/CodeSystem/sbc-plan-type#HMO
 
 // General Costs - Deductibles and OOP Max
 * plan[0].generalCost[0].type.text = "Individual Deductible"
@@ -81,8 +81,8 @@ Usage: #example
 * plan[0].generalCost[3].cost.currency = #USD
 
 // Specific Cost - Preventive Care
-* plan[0].specificCost[0].category = http://example.org/fhir/sbc/CodeSystem/sbc-benefit-category#preventive-care
-* plan[0].specificCost[0].benefit[0].type = http://example.org/fhir/sbc/CodeSystem/sbc-benefit-category#preventive-care
+* plan[0].specificCost[0].category = http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category#preventive-care
+* plan[0].specificCost[0].benefit[0].type = http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category#preventive-care
 
 * plan[0].specificCost[0].benefit[0].cost[0].type.text = "No charge"
 * plan[0].specificCost[0].benefit[0].cost[0].applicability.text = "in-network"
@@ -95,8 +95,8 @@ Usage: #example
 * plan[0].specificCost[0].benefit[0].cost[1].value.unit = "USD"
 
 // Specific Cost - Primary Care Visit
-* plan[0].specificCost[1].category = http://example.org/fhir/sbc/CodeSystem/sbc-benefit-category#primary-care-visit
-* plan[0].specificCost[1].benefit[0].type = http://example.org/fhir/sbc/CodeSystem/sbc-benefit-category#primary-care-visit
+* plan[0].specificCost[1].category = http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category#primary-care-visit
+* plan[0].specificCost[1].benefit[0].type = http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category#primary-care-visit
 
 * plan[0].specificCost[1].benefit[0].cost[0].type.text = "Copayment"
 * plan[0].specificCost[1].benefit[0].cost[0].applicability.text = "in-network"
@@ -109,8 +109,8 @@ Usage: #example
 * plan[0].specificCost[1].benefit[0].cost[1].value.unit = "USD"
 
 // Specific Cost - Specialist Visit
-* plan[0].specificCost[2].category = http://example.org/fhir/sbc/CodeSystem/sbc-benefit-category#specialist-visit
-* plan[0].specificCost[2].benefit[0].type = http://example.org/fhir/sbc/CodeSystem/sbc-benefit-category#specialist-visit
+* plan[0].specificCost[2].category = http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category#specialist-visit
+* plan[0].specificCost[2].benefit[0].type = http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category#specialist-visit
 
 * plan[0].specificCost[2].benefit[0].cost[0].type.text = "Copayment"
 * plan[0].specificCost[2].benefit[0].cost[0].applicability.text = "in-network"
@@ -123,8 +123,8 @@ Usage: #example
 * plan[0].specificCost[2].benefit[0].cost[1].value.unit = "USD"
 
 // Specific Cost - Emergency Room Care
-* plan[0].specificCost[3].category = http://example.org/fhir/sbc/CodeSystem/sbc-benefit-category#emergency-room-care
-* plan[0].specificCost[3].benefit[0].type = http://example.org/fhir/sbc/CodeSystem/sbc-benefit-category#emergency-room-care
+* plan[0].specificCost[3].category = http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category#emergency-room-care
+* plan[0].specificCost[3].benefit[0].type = http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category#emergency-room-care
 
 * plan[0].specificCost[3].benefit[0].cost[0].type.text = "Copayment"
 * plan[0].specificCost[3].benefit[0].cost[0].applicability.text = "in-network"
@@ -138,8 +138,8 @@ Usage: #example
 * plan[0].specificCost[3].benefit[0].extension[limitation].valueString = "Copay waived if admitted"
 
 // Specific Cost - Generic Drugs
-* plan[0].specificCost[4].category = http://example.org/fhir/sbc/CodeSystem/sbc-benefit-category#generic-drugs
-* plan[0].specificCost[4].benefit[0].type = http://example.org/fhir/sbc/CodeSystem/sbc-benefit-category#generic-drugs
+* plan[0].specificCost[4].category = http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category#generic-drugs
+* plan[0].specificCost[4].benefit[0].type = http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category#generic-drugs
 
 * plan[0].specificCost[4].benefit[0].cost[0].type.text = "Copayment"
 * plan[0].specificCost[4].benefit[0].cost[0].applicability.text = "in-network"
@@ -152,8 +152,8 @@ Usage: #example
 * plan[0].specificCost[4].benefit[0].cost[1].value.unit = "USD"
 
 // Specific Cost - Hospital Inpatient Care
-* plan[0].specificCost[5].category = http://example.org/fhir/sbc/CodeSystem/sbc-benefit-category#hospital-inpatient
-* plan[0].specificCost[5].benefit[0].type = http://example.org/fhir/sbc/CodeSystem/sbc-benefit-category#hospital-inpatient
+* plan[0].specificCost[5].category = http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category#hospital-inpatient
+* plan[0].specificCost[5].benefit[0].type = http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category#hospital-inpatient
 
 * plan[0].specificCost[5].benefit[0].cost[0].type.text = "Coinsurance"
 * plan[0].specificCost[5].benefit[0].cost[0].applicability.text = "in-network"

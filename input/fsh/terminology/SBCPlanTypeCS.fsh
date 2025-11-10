@@ -2,7 +2,7 @@ CodeSystem: SBCPlanType
 Id: sbc-plan-type
 Title: "SBC Plan Type Code System"
 Description: "Code system for health insurance plan types displayed in Summary of Benefits and Coverage documents"
-* ^url = "http://example.org/fhir/sbc/CodeSystem/sbc-plan-type"
+* ^url = "http://flexpa.com/fhir/sbc/CodeSystem/sbc-plan-type"
 * ^status = #draft
 * ^experimental = false
 * ^caseSensitive = true
