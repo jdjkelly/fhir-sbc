@@ -3,10 +3,10 @@ name: Build and Publish FHIR IG
 on:
   push:
     branches:
-      - main
+      - master
   pull_request:
     branches:
-      - main
+      - master
   workflow_dispatch:  # Allow manual triggering
 
 jobs:
@@ -71,7 +71,7 @@ jobs:
 
       # Step 10: Deploy to GitHub Pages (only on main branch push)
       - name: Deploy to GitHub Pages
-        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        if: github.ref == 'refs/heads/master' && github.event_name == 'push'
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
