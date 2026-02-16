@@ -12,7 +12,7 @@ This example demonstrates a Health Maintenance Organization (HMO) plan with typi
 - **Plan Name:** Sample Health HMO Gold Plan
 - **Plan Type:** HMO
 - **Coverage Period:** January 1, 2025 - December 31, 2025
-- **HIOS ID:** 12345CA0010001-01
+- **HIOS ID:** 12345CA001000101
 - **Issuer:** Sample Health Insurance Company
 
 ### General Plan Costs
@@ -51,7 +51,7 @@ The example includes six representative benefit categories demonstrating differe
 - **In-Network:** $10 copay
 - **Out-of-Network:** Not covered
 
-#### 6. Hospital Inpatient Care
+#### 6. Hospital Stay Facility Fee
 - **In-Network:** 20% coinsurance
 - **Out-of-Network:** Not covered
 - **Requirement:** Prior authorization required for non-emergency admissions
@@ -100,12 +100,24 @@ Preventive care is typically covered at no cost for in-network services under AC
     "cost": [
       {
         "type": { "text": "No charge" },
-        "applicability": { "text": "in-network" },
+        "applicability": {
+          "coding": [{
+            "system": "http://terminology.hl7.org/CodeSystem/applicability",
+            "code": "in-network",
+            "display": "In Network"
+          }]
+        },
         "value": { "value": 0, "unit": "USD" }
       },
       {
         "type": { "text": "Not covered" },
-        "applicability": { "text": "out-of-network" },
+        "applicability": {
+          "coding": [{
+            "system": "http://terminology.hl7.org/CodeSystem/applicability",
+            "code": "out-of-network",
+            "display": "Out of Network"
+          }]
+        },
         "value": { "value": 0, "unit": "USD" }
       }
     ]
@@ -121,7 +133,13 @@ Most office visits use fixed copayment amounts:
 {
   "cost": [{
     "type": { "text": "Copayment" },
-    "applicability": { "text": "in-network" },
+    "applicability": {
+      "coding": [{
+        "system": "http://terminology.hl7.org/CodeSystem/applicability",
+        "code": "in-network",
+        "display": "In Network"
+      }]
+    },
     "value": { "value": 25, "unit": "USD" }
   }]
 }
@@ -135,7 +153,13 @@ Hospital services often use coinsurance (percentage):
 {
   "cost": [{
     "type": { "text": "Coinsurance" },
-    "applicability": { "text": "in-network" },
+    "applicability": {
+      "coding": [{
+        "system": "http://terminology.hl7.org/CodeSystem/applicability",
+        "code": "in-network",
+        "display": "In Network"
+      }]
+    },
     "value": { "value": 20, "unit": "%" }
   }]
 }
@@ -149,7 +173,13 @@ HMO plans typically don't cover out-of-network except emergencies:
 {
   "cost": [{
     "type": { "text": "Not covered" },
-    "applicability": { "text": "out-of-network" },
+    "applicability": {
+      "coding": [{
+        "system": "http://terminology.hl7.org/CodeSystem/applicability",
+        "code": "out-of-network",
+        "display": "Out of Network"
+      }]
+    },
     "value": { "value": 0, "unit": "USD" }
   }]
 }
@@ -164,12 +194,24 @@ Emergency services must be covered equally regardless of network:
   "cost": [
     {
       "type": { "text": "Copayment" },
-      "applicability": { "text": "in-network" },
+      "applicability": {
+        "coding": [{
+          "system": "http://terminology.hl7.org/CodeSystem/applicability",
+          "code": "in-network",
+          "display": "In Network"
+        }]
+      },
       "value": { "value": 350, "unit": "USD" }
     },
     {
       "type": { "text": "Copayment" },
-      "applicability": { "text": "out-of-network" },
+      "applicability": {
+        "coding": [{
+          "system": "http://terminology.hl7.org/CodeSystem/applicability",
+          "code": "out-of-network",
+          "display": "Out of Network"
+        }]
+      },
       "value": { "value": 350, "unit": "USD" }
     }
   ]
@@ -206,11 +248,23 @@ A PPO plan would differ from the HMO example by:
   "type": "Specialist Visit",
   "cost": [
     {
-      "applicability": "in-network",
+      "applicability": {
+        "coding": [{
+          "system": "http://terminology.hl7.org/CodeSystem/applicability",
+          "code": "in-network",
+          "display": "In Network"
+        }]
+      },
       "value": { "value": 50, "unit": "USD" }
     },
     {
-      "applicability": "out-of-network",
+      "applicability": {
+        "coding": [{
+          "system": "http://terminology.hl7.org/CodeSystem/applicability",
+          "code": "out-of-network",
+          "display": "Out of Network"
+        }]
+      },
       "value": { "value": 100, "unit": "USD" }
     }
   ]
@@ -239,7 +293,13 @@ An HDHP would feature:
       "type": "primary-care-visit",
       "cost": [{
         "type": { "text": "Subject to deductible, then coinsurance" },
-        "applicability": { "text": "in-network" }
+        "applicability": {
+          "coding": [{
+            "system": "http://terminology.hl7.org/CodeSystem/applicability",
+            "code": "in-network",
+            "display": "In Network"
+          }]
+        }
       }]
     }]
   }]
@@ -258,7 +318,13 @@ Drug coverage typically has tiered cost-sharing:
       "benefit": [{
         "cost": [{
           "type": { "text": "Copayment" },
-          "applicability": { "text": "in-network" },
+          "applicability": {
+            "coding": [{
+              "system": "http://terminology.hl7.org/CodeSystem/applicability",
+              "code": "in-network",
+              "display": "In Network"
+            }]
+          },
           "value": { "value": 10, "unit": "USD" }
         }]
       }]
@@ -268,7 +334,13 @@ Drug coverage typically has tiered cost-sharing:
       "benefit": [{
         "cost": [{
           "type": { "text": "Copayment" },
-          "applicability": { "text": "in-network" },
+          "applicability": {
+            "coding": [{
+              "system": "http://terminology.hl7.org/CodeSystem/applicability",
+              "code": "in-network",
+              "display": "In Network"
+            }]
+          },
           "value": { "value": 40, "unit": "USD" }
         }]
       }]
@@ -278,7 +350,13 @@ Drug coverage typically has tiered cost-sharing:
       "benefit": [{
         "cost": [{
           "type": { "text": "Copayment" },
-          "applicability": { "text": "in-network" },
+          "applicability": {
+            "coding": [{
+              "system": "http://terminology.hl7.org/CodeSystem/applicability",
+              "code": "in-network",
+              "display": "In Network"
+            }]
+          },
           "value": { "value": 70, "unit": "USD" }
         }]
       }]
@@ -288,7 +366,13 @@ Drug coverage typically has tiered cost-sharing:
       "benefit": [{
         "cost": [{
           "type": { "text": "Coinsurance" },
-          "applicability": { "text": "in-network" },
+          "applicability": {
+            "coding": [{
+              "system": "http://terminology.hl7.org/CodeSystem/applicability",
+              "code": "in-network",
+              "display": "In Network"
+            }]
+          },
           "value": { "value": 30, "unit": "%" }
         }]
       }]
@@ -301,7 +385,7 @@ Drug coverage typically has tiered cost-sharing:
 
 A production-ready SBC representation should include:
 
-1. **All 27 benefit categories** in `plan.specificCost`
+1. **All 30 benefit categories** in `plan.specificCost`
 2. **Both network applicabilities** (in-network and out-of-network) for each benefit
 3. **General costs** (deductibles, OOP maximums) in `plan.generalCost`
 4. **Contact information** for questions, provider lists, formulary, glossary
@@ -310,7 +394,7 @@ A production-ready SBC representation should include:
 7. **Requirements and limitations** for each benefit as applicable
 8. **Plan identification** (name, type, period, HIOS ID)
 
-The example provided demonstrates the structure with 6 benefit categories. A complete implementation would expand this to all 27 categories with appropriate cost-sharing for each.
+The example provided demonstrates the structure with 6 benefit categories. A complete implementation would expand this to all 30 categories with appropriate cost-sharing for each.
 
 ## Testing and Validation
 
@@ -320,7 +404,7 @@ When creating SBC InsurancePlan instances, validate:
 2. ✓ Name, period, and ownedBy are populated
 3. ✓ At least one contact with phone and URL
 4. ✓ Plan type is from SBC Plan Type ValueSet
-5. ✓ All 27 benefit categories present in specificCost
+5. ✓ All 30 benefit categories present in specificCost
 6. ✓ Each benefit has at least 2 cost entries (in/out of network)
 7. ✓ Cost applicability is specified for each cost
 8. ✓ Currency is consistent (e.g., all USD)
@@ -332,4 +416,4 @@ When creating SBC InsurancePlan instances, validate:
 After reviewing these examples:
 - Explore the [SBC InsurancePlan Profile](StructureDefinition-sbc-insurance-plan.html) for detailed element definitions
 - Review the [SBC to FHIR Mapping](mapping.html) for comprehensive mapping guidance
-- Check the [Terminology](terminology.html) page for all 27 benefit category codes
+- Check the [Terminology](terminology.html) page for all 30 benefit category codes

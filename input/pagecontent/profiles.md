@@ -56,7 +56,7 @@ plan.generalCost[1]
 
 #### Representing Benefit-Specific Costs
 
-Use `plan.specificCost` for each of the 27 SBC benefit categories:
+Use `plan.specificCost` for each of the 30 SBC benefit categories:
 
 ```
 plan.specificCost[x]
@@ -146,7 +146,7 @@ coverage.benefit.extension[limitation].valueString = "Prior authorization requir
 
 Implementations should ensure:
 
-1. All 27 SBC benefit categories are represented in `plan.specificCost`
+1. All 30 SBC benefit categories are represented in `plan.specificCost`
 2. Each benefit has costs for both in-network and out-of-network (even if "not covered")
 3. Contact information includes at minimum phone and web URL
 4. Cost values use consistent currency (USD recommended)

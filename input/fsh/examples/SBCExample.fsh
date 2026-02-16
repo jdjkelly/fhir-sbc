@@ -5,7 +5,7 @@ Description: "Example Summary of Benefits and Coverage document represented as a
 Usage: #example
 
 * identifier.system = "https://www.cms.gov/CCIIO/Resources/Data-Resources/hios"
-* identifier.value = "12345CA0010001-01"
+* identifier.value = "12345CA001000101"
 
 * status = #active
 
@@ -56,8 +56,10 @@ Usage: #example
 * coverage[0].benefit[3].type = http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category#emergency-room-care
 * coverage[0].benefit[3].extension[limitation].valueString = "Copay waived if admitted to hospital"
 
-* coverage[0].benefit[4].type = http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category#hospital-inpatient
-* coverage[0].benefit[4].requirement = "Prior authorization required for non-emergency admissions"
+* coverage[0].benefit[4].type = http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category#generic-drugs
+
+* coverage[0].benefit[5].type = http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category#hospital-facility-fee
+* coverage[0].benefit[5].requirement = "Prior authorization required for non-emergency admissions"
 
 // Plan Details
 * plan[0].type = http://flexpa.com/fhir/sbc/CodeSystem/sbc-plan-type#HMO
@@ -85,12 +87,12 @@ Usage: #example
 * plan[0].specificCost[0].benefit[0].type = http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category#preventive-care
 
 * plan[0].specificCost[0].benefit[0].cost[0].type.text = "No charge"
-* plan[0].specificCost[0].benefit[0].cost[0].applicability.text = "in-network"
+* plan[0].specificCost[0].benefit[0].cost[0].applicability = http://terminology.hl7.org/CodeSystem/applicability#in-network "In Network"
 * plan[0].specificCost[0].benefit[0].cost[0].value.value = 0
 * plan[0].specificCost[0].benefit[0].cost[0].value.unit = "USD"
 
 * plan[0].specificCost[0].benefit[0].cost[1].type.text = "Not covered"
-* plan[0].specificCost[0].benefit[0].cost[1].applicability.text = "out-of-network"
+* plan[0].specificCost[0].benefit[0].cost[1].applicability = http://terminology.hl7.org/CodeSystem/applicability#out-of-network "Out of Network"
 * plan[0].specificCost[0].benefit[0].cost[1].value.value = 0
 * plan[0].specificCost[0].benefit[0].cost[1].value.unit = "USD"
 
@@ -99,12 +101,12 @@ Usage: #example
 * plan[0].specificCost[1].benefit[0].type = http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category#primary-care-visit
 
 * plan[0].specificCost[1].benefit[0].cost[0].type.text = "Copayment"
-* plan[0].specificCost[1].benefit[0].cost[0].applicability.text = "in-network"
+* plan[0].specificCost[1].benefit[0].cost[0].applicability = http://terminology.hl7.org/CodeSystem/applicability#in-network "In Network"
 * plan[0].specificCost[1].benefit[0].cost[0].value.value = 25
 * plan[0].specificCost[1].benefit[0].cost[0].value.unit = "USD"
 
 * plan[0].specificCost[1].benefit[0].cost[1].type.text = "Not covered"
-* plan[0].specificCost[1].benefit[0].cost[1].applicability.text = "out-of-network"
+* plan[0].specificCost[1].benefit[0].cost[1].applicability = http://terminology.hl7.org/CodeSystem/applicability#out-of-network "Out of Network"
 * plan[0].specificCost[1].benefit[0].cost[1].value.value = 0
 * plan[0].specificCost[1].benefit[0].cost[1].value.unit = "USD"
 
@@ -113,12 +115,12 @@ Usage: #example
 * plan[0].specificCost[2].benefit[0].type = http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category#specialist-visit
 
 * plan[0].specificCost[2].benefit[0].cost[0].type.text = "Copayment"
-* plan[0].specificCost[2].benefit[0].cost[0].applicability.text = "in-network"
+* plan[0].specificCost[2].benefit[0].cost[0].applicability = http://terminology.hl7.org/CodeSystem/applicability#in-network "In Network"
 * plan[0].specificCost[2].benefit[0].cost[0].value.value = 50
 * plan[0].specificCost[2].benefit[0].cost[0].value.unit = "USD"
 
 * plan[0].specificCost[2].benefit[0].cost[1].type.text = "Not covered"
-* plan[0].specificCost[2].benefit[0].cost[1].applicability.text = "out-of-network"
+* plan[0].specificCost[2].benefit[0].cost[1].applicability = http://terminology.hl7.org/CodeSystem/applicability#out-of-network "Out of Network"
 * plan[0].specificCost[2].benefit[0].cost[1].value.value = 0
 * plan[0].specificCost[2].benefit[0].cost[1].value.unit = "USD"
 
@@ -127,12 +129,12 @@ Usage: #example
 * plan[0].specificCost[3].benefit[0].type = http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category#emergency-room-care
 
 * plan[0].specificCost[3].benefit[0].cost[0].type.text = "Copayment"
-* plan[0].specificCost[3].benefit[0].cost[0].applicability.text = "in-network"
+* plan[0].specificCost[3].benefit[0].cost[0].applicability = http://terminology.hl7.org/CodeSystem/applicability#in-network "In Network"
 * plan[0].specificCost[3].benefit[0].cost[0].value.value = 350
 * plan[0].specificCost[3].benefit[0].cost[0].value.unit = "USD"
 
 * plan[0].specificCost[3].benefit[0].cost[1].type.text = "Copayment"
-* plan[0].specificCost[3].benefit[0].cost[1].applicability.text = "out-of-network"
+* plan[0].specificCost[3].benefit[0].cost[1].applicability = http://terminology.hl7.org/CodeSystem/applicability#out-of-network "Out of Network"
 * plan[0].specificCost[3].benefit[0].cost[1].value.value = 350
 * plan[0].specificCost[3].benefit[0].cost[1].value.unit = "USD"
 * plan[0].specificCost[3].benefit[0].extension[limitation].valueString = "Copay waived if admitted"
@@ -142,26 +144,26 @@ Usage: #example
 * plan[0].specificCost[4].benefit[0].type = http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category#generic-drugs
 
 * plan[0].specificCost[4].benefit[0].cost[0].type.text = "Copayment"
-* plan[0].specificCost[4].benefit[0].cost[0].applicability.text = "in-network"
+* plan[0].specificCost[4].benefit[0].cost[0].applicability = http://terminology.hl7.org/CodeSystem/applicability#in-network "In Network"
 * plan[0].specificCost[4].benefit[0].cost[0].value.value = 10
 * plan[0].specificCost[4].benefit[0].cost[0].value.unit = "USD"
 
 * plan[0].specificCost[4].benefit[0].cost[1].type.text = "Not covered"
-* plan[0].specificCost[4].benefit[0].cost[1].applicability.text = "out-of-network"
+* plan[0].specificCost[4].benefit[0].cost[1].applicability = http://terminology.hl7.org/CodeSystem/applicability#out-of-network "Out of Network"
 * plan[0].specificCost[4].benefit[0].cost[1].value.value = 0
 * plan[0].specificCost[4].benefit[0].cost[1].value.unit = "USD"
 
-// Specific Cost - Hospital Inpatient Care
-* plan[0].specificCost[5].category = http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category#hospital-inpatient
-* plan[0].specificCost[5].benefit[0].type = http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category#hospital-inpatient
+// Specific Cost - Hospital Stay Facility Fee
+* plan[0].specificCost[5].category = http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category#hospital-facility-fee
+* plan[0].specificCost[5].benefit[0].type = http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category#hospital-facility-fee
 
 * plan[0].specificCost[5].benefit[0].cost[0].type.text = "Coinsurance"
-* plan[0].specificCost[5].benefit[0].cost[0].applicability.text = "in-network"
+* plan[0].specificCost[5].benefit[0].cost[0].applicability = http://terminology.hl7.org/CodeSystem/applicability#in-network "In Network"
 * plan[0].specificCost[5].benefit[0].cost[0].value.value = 20
 * plan[0].specificCost[5].benefit[0].cost[0].value.unit = "%"
 
 * plan[0].specificCost[5].benefit[0].cost[1].type.text = "Not covered"
-* plan[0].specificCost[5].benefit[0].cost[1].applicability.text = "out-of-network"
+* plan[0].specificCost[5].benefit[0].cost[1].applicability = http://terminology.hl7.org/CodeSystem/applicability#out-of-network "Out of Network"
 * plan[0].specificCost[5].benefit[0].cost[1].value.value = 0
 * plan[0].specificCost[5].benefit[0].cost[1].value.unit = "%"
 * plan[0].specificCost[5].benefit[0].extension[limitation].valueString = "Prior authorization required"

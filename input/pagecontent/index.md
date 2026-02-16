@@ -9,7 +9,7 @@ This Implementation Guide (IG) defines a FHIR profile for representing Summary o
 The SBC framework was established to provide consumers with clear, standardized information about health insurance benefits and costs. While SBC regulations prescribe detailed content requirements, they do not specify machine-readable data formats. This IG addresses that gap by:
 
 - Defining a structured FHIR representation of SBC documents
-- Enabling machine-readable representation of the 27 required benefit categories
+- Enabling machine-readable representation of the 30 required benefit service categories
 - Supporting programmatic access to cost-sharing information (copays, coinsurance, deductibles)
 - Preserving network distinctions (in-network vs. out-of-network)
 - Maintaining regulatory compliance with SBC content requirements
@@ -26,39 +26,59 @@ The statutory authority stems from Section 2715 of the Public Health Service Act
 
 ## Key Features
 
-### 27 Required Benefit Categories
+### 30 Required Benefit Service Categories
 
-The profile supports all 27 benefit categories mandated by SBC regulations:
+The profile supports all 30 benefit service rows from the SBC template, organized by Common Medical Event:
 
-1. Preventive care/screening/immunization
-2. Primary care visits
-3. Specialist visits
-4. Diagnostic tests
-5. Imaging (CT/PET/MRI)
+**If you visit a health care provider's office or clinic:**
+1. Primary care visit to treat an injury or illness
+2. Specialist visit
+3. Preventive care/screening/immunization
+
+**If you have a test:**
+4. Diagnostic test (x-ray, blood work)
+5. Imaging (CT/PET scans, MRIs)
+
+**If you need drugs to treat your illness or condition:**
 6. Generic drugs
 7. Preferred brand drugs
 8. Non-preferred brand drugs
 9. Specialty drugs
-10. Facility fees
+
+**If you have outpatient surgery:**
+10. Facility fee (e.g., ambulatory surgery center)
 11. Physician/surgeon fees
+
+**If you need immediate medical attention:**
 12. Emergency room care
 13. Emergency medical transportation
 14. Urgent care
-15. Hospital outpatient care
-16. Hospital inpatient care
-17. Mental/behavioral health outpatient services
-18. Mental/behavioral health inpatient services
-19. Pregnancy services
-20. Childbirth/delivery
-21. Pregnancy home health care
-22. Rehabilitation services
-23. Habilitation services
-24. Skilled nursing care
-25. Durable medical equipment
-26. Hospice services
-27. Children's eye exams
-28. Children's glasses
-29. Children's dental check-ups
+
+**If you have a hospital stay:**
+15. Facility fee (e.g., hospital room)
+16. Physician/surgeon fees
+
+**If you need mental health, behavioral health, or substance abuse services:**
+17. Outpatient services
+18. Inpatient services
+
+**If you are pregnant:**
+19. Office visits
+20. Childbirth/delivery professional services
+21. Childbirth/delivery facility services
+
+**If you need help recovering or have other special health needs:**
+22. Home health care
+23. Rehabilitation services
+24. Habilitation services
+25. Skilled nursing care
+26. Durable medical equipment
+27. Hospice services
+
+**If your child needs dental or eye care:**
+28. Children's eye exam
+29. Children's glasses
+30. Children's dental check-up
 
 ### Cost-Sharing Representation
 

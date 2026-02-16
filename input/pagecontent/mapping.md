@@ -26,15 +26,26 @@ The SBC "Important Questions" section contains seven mandatory Q&A items. These 
 | Will you pay less if you use a network provider? | `InsurancePlan.plan.specificCost.benefit.cost.applicability` | in-network vs out-of-network cost variations |
 | Do you need a referral to see a specialist? | `InsurancePlan.coverage.benefit.requirement` | Text on specialist benefit |
 
-## Benefit Categories (27 Required Categories)
+## Benefit Categories (30 Required Categories)
 
-All 27 SBC benefit categories map to the `InsurancePlan` structure through two interconnected sections:
+All 30 SBC benefit categories map to the `InsurancePlan` structure through two interconnected sections. The 30 codes correspond to the actual rows in the CMS SBC template per 45 CFR § 147.200, including:
+
+**Key structural changes from previous versions:**
+- `facility-fee` split into `outpatient-facility-fee` and `hospital-facility-fee`
+- `physician-surgeon-fee` split into `outpatient-physician-fee` and `hospital-physician-fee`
+- Generic `hospital-outpatient` and `hospital-inpatient` removed (not actual SBC template rows)
+- `pregnancy` renamed to `pregnancy-office-visits`
+- `pregnancy-delivery` renamed to `pregnancy-delivery-professional`
+- `pregnancy-home-health` replaced with `pregnancy-delivery-facility` (delivery-specific facility fee)
+- `home-health-care` added as a separate benefit (under recovery, not pregnancy-related)
 
 ### Coverage Section
 Maps to `InsurancePlan.coverage.benefit`:
 - Each benefit category is represented
 - Includes requirements (e.g., "referral required", "prior authorization required")
 - Uses BenefitLimitation extension for limitations and exceptions
+
+**Note on coverage.type:** The `InsurancePlan.coverage.type` element is NOT bound to SBCBenefitCategory. Instead, it's used for high-level coverage type classification (e.g., v3-ActCode#HIP for "health insurance plan"). The specific SBC benefit categories are represented in the `coverage.benefit.type` and `plan.specificCost.category` elements.
 
 ### Plan Cost Section
 Maps to `InsurancePlan.plan.specificCost`:
@@ -79,7 +90,7 @@ The SBC includes a two-column section listing excluded services and other covere
 |------------|--------------|-------|
 | Excluded Services | `ExcludedServices` extension | Array of services not covered |
 | Each excluded service | `extension.service.serviceType` and `.description` | CodeableConcept + descriptive text |
-| Other Covered Services | Additional `coverage.benefit` entries | Services beyond the 27 required categories |
+| Other Covered Services | Additional `coverage.benefit` entries | Services beyond the 30 required categories |
 
 ## Limitations and Exceptions
 
@@ -131,7 +142,7 @@ The SBC requires three standardized coverage examples:
 
 1. **Maximize use of base InsurancePlan elements** - Extensions only where truly necessary
 2. **Network distinctions are critical** - Always include both in-network and out-of-network costs via `.applicability`
-3. **All 27 benefit categories should be represented** - Even if "Not covered" or "$0"
+3. **All 30 benefit categories should be represented** - Even if "Not covered" or "$0"
 4. **Consumer-readable text is important** - Use `.requirement`, `.comment`, and extension strings for explanations
 5. **Regulatory compliance** - Map all mandatory SBC elements to maintain compliance
 
@@ -150,7 +161,7 @@ These elements provide important consumer information but are standardized boile
 ## Validation Considerations
 
 Implementations should validate:
-- All 27 benefit categories are present in `plan.specificCost`
+- All 30 benefit categories are present in `plan.specificCost`
 - Each benefit has at least 2 cost entries (in-network and out-of-network)
 - Required metadata elements are populated (name, period, ownedBy)
 - Contact information includes at minimum a phone number and website

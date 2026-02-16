@@ -8,7 +8,7 @@ This page describes the code systems and value sets defined in this implementati
 
 **URL:** `http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category`
 
-**Purpose:** Defines codes for the 27 benefit categories required in Summary of Benefits and Coverage documents per ACA Section 2715 regulations.
+**Purpose:** Defines codes for the 30 benefit categories required in Summary of Benefits and Coverage documents per ACA Section 2715 regulations.
 
 **Status:** Draft
 
@@ -16,29 +16,32 @@ This page describes the code systems and value sets defined in this implementati
 
 #### Codes
 
+The 30 codes are organized by Common Medical Event groups as shown in the SBC template:
+
 | Code | Display | Definition |
 |------|---------|------------|
-| `preventive-care` | Preventive Care/Screening/Immunization | Preventive care services, health screenings, and immunizations |
-| `primary-care-visit` | Primary Care Visit | Visits to primary care physicians to treat illness or injury |
+| `primary-care-visit` | Primary Care Visit to Treat an Injury or Illness | Visits to primary care physicians to treat illness or injury |
 | `specialist-visit` | Specialist Visit | Visits to specialist physicians |
-| `diagnostic-test` | Diagnostic Test | X-rays and diagnostic imaging other than CT/PET/MRI |
-| `imaging` | Imaging (CT/PET/MRI) | Advanced imaging services including CT scans, PET scans, and MRIs |
+| `preventive-care` | Preventive Care/Screening/Immunization | Preventive care services, health screenings, and immunizations |
+| `diagnostic-test` | Diagnostic Test (X-ray, Blood Work) | X-rays, blood work, and other diagnostic tests |
+| `imaging` | Imaging (CT/PET Scans, MRIs) | Advanced imaging services including CT scans, PET scans, and MRIs |
 | `generic-drugs` | Generic Drugs | Generic prescription medications |
 | `preferred-brand-drugs` | Preferred Brand Drugs | Brand-name prescription medications on the preferred drug list |
 | `non-preferred-brand-drugs` | Non-Preferred Brand Drugs | Brand-name prescription medications not on the preferred drug list |
 | `specialty-drugs` | Specialty Drugs | High-cost or specialty prescription medications |
-| `facility-fee` | Facility Fee | Hospital or facility charges for services |
-| `physician-surgeon-fee` | Physician/Surgeon Fees | Professional fees for physicians and surgeons |
+| `outpatient-facility-fee` | Facility Fee (e.g., Ambulatory Surgery Center) | Facility charges for outpatient surgery |
+| `outpatient-physician-fee` | Physician/Surgeon Fees (Outpatient Surgery) | Professional fees for physicians and surgeons for outpatient surgery |
 | `emergency-room-care` | Emergency Room Care | Emergency department services |
 | `emergency-medical-transport` | Emergency Medical Transportation | Ambulance and emergency medical transport services |
 | `urgent-care` | Urgent Care | Urgent care facility services |
-| `hospital-outpatient` | Hospital Outpatient Care | Outpatient hospital services and surgeries |
-| `hospital-inpatient` | Hospital Inpatient Care | Inpatient hospital stays and services |
+| `hospital-facility-fee` | Facility Fee (e.g., Hospital Room) | Facility charges for hospital inpatient stays |
+| `hospital-physician-fee` | Physician/Surgeon Fees (Hospital Stay) | Professional fees for physicians and surgeons during hospital stays |
 | `mental-health-outpatient` | Mental/Behavioral Health Outpatient Services | Outpatient mental health and substance abuse services |
 | `mental-health-inpatient` | Mental/Behavioral Health Inpatient Services | Inpatient mental health and substance abuse services |
-| `pregnancy` | Pregnancy Services | Prenatal and postnatal office visits |
-| `pregnancy-delivery` | Childbirth/Delivery Professional Services | Professional services for childbirth and delivery |
-| `pregnancy-home-health` | Pregnancy Home Health Care | Home health care services related to pregnancy |
+| `pregnancy-office-visits` | Office Visits (Pregnancy) | Prenatal and postnatal office visits |
+| `pregnancy-delivery-professional` | Childbirth/Delivery Professional Services | Professional services for childbirth and delivery |
+| `pregnancy-delivery-facility` | Childbirth/Delivery Facility Services | Facility services for childbirth and delivery |
+| `home-health-care` | Home Health Care | Home health care services |
 | `rehabilitation` | Rehabilitation Services | Outpatient physical, occupational, and speech therapy |
 | `habilitation` | Habilitation Services | Health care services that help develop or maintain daily living skills |
 | `skilled-nursing` | Skilled Nursing Care | Skilled nursing facility services |
@@ -51,8 +54,8 @@ This page describes the code systems and value sets defined in this implementati
 #### Usage Notes
 
 - These codes are derived from the SBC template's required benefit categories
-- All 27 categories must be represented in a compliant SBC
-- The pregnancy-related benefits are broken into three separate codes (office visits, delivery, home health) per SBC requirements
+- All 30 categories must be represented in a compliant SBC
+- The pregnancy-related benefits are broken into three separate codes: Office visits (pregnancy), Childbirth/delivery professional services, and Childbirth/delivery facility services
 - These codes should be used in both `InsurancePlan.coverage.benefit.type` and `InsurancePlan.plan.specificCost.category`
 
 ### SBC Plan Type Code System
@@ -89,7 +92,7 @@ This page describes the code systems and value sets defined in this implementati
 
 **URL:** `http://flexpa.com/fhir/sbc/ValueSet/sbc-benefit-category`
 
-**Purpose:** Contains all 27 benefit categories required in Summary of Benefits and Coverage documents.
+**Purpose:** Contains all 30 benefit categories required in Summary of Benefits and Coverage documents.
 
 **Status:** Draft
 
@@ -116,7 +119,7 @@ This page describes the code systems and value sets defined in this implementati
 The standard FHIR `benefit-type` value set (http://hl7.org/fhir/ValueSet/benefit-type) contains only 12 codes:
 - visit, room, vision-exam, vision-glasses, vision-contacts, medical-primarycare, pharmacy-dispense, etc.
 
-**This is insufficient for SBC requirements**, which mandate 27 specific benefit categories. Therefore, this IG defines a custom code system with all required SBC categories.
+**This is insufficient for SBC requirements**, which mandate 30 specific benefit categories. Therefore, this IG defines a custom code system with all required SBC categories.
 
 ### Applicability Codes
 
@@ -173,7 +176,7 @@ The `extensible` binding on plan types allows implementations to add local codes
 
 ### Additional Benefit Categories
 
-While the 27 SBC categories are required, plans may cover additional services. These can be represented using:
+While the 30 SBC categories are required, plans may cover additional services. These can be represented using:
 - The "Other Covered Services" section of the SBC (no specific code required)
 - Local codes from institutional code systems
 - Standard FHIR benefit-type codes where appropriate
@@ -196,12 +199,12 @@ coverage.benefit[x]
 
 plan.specificCost[x]
   .category = http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category#primary-care-visit
-  .benefit.type = http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category#primary-care-visit
+  .benefit[x].type = http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category#primary-care-visit
 ```
 
 ### Translation and Localization
 
-SBC documents are required in multiple languages (English, Spanish, Chinese, Tagalog, Navajo, and others as of 2025).
+SBC documents must include language access taglines per 45 CFR 147.136(e). The SBC template includes taglines in Spanish, Tagalog, Chinese, and Navajo. Full translation requirements are determined by county demographics—if a county has a certain threshold of speakers of a non-English language, the SBC must be available in that language.
 
 Future versions of this IG may include:
 - Translated display values for benefit category codes

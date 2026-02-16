@@ -3,7 +3,6 @@ Extension: SBCMetadata
 Id: sbc-metadata
 Title: "SBC Metadata Extension"
 Description: "Extension containing regulatory metadata required for Summary of Benefits and Coverage documents"
-* ^url = "http://flexpa.com/fhir/sbc/StructureDefinition/sbc-metadata"
 * ^status = #draft
 * ^context.type = #element
 * ^context.expression = "InsurancePlan"
@@ -36,7 +35,6 @@ Extension: ExcludedServices
 Id: excluded-services
 Title: "Excluded Services Extension"
 Description: "Extension for documenting services that are not covered by the health insurance plan, as required in SBC 'Excluded Services & Other Covered Services' section"
-* ^url = "http://flexpa.com/fhir/sbc/StructureDefinition/excluded-services"
 * ^status = #draft
 * ^context.type = #element
 * ^context.expression = "InsurancePlan"
@@ -60,11 +58,14 @@ Description: "Extension for documenting services that are not covered by the hea
 
 
 // Benefit Limitation Extension
+// Note: The base InsurancePlan.coverage.benefit.limit element is designed for quantitative
+// limits (e.g., "30 visits per year") using Quantity + CodeableConcept. SBC limitations are
+// free-text narrative (e.g., "Copay waived if admitted", "Prior authorization required")
+// that don't fit the structured limit element, justifying this string-valued extension.
 Extension: BenefitLimitation
 Id: benefit-limitation
 Title: "Benefit Limitation Extension"
 Description: "Extension for documenting limitations and exceptions that apply to specific benefits in the SBC"
-* ^url = "http://flexpa.com/fhir/sbc/StructureDefinition/benefit-limitation"
 * ^status = #draft
 * ^context[0].type = #element
 * ^context[0].expression = "InsurancePlan.coverage.benefit"
