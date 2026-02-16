@@ -1,0 +1,10 @@
+[BenefitLimitation]: StructureDefinition-benefit-limitation.html
+[ExampleIssuerOrg]: Organization-ExampleIssuerOrg.html
+[SBCExampleHMO]: InsurancePlan-SBCExampleHMO.html
+[ExcludedServices]: StructureDefinition-excluded-services.html
+[SBCBenefitCategoryCS]: CodeSystem-sbc-benefit-category.html
+[SBCBenefitCategoryVS]: ValueSet-sbc-benefit-category.html
+[SBCInsurancePlan]: StructureDefinition-sbc-insurance-plan.html
+[SBCMetadata]: StructureDefinition-sbc-metadata.html
+[SBCPlanTypeCS]: CodeSystem-sbc-plan-type.html
+[SBCPlanTypeVS]: ValueSet-sbc-plan-type.html

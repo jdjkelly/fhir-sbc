@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="sbc-plan-type"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet sbc-plan-type</b></p><a name="sbc-plan-type"> </a><a name="hcsbc-plan-type"> </a><ul><li>Include all codes defined in <a href="CodeSystem-sbc-plan-type.html"><code>http://flexpa.com/fhir/sbc/CodeSystem/sbc-plan-type</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.1.0</span></li></ul></div>
+  </text>
+  <url value="http://flexpa.com/fhir/sbc/ValueSet/sbc-plan-type"/>
+  <version value="0.1.0"/>
+  <name value="SBCPlanTypeVS"/>
+  <title value="SBC Plan Type Value Set"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-02-16T20:07:33+00:00"/>
+  <publisher value="SBC FHIR Project"/>
+  <contact>
+    <name value="SBC FHIR Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://flexpa.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="contact@flexpa.com"/>
+    </telecom>
+  </contact>
+  <description value="Value set containing health insurance plan types for Summary of Benefits and Coverage documents"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://flexpa.com/fhir/sbc/CodeSystem/sbc-plan-type"/>
+    </include>
+  </compose>
+</ValueSet>

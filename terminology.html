@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Terminology - Summary of Benefits and Coverage (SBC) FHIR Implementation Guide v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"4"}
+    h3,h4,h5,h6{--heading-prefix:"4"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Summary of Benefits and Coverage (SBC) FHIR Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+
+  United States of America
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="mapping.html">Mapping</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="profiles.html">Profiles</a>
+      </li>
+      <li>
+        <a href="terminology.html">Terminology</a>
+      </li>
+      <li>
+        <a href="examples.html">Examples</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="http://hl7.org/fhir/R4/">FHIR Spec</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Terminology</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Summary of Benefits and Coverage (SBC) FHIR Implementation Guide - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://flexpa.com/fhir/sbc/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Terminology</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#terminology" id="markdown-toc-terminology">Terminology</a>    <ul>
+      <li><a href="#code-systems" id="markdown-toc-code-systems">Code Systems</a>        <ul>
+          <li><a href="#sbc-benefit-category-code-system" id="markdown-toc-sbc-benefit-category-code-system">SBC Benefit Category Code System</a></li>
+          <li><a href="#sbc-plan-type-code-system" id="markdown-toc-sbc-plan-type-code-system">SBC Plan Type Code System</a></li>
+        </ul>
+      </li>
+      <li><a href="#value-sets" id="markdown-toc-value-sets">Value Sets</a>        <ul>
+          <li><a href="#sbc-benefit-category-value-set" id="markdown-toc-sbc-benefit-category-value-set">SBC Benefit Category Value Set</a></li>
+          <li><a href="#sbc-plan-type-value-set" id="markdown-toc-sbc-plan-type-value-set">SBC Plan Type Value Set</a></li>
+        </ul>
+      </li>
+      <li><a href="#relationships-to-standard-fhir-terminology" id="markdown-toc-relationships-to-standard-fhir-terminology">Relationships to Standard FHIR Terminology</a>        <ul>
+          <li><a href="#fhir-benefit-type-value-set" id="markdown-toc-fhir-benefit-type-value-set">FHIR Benefit Type Value Set</a></li>
+          <li><a href="#applicability-codes" id="markdown-toc-applicability-codes">Applicability Codes</a></li>
+          <li><a href="#cost-type-codes" id="markdown-toc-cost-type-codes">Cost Type Codes</a></li>
+        </ul>
+      </li>
+      <li><a href="#extension-code-systems" id="markdown-toc-extension-code-systems">Extension Code Systems</a>        <ul>
+          <li><a href="#abortion-coverage-codes" id="markdown-toc-abortion-coverage-codes">Abortion Coverage Codes</a></li>
+        </ul>
+      </li>
+      <li><a href="#versioning-and-maintenance" id="markdown-toc-versioning-and-maintenance">Versioning and Maintenance</a>        <ul>
+          <li><a href="#code-system-evolution" id="markdown-toc-code-system-evolution">Code System Evolution</a></li>
+          <li><a href="#relationship-to-official-cms-terminology" id="markdown-toc-relationship-to-official-cms-terminology">Relationship to Official CMS Terminology</a></li>
+        </ul>
+      </li>
+      <li><a href="#extensibility" id="markdown-toc-extensibility">Extensibility</a>        <ul>
+          <li><a href="#adding-local-benefit-codes" id="markdown-toc-adding-local-benefit-codes">Adding Local Benefit Codes</a></li>
+          <li><a href="#additional-benefit-categories" id="markdown-toc-additional-benefit-categories">Additional Benefit Categories</a></li>
+        </ul>
+      </li>
+      <li><a href="#implementation-guidance" id="markdown-toc-implementation-guidance">Implementation Guidance</a>        <ul>
+          <li><a href="#coding-consistency" id="markdown-toc-coding-consistency">Coding Consistency</a></li>
+          <li><a href="#translation-and-localization" id="markdown-toc-translation-and-localization">Translation and Localization</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+<h1 id="terminology">Terminology</h1>
+
+<p>This page describes the code systems and value sets defined in this implementation guide for representing SBC documents.</p>
+
+<h2 id="code-systems">Code Systems</h2>
+
+<h3 id="sbc-benefit-category-code-system">SBC Benefit Category Code System</h3>
+
+<p><strong>URL:</strong> <code class="language-plaintext highlighter-rouge">http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category</code></p>
+
+<p><strong>Purpose:</strong> Defines codes for the 30 benefit categories required in Summary of Benefits and Coverage documents per ACA Section 2715 regulations.</p>
+
+<p><strong>Status:</strong> Draft</p>
+
+<p><strong>Content:</strong> Complete (all codes defined)</p>
+
+<h4 id="codes">Codes</h4>
+
+<p>The 30 codes are organized by Common Medical Event groups as shown in the SBC template:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>Display</th>
+      <th>Definition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">primary-care-visit</code></td>
+      <td>Primary Care Visit to Treat an Injury or Illness</td>
+      <td>Visits to primary care physicians to treat illness or injury</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">specialist-visit</code></td>
+      <td>Specialist Visit</td>
+      <td>Visits to specialist physicians</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">preventive-care</code></td>
+      <td>Preventive Care/Screening/Immunization</td>
+      <td>Preventive care services, health screenings, and immunizations</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">diagnostic-test</code></td>
+      <td>Diagnostic Test (X-ray, Blood Work)</td>
+      <td>X-rays, blood work, and other diagnostic tests</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">imaging</code></td>
+      <td>Imaging (CT/PET Scans, MRIs)</td>
+      <td>Advanced imaging services including CT scans, PET scans, and MRIs</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">generic-drugs</code></td>
+      <td>Generic Drugs</td>
+      <td>Generic prescription medications</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">preferred-brand-drugs</code></td>
+      <td>Preferred Brand Drugs</td>
+      <td>Brand-name prescription medications on the preferred drug list</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">non-preferred-brand-drugs</code></td>
+      <td>Non-Preferred Brand Drugs</td>
+      <td>Brand-name prescription medications not on the preferred drug list</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">specialty-drugs</code></td>
+      <td>Specialty Drugs</td>
+      <td>High-cost or specialty prescription medications</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">outpatient-facility-fee</code></td>
+      <td>Facility Fee (e.g., Ambulatory Surgery Center)</td>
+      <td>Facility charges for outpatient surgery</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">outpatient-physician-fee</code></td>
+      <td>Physician/Surgeon Fees (Outpatient Surgery)</td>
+      <td>Professional fees for physicians and surgeons for outpatient surgery</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">emergency-room-care</code></td>
+      <td>Emergency Room Care</td>
+      <td>Emergency department services</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">emergency-medical-transport</code></td>
+      <td>Emergency Medical Transportation</td>
+      <td>Ambulance and emergency medical transport services</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">urgent-care</code></td>
+      <td>Urgent Care</td>
+      <td>Urgent care facility services</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">hospital-facility-fee</code></td>
+      <td>Facility Fee (e.g., Hospital Room)</td>
+      <td>Facility charges for hospital inpatient stays</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">hospital-physician-fee</code></td>
+      <td>Physician/Surgeon Fees (Hospital Stay)</td>
+      <td>Professional fees for physicians and surgeons during hospital stays</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">mental-health-outpatient</code></td>
+      <td>Mental/Behavioral Health Outpatient Services</td>
+      <td>Outpatient mental health and substance abuse services</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">mental-health-inpatient</code></td>
+      <td>Mental/Behavioral Health Inpatient Services</td>
+      <td>Inpatient mental health and substance abuse services</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">pregnancy-office-visits</code></td>
+      <td>Office Visits (Pregnancy)</td>
+      <td>Prenatal and postnatal office visits</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">pregnancy-delivery-professional</code></td>
+      <td>Childbirth/Delivery Professional Services</td>
+      <td>Professional services for childbirth and delivery</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">pregnancy-delivery-facility</code></td>
+      <td>Childbirth/Delivery Facility Services</td>
+      <td>Facility services for childbirth and delivery</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">home-health-care</code></td>
+      <td>Home Health Care</td>
+      <td>Home health care services</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">rehabilitation</code></td>
+      <td>Rehabilitation Services</td>
+      <td>Outpatient physical, occupational, and speech therapy</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">habilitation</code></td>
+      <td>Habilitation Services</td>
+      <td>Health care services that help develop or maintain daily living skills</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">skilled-nursing</code></td>
+      <td>Skilled Nursing Care</td>
+      <td>Skilled nursing facility services</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">durable-medical-equipment</code></td>
+      <td>Durable Medical Equipment</td>
+      <td>Medical equipment for home use such as wheelchairs, oxygen equipment</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">hospice</code></td>
+      <td>Hospice Services</td>
+      <td>End-of-life care services</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">children-eye-exam</code></td>
+      <td>Children's Eye Exam</td>
+      <td>Eye examinations for children</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">children-glasses</code></td>
+      <td>Children's Glasses</td>
+      <td>Eyeglasses for children</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">children-dental</code></td>
+      <td>Children's Dental Check-up</td>
+      <td>Routine dental care for children</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="usage-notes">Usage Notes</h4>
+
+<ul>
+  <li>These codes are derived from the SBC template's required benefit categories</li>
+  <li>All 30 categories must be represented in a compliant SBC</li>
+  <li>The pregnancy-related benefits are broken into three separate codes: Office visits (pregnancy), Childbirth/delivery professional services, and Childbirth/delivery facility services</li>
+  <li>These codes should be used in both <code class="language-plaintext highlighter-rouge">InsurancePlan.coverage.benefit.type</code> and <code class="language-plaintext highlighter-rouge">InsurancePlan.plan.specificCost.category</code></li>
+</ul>
+
+<h3 id="sbc-plan-type-code-system">SBC Plan Type Code System</h3>
+
+<p><strong>URL:</strong> <code class="language-plaintext highlighter-rouge">http://flexpa.com/fhir/sbc/CodeSystem/sbc-plan-type</code></p>
+
+<p><strong>Purpose:</strong> Defines codes for health insurance plan types displayed in Summary of Benefits and Coverage documents.</p>
+
+<p><strong>Status:</strong> Draft</p>
+
+<p><strong>Content:</strong> Complete</p>
+
+<h4 id="codes-1">Codes</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>Display</th>
+      <th>Definition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">HMO</code></td>
+      <td>Health Maintenance Organization (HMO)</td>
+      <td>A type of health insurance plan that requires members to get health care services from doctors and hospitals in the plan's network, except in an emergency</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">PPO</code></td>
+      <td>Preferred Provider Organization (PPO)</td>
+      <td>A type of health insurance plan where members pay less if they use providers in the plan's network, but can use out-of-network providers at higher cost</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">POS</code></td>
+      <td>Point of Service (POS)</td>
+      <td>A type of health insurance plan where members pay less if they use doctors and hospitals in the plan's network and choose a primary care doctor to coordinate care</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">EPO</code></td>
+      <td>Exclusive Provider Organization (EPO)</td>
+      <td>A type of health insurance plan where services are covered only if members use doctors and providers in the plan's network, except in an emergency</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">HDHP</code></td>
+      <td>High Deductible Health Plan (HDHP)</td>
+      <td>A health insurance plan with a higher deductible than traditional plans, often paired with a Health Savings Account</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">INDEMNITY</code></td>
+      <td>Indemnity Plan</td>
+      <td>A type of health insurance that allows members to see any doctor or hospital and pays a portion of the bill</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="usage-notes-1">Usage Notes</h4>
+
+<ul>
+  <li>These plan types align with common categorizations used in health insurance</li>
+  <li>Used in <code class="language-plaintext highlighter-rouge">InsurancePlan.plan.type</code></li>
+  <li>The definitions use consumer-friendly language consistent with SBC glossary terms</li>
+  <li>Plans may also have product-level types that differ from plan-level types</li>
+</ul>
+
+<h2 id="value-sets">Value Sets</h2>
+
+<h3 id="sbc-benefit-category-value-set">SBC Benefit Category Value Set</h3>
+
+<p><strong>URL:</strong> <code class="language-plaintext highlighter-rouge">http://flexpa.com/fhir/sbc/ValueSet/sbc-benefit-category</code></p>
+
+<p><strong>Purpose:</strong> Contains all 30 benefit categories required in Summary of Benefits and Coverage documents.</p>
+
+<p><strong>Status:</strong> Draft</p>
+
+<p><strong>Compose:</strong> Includes all codes from the SBC Benefit Category Code System</p>
+
+<p><strong>Binding Strength:</strong> Required for <code class="language-plaintext highlighter-rouge">InsurancePlan.coverage.benefit.type</code> and <code class="language-plaintext highlighter-rouge">InsurancePlan.plan.specificCost.category</code> in the SBC InsurancePlan profile</p>
+
+<h3 id="sbc-plan-type-value-set">SBC Plan Type Value Set</h3>
+
+<p><strong>URL:</strong> <code class="language-plaintext highlighter-rouge">http://flexpa.com/fhir/sbc/ValueSet/sbc-plan-type</code></p>
+
+<p><strong>Purpose:</strong> Contains health insurance plan types for Summary of Benefits and Coverage documents.</p>
+
+<p><strong>Status:</strong> Draft</p>
+
+<p><strong>Compose:</strong> Includes all codes from the SBC Plan Type Code System</p>
+
+<p><strong>Binding Strength:</strong> Extensible for <code class="language-plaintext highlighter-rouge">InsurancePlan.plan.type</code> in the SBC InsurancePlan profile</p>
+
+<h2 id="relationships-to-standard-fhir-terminology">Relationships to Standard FHIR Terminology</h2>
+
+<h3 id="fhir-benefit-type-value-set">FHIR Benefit Type Value Set</h3>
+
+<p>The standard FHIR <code class="language-plaintext highlighter-rouge">benefit-type</code> value set (http://hl7.org/fhir/ValueSet/benefit-type) contains only 12 codes:</p>
+<ul>
+  <li>visit, room, vision-exam, vision-glasses, vision-contacts, medical-primarycare, pharmacy-dispense, etc.</li>
+</ul>
+
+<p><strong>This is insufficient for SBC requirements</strong>, which mandate 30 specific benefit categories. Therefore, this IG defines a custom code system with all required SBC categories.</p>
+
+<h3 id="applicability-codes">Applicability Codes</h3>
+
+<p>For network applicability (<code class="language-plaintext highlighter-rouge">InsurancePlan.plan.specificCost.benefit.cost.applicability</code>), use the standard FHIR <code class="language-plaintext highlighter-rouge">BenefitCostApplicability</code> value set:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">in-network</code> - Services provided by in-network providers</li>
+  <li><code class="language-plaintext highlighter-rouge">out-of-network</code> - Services provided by out-of-network providers</li>
+  <li><code class="language-plaintext highlighter-rouge">other</code> - Other applicability scenarios</li>
+</ul>
+
+<h3 id="cost-type-codes">Cost Type Codes</h3>
+
+<p>While this IG doesn't define a specific code system for cost types, implementations should use clear text values:</p>
+<ul>
+  <li>"Copayment" - Fixed dollar amount per service</li>
+  <li>"Coinsurance" - Percentage of cost</li>
+  <li>"Deductible" - Amount to be met before coverage</li>
+  <li>"Not covered" - Service is not covered under the plan</li>
+</ul>
+
+<h2 id="extension-code-systems">Extension Code Systems</h2>
+
+<h3 id="abortion-coverage-codes">Abortion Coverage Codes</h3>
+
+<p>For the <code class="language-plaintext highlighter-rouge">SBCMetadata.abortionCoverage</code> element (required for qualified health plans per 45 CFR 156.280):</p>
+
+<p>Suggested codes (implementation-specific):</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">covered</code> - Abortion services are covered</li>
+  <li><code class="language-plaintext highlighter-rouge">not-covered</code> - Abortion services are not covered except excepted services</li>
+  <li><code class="language-plaintext highlighter-rouge">excepted-only</code> - Only excepted abortion services covered (life endangerment, rape, incest)</li>
+</ul>
+
+<p><em>Note: This IG does not currently define a formal code system for abortion coverage; implementers may use local codes or text</em></p>
+
+<h2 id="versioning-and-maintenance">Versioning and Maintenance</h2>
+
+<h3 id="code-system-evolution">Code System Evolution</h3>
+
+<p>As SBC regulations evolve, this terminology may be updated to:</p>
+<ul>
+  <li>Add new benefit categories if regulations change</li>
+  <li>Refine definitions based on regulatory guidance</li>
+  <li>Add translations for multi-language support</li>
+  <li>Align with CMS terminology if formal codes are released</li>
+</ul>
+
+<h3 id="relationship-to-official-cms-terminology">Relationship to Official CMS Terminology</h3>
+
+<p>Currently, <strong>CMS does not provide official code systems for SBC benefit categories</strong>. The codes in this IG are derived from the textual descriptions in the SBC template.</p>
+
+<p>If CMS publishes official codes in the future, this IG should be updated to reference or align with those codes.</p>
+
+<h2 id="extensibility">Extensibility</h2>
+
+<h3 id="adding-local-benefit-codes">Adding Local Benefit Codes</h3>
+
+<p>The <code class="language-plaintext highlighter-rouge">extensible</code> binding on plan types allows implementations to add local codes for:</p>
+<ul>
+  <li>Regional plan types</li>
+  <li>State-specific variations</li>
+  <li>Product-specific categorizations</li>
+</ul>
+
+<h3 id="additional-benefit-categories">Additional Benefit Categories</h3>
+
+<p>While the 30 SBC categories are required, plans may cover additional services. These can be represented using:</p>
+<ul>
+  <li>The "Other Covered Services" section of the SBC (no specific code required)</li>
+  <li>Local codes from institutional code systems</li>
+  <li>Standard FHIR benefit-type codes where appropriate</li>
+</ul>
+
+<h2 id="implementation-guidance">Implementation Guidance</h2>
+
+<h3 id="coding-consistency">Coding Consistency</h3>
+
+<p>When representing an SBC document:</p>
+
+<ol>
+  <li>Use the <strong>same benefit category code</strong> in multiple places:
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">coverage.benefit.type</code> - To indicate the benefit is covered</li>
+      <li><code class="language-plaintext highlighter-rouge">plan.specificCost.category</code> - To group costs by benefit</li>
+      <li><code class="language-plaintext highlighter-rouge">plan.specificCost.benefit.type</code> - To identify the specific benefit with costs</li>
+    </ul>
+  </li>
+  <li>Example for Primary Care Visit:
+```
+coverage.benefit[x]
+  .type = http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category#primary-care-visit</li>
+</ol>
+
+<p>plan.specificCost[x]
+  .category = http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category#primary-care-visit
+  .benefit[x].type = http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category#primary-care-visit
+```</p>
+
+<h3 id="translation-and-localization">Translation and Localization</h3>
+
+<p>SBC documents must include language access taglines per 45 CFR 147.136(e). The SBC template includes taglines in Spanish, Tagalog, Chinese, and Navajo. Full translation requirements are determined by county demographics—if a county has a certain threshold of speakers of a non-English language, the SBC must be available in that language.</p>
+
+<p>Future versions of this IG may include:</p>
+<ul>
+  <li>Translated display values for benefit category codes</li>
+  <li>Language-specific value sets</li>
+  <li>Translation metadata extensions</li>
+</ul>
+
+<p>Currently, implementers should maintain translations separately and apply them when rendering SBC documents for consumers.</p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://flexpa.com">SBC FHIR Project</a>.  Package sbc-fhir-ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Feb 16, 2026 20:07+0000">2026-02-16</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

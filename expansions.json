@@ -1,0 +1,288 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "71a2dceb-7926-4a05-adc9-9621562d9e71",
+  "meta" : {
+    "lastUpdated" : "2026-02-16T20:07:33.910+00:00"
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "http://flexpa.com/fhir/sbc/ValueSet/sbc-benefit-category",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-sbc-benefit-category.html\">codesystem SBC Benefit Category Code System v0.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category|0.1.0\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 30 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>Definition</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category-primary-care-visit\"> </a><code>http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-sbc-benefit-category.html#sbc-benefit-category-primary-care-visit\">primary-care-visit</a></td><td>Primary Care Visit to Treat an Injury or Illness</td><td>Visits to primary care physicians to treat illness or injury</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;primary-care-visit&quot;, &quot;display&quot;: &quot;Primary Care Visit to Treat an Injury or Illness&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;primary-care-visit&quot;&gt;&lt;display value=&quot;Primary Care Visit to Treat an Injury or Illness&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category-specialist-visit\"> </a><code>http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-sbc-benefit-category.html#sbc-benefit-category-specialist-visit\">specialist-visit</a></td><td>Specialist Visit</td><td>Visits to specialist physicians</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;specialist-visit&quot;, &quot;display&quot;: &quot;Specialist Visit&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;specialist-visit&quot;&gt;&lt;display value=&quot;Specialist Visit&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category-preventive-care\"> </a><code>http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-sbc-benefit-category.html#sbc-benefit-category-preventive-care\">preventive-care</a></td><td>Preventive Care/Screening/Immunization</td><td>Preventive care services, health screenings, and immunizations</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;preventive-care&quot;, &quot;display&quot;: &quot;Preventive Care/Screening/Immunization&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;preventive-care&quot;&gt;&lt;display value=&quot;Preventive Care/Screening/Immunization&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category-diagnostic-test\"> </a><code>http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-sbc-benefit-category.html#sbc-benefit-category-diagnostic-test\">diagnostic-test</a></td><td>Diagnostic Test (X-ray, Blood Work)</td><td>X-rays, blood work, and other diagnostic tests</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;diagnostic-test&quot;, &quot;display&quot;: &quot;Diagnostic Test (X-ray, Blood Work)&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;diagnostic-test&quot;&gt;&lt;display value=&quot;Diagnostic Test (X-ray, Blood Work)&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category-imaging\"> </a><code>http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-sbc-benefit-category.html#sbc-benefit-category-imaging\">imaging</a></td><td>Imaging (CT/PET Scans, MRIs)</td><td>Advanced imaging services including CT scans, PET scans, and MRIs</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;imaging&quot;, &quot;display&quot;: &quot;Imaging (CT/PET Scans, MRIs)&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;imaging&quot;&gt;&lt;display value=&quot;Imaging (CT/PET Scans, MRIs)&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category-generic-drugs\"> </a><code>http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-sbc-benefit-category.html#sbc-benefit-category-generic-drugs\">generic-drugs</a></td><td>Generic Drugs</td><td>Generic prescription medications</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;generic-drugs&quot;, &quot;display&quot;: &quot;Generic Drugs&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;generic-drugs&quot;&gt;&lt;display value=&quot;Generic Drugs&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category-preferred-brand-drugs\"> </a><code>http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-sbc-benefit-category.html#sbc-benefit-category-preferred-brand-drugs\">preferred-brand-drugs</a></td><td>Preferred Brand Drugs</td><td>Brand-name prescription medications on the preferred drug list</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;preferred-brand-drugs&quot;, &quot;display&quot;: &quot;Preferred Brand Drugs&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;preferred-brand-drugs&quot;&gt;&lt;display value=&quot;Preferred Brand Drugs&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category-non-preferred-brand-drugs\"> </a><code>http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-sbc-benefit-category.html#sbc-benefit-category-non-preferred-brand-drugs\">non-preferred-brand-drugs</a></td><td>Non-Preferred Brand Drugs</td><td>Brand-name prescription medications not on the preferred drug list</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;non-preferred-brand-drugs&quot;, &quot;display&quot;: &quot;Non-Preferred Brand Drugs&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;non-preferred-brand-drugs&quot;&gt;&lt;display value=&quot;Non-Preferred Brand Drugs&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category-specialty-drugs\"> </a><code>http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-sbc-benefit-category.html#sbc-benefit-category-specialty-drugs\">specialty-drugs</a></td><td>Specialty Drugs</td><td>High-cost or specialty prescription medications</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;specialty-drugs&quot;, &quot;display&quot;: &quot;Specialty Drugs&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;specialty-drugs&quot;&gt;&lt;display value=&quot;Specialty Drugs&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category-outpatient-facility-fee\"> </a><code>http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-sbc-benefit-category.html#sbc-benefit-category-outpatient-facility-fee\">outpatient-facility-fee</a></td><td>Facility Fee (e.g., Ambulatory Surgery Center)</td><td>Facility charges for outpatient surgery</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;outpatient-facility-fee&quot;, &quot;display&quot;: &quot;Facility Fee (e.g., Ambulatory Surgery Center)&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;outpatient-facility-fee&quot;&gt;&lt;display value=&quot;Facility Fee (e.g., Ambulatory Surgery Center)&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category-outpatient-physician-fee\"> </a><code>http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-sbc-benefit-category.html#sbc-benefit-category-outpatient-physician-fee\">outpatient-physician-fee</a></td><td>Physician/Surgeon Fees (Outpatient Surgery)</td><td>Professional fees for physicians and surgeons for outpatient surgery</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;outpatient-physician-fee&quot;, &quot;display&quot;: &quot;Physician/Surgeon Fees (Outpatient Surgery)&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;outpatient-physician-fee&quot;&gt;&lt;display value=&quot;Physician/Surgeon Fees (Outpatient Surgery)&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category-emergency-room-care\"> </a><code>http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-sbc-benefit-category.html#sbc-benefit-category-emergency-room-care\">emergency-room-care</a></td><td>Emergency Room Care</td><td>Emergency department services</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;emergency-room-care&quot;, &quot;display&quot;: &quot;Emergency Room Care&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;emergency-room-care&quot;&gt;&lt;display value=&quot;Emergency Room Care&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category-emergency-medical-transport\"> </a><code>http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-sbc-benefit-category.html#sbc-benefit-category-emergency-medical-transport\">emergency-medical-transport</a></td><td>Emergency Medical Transportation</td><td>Ambulance and emergency medical transport services</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;emergency-medical-transport&quot;, &quot;display&quot;: &quot;Emergency Medical Transportation&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;emergency-medical-transport&quot;&gt;&lt;display value=&quot;Emergency Medical Transportation&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category-urgent-care\"> </a><code>http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-sbc-benefit-category.html#sbc-benefit-category-urgent-care\">urgent-care</a></td><td>Urgent Care</td><td>Urgent care facility services</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;urgent-care&quot;, &quot;display&quot;: &quot;Urgent Care&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;urgent-care&quot;&gt;&lt;display value=&quot;Urgent Care&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category-hospital-facility-fee\"> </a><code>http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-sbc-benefit-category.html#sbc-benefit-category-hospital-facility-fee\">hospital-facility-fee</a></td><td>Facility Fee (e.g., Hospital Room)</td><td>Facility charges for hospital inpatient stays</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;hospital-facility-fee&quot;, &quot;display&quot;: &quot;Facility Fee (e.g., Hospital Room)&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;hospital-facility-fee&quot;&gt;&lt;display value=&quot;Facility Fee (e.g., Hospital Room)&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category-hospital-physician-fee\"> </a><code>http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-sbc-benefit-category.html#sbc-benefit-category-hospital-physician-fee\">hospital-physician-fee</a></td><td>Physician/Surgeon Fees (Hospital Stay)</td><td>Professional fees for physicians and surgeons during hospital stays</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;hospital-physician-fee&quot;, &quot;display&quot;: &quot;Physician/Surgeon Fees (Hospital Stay)&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;hospital-physician-fee&quot;&gt;&lt;display value=&quot;Physician/Surgeon Fees (Hospital Stay)&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category-mental-health-outpatient\"> </a><code>http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-sbc-benefit-category.html#sbc-benefit-category-mental-health-outpatient\">mental-health-outpatient</a></td><td>Mental/Behavioral Health Outpatient Services</td><td>Outpatient mental health and substance abuse services</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;mental-health-outpatient&quot;, &quot;display&quot;: &quot;Mental/Behavioral Health Outpatient Services&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;mental-health-outpatient&quot;&gt;&lt;display value=&quot;Mental/Behavioral Health Outpatient Services&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category-mental-health-inpatient\"> </a><code>http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-sbc-benefit-category.html#sbc-benefit-category-mental-health-inpatient\">mental-health-inpatient</a></td><td>Mental/Behavioral Health Inpatient Services</td><td>Inpatient mental health and substance abuse services</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;mental-health-inpatient&quot;, &quot;display&quot;: &quot;Mental/Behavioral Health Inpatient Services&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;mental-health-inpatient&quot;&gt;&lt;display value=&quot;Mental/Behavioral Health Inpatient Services&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category-pregnancy-office-visits\"> </a><code>http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-sbc-benefit-category.html#sbc-benefit-category-pregnancy-office-visits\">pregnancy-office-visits</a></td><td>Office Visits (Pregnancy)</td><td>Prenatal and postnatal office visits</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;pregnancy-office-visits&quot;, &quot;display&quot;: &quot;Office Visits (Pregnancy)&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;pregnancy-office-visits&quot;&gt;&lt;display value=&quot;Office Visits (Pregnancy)&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category-pregnancy-delivery-professional\"> </a><code>http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-sbc-benefit-category.html#sbc-benefit-category-pregnancy-delivery-professional\">pregnancy-delivery-professional</a></td><td>Childbirth/Delivery Professional Services</td><td>Professional services for childbirth and delivery</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;pregnancy-delivery-professional&quot;, &quot;display&quot;: &quot;Childbirth/Delivery Professional Services&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;pregnancy-delivery-professional&quot;&gt;&lt;display value=&quot;Childbirth/Delivery Professional Services&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category-pregnancy-delivery-facility\"> </a><code>http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-sbc-benefit-category.html#sbc-benefit-category-pregnancy-delivery-facility\">pregnancy-delivery-facility</a></td><td>Childbirth/Delivery Facility Services</td><td>Facility services for childbirth and delivery</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;pregnancy-delivery-facility&quot;, &quot;display&quot;: &quot;Childbirth/Delivery Facility Services&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;pregnancy-delivery-facility&quot;&gt;&lt;display value=&quot;Childbirth/Delivery Facility Services&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category-home-health-care\"> </a><code>http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-sbc-benefit-category.html#sbc-benefit-category-home-health-care\">home-health-care</a></td><td>Home Health Care</td><td>Home health care services</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;home-health-care&quot;, &quot;display&quot;: &quot;Home Health Care&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;home-health-care&quot;&gt;&lt;display value=&quot;Home Health Care&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category-rehabilitation\"> </a><code>http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-sbc-benefit-category.html#sbc-benefit-category-rehabilitation\">rehabilitation</a></td><td>Rehabilitation Services</td><td>Outpatient physical, occupational, and speech therapy</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;rehabilitation&quot;, &quot;display&quot;: &quot;Rehabilitation Services&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;rehabilitation&quot;&gt;&lt;display value=&quot;Rehabilitation Services&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category-habilitation\"> </a><code>http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-sbc-benefit-category.html#sbc-benefit-category-habilitation\">habilitation</a></td><td>Habilitation Services</td><td>Health care services that help develop or maintain daily living skills</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;habilitation&quot;, &quot;display&quot;: &quot;Habilitation Services&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;habilitation&quot;&gt;&lt;display value=&quot;Habilitation Services&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category-skilled-nursing\"> </a><code>http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-sbc-benefit-category.html#sbc-benefit-category-skilled-nursing\">skilled-nursing</a></td><td>Skilled Nursing Care</td><td>Skilled nursing facility services</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;skilled-nursing&quot;, &quot;display&quot;: &quot;Skilled Nursing Care&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;skilled-nursing&quot;&gt;&lt;display value=&quot;Skilled Nursing Care&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category-durable-medical-equipment\"> </a><code>http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-sbc-benefit-category.html#sbc-benefit-category-durable-medical-equipment\">durable-medical-equipment</a></td><td>Durable Medical Equipment</td><td>Medical equipment for home use such as wheelchairs, oxygen equipment</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;durable-medical-equipment&quot;, &quot;display&quot;: &quot;Durable Medical Equipment&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;durable-medical-equipment&quot;&gt;&lt;display value=&quot;Durable Medical Equipment&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category-hospice\"> </a><code>http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-sbc-benefit-category.html#sbc-benefit-category-hospice\">hospice</a></td><td>Hospice Services</td><td>End-of-life care services</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;hospice&quot;, &quot;display&quot;: &quot;Hospice Services&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;hospice&quot;&gt;&lt;display value=&quot;Hospice Services&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category-children-eye-exam\"> </a><code>http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-sbc-benefit-category.html#sbc-benefit-category-children-eye-exam\">children-eye-exam</a></td><td>Children's Eye Exam</td><td>Eye examinations for children</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;children-eye-exam&quot;, &quot;display&quot;: &quot;Children's Eye Exam&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;children-eye-exam&quot;&gt;&lt;display value=&quot;Children's Eye Exam&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category-children-glasses\"> </a><code>http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-sbc-benefit-category.html#sbc-benefit-category-children-glasses\">children-glasses</a></td><td>Children's Glasses</td><td>Eyeglasses for children</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;children-glasses&quot;, &quot;display&quot;: &quot;Children's Glasses&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;children-glasses&quot;&gt;&lt;display value=&quot;Children's Glasses&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category-children-dental\"> </a><code>http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-sbc-benefit-category.html#sbc-benefit-category-children-dental\">children-dental</a></td><td>Children's Dental Check-up</td><td>Routine dental care for children</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;children-dental&quot;, &quot;display&quot;: &quot;Children's Dental Check-up&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;children-dental&quot;&gt;&lt;display value=&quot;Children's Dental Check-up&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "http://flexpa.com/fhir/sbc/ValueSet/sbc-benefit-category",
+      "version" : "0.1.0",
+      "name" : "SBCBenefitCategoryVS",
+      "title" : "SBC Benefit Category Value Set",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2026-02-16T20:07:33+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "US",
+          "display" : "United States of America"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:1632331b-1fca-4d1d-b5e6-fe9f07da4f46",
+        "timestamp" : "2026-02-16T20:08:26+00:00",
+        "total" : 30,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category",
+          "code" : "primary-care-visit",
+          "display" : "Primary Care Visit to Treat an Injury or Illness"
+        },
+        {
+          "system" : "http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category",
+          "code" : "specialist-visit",
+          "display" : "Specialist Visit"
+        },
+        {
+          "system" : "http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category",
+          "code" : "preventive-care",
+          "display" : "Preventive Care/Screening/Immunization"
+        },
+        {
+          "system" : "http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category",
+          "code" : "diagnostic-test",
+          "display" : "Diagnostic Test (X-ray, Blood Work)"
+        },
+        {
+          "system" : "http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category",
+          "code" : "imaging",
+          "display" : "Imaging (CT/PET Scans, MRIs)"
+        },
+        {
+          "system" : "http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category",
+          "code" : "generic-drugs",
+          "display" : "Generic Drugs"
+        },
+        {
+          "system" : "http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category",
+          "code" : "preferred-brand-drugs",
+          "display" : "Preferred Brand Drugs"
+        },
+        {
+          "system" : "http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category",
+          "code" : "non-preferred-brand-drugs",
+          "display" : "Non-Preferred Brand Drugs"
+        },
+        {
+          "system" : "http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category",
+          "code" : "specialty-drugs",
+          "display" : "Specialty Drugs"
+        },
+        {
+          "system" : "http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category",
+          "code" : "outpatient-facility-fee",
+          "display" : "Facility Fee (e.g., Ambulatory Surgery Center)"
+        },
+        {
+          "system" : "http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category",
+          "code" : "outpatient-physician-fee",
+          "display" : "Physician/Surgeon Fees (Outpatient Surgery)"
+        },
+        {
+          "system" : "http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category",
+          "code" : "emergency-room-care",
+          "display" : "Emergency Room Care"
+        },
+        {
+          "system" : "http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category",
+          "code" : "emergency-medical-transport",
+          "display" : "Emergency Medical Transportation"
+        },
+        {
+          "system" : "http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category",
+          "code" : "urgent-care",
+          "display" : "Urgent Care"
+        },
+        {
+          "system" : "http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category",
+          "code" : "hospital-facility-fee",
+          "display" : "Facility Fee (e.g., Hospital Room)"
+        },
+        {
+          "system" : "http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category",
+          "code" : "hospital-physician-fee",
+          "display" : "Physician/Surgeon Fees (Hospital Stay)"
+        },
+        {
+          "system" : "http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category",
+          "code" : "mental-health-outpatient",
+          "display" : "Mental/Behavioral Health Outpatient Services"
+        },
+        {
+          "system" : "http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category",
+          "code" : "mental-health-inpatient",
+          "display" : "Mental/Behavioral Health Inpatient Services"
+        },
+        {
+          "system" : "http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category",
+          "code" : "pregnancy-office-visits",
+          "display" : "Office Visits (Pregnancy)"
+        },
+        {
+          "system" : "http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category",
+          "code" : "pregnancy-delivery-professional",
+          "display" : "Childbirth/Delivery Professional Services"
+        },
+        {
+          "system" : "http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category",
+          "code" : "pregnancy-delivery-facility",
+          "display" : "Childbirth/Delivery Facility Services"
+        },
+        {
+          "system" : "http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category",
+          "code" : "home-health-care",
+          "display" : "Home Health Care"
+        },
+        {
+          "system" : "http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category",
+          "code" : "rehabilitation",
+          "display" : "Rehabilitation Services"
+        },
+        {
+          "system" : "http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category",
+          "code" : "habilitation",
+          "display" : "Habilitation Services"
+        },
+        {
+          "system" : "http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category",
+          "code" : "skilled-nursing",
+          "display" : "Skilled Nursing Care"
+        },
+        {
+          "system" : "http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category",
+          "code" : "durable-medical-equipment",
+          "display" : "Durable Medical Equipment"
+        },
+        {
+          "system" : "http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category",
+          "code" : "hospice",
+          "display" : "Hospice Services"
+        },
+        {
+          "system" : "http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category",
+          "code" : "children-eye-exam",
+          "display" : "Children's Eye Exam"
+        },
+        {
+          "system" : "http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category",
+          "code" : "children-glasses",
+          "display" : "Children's Glasses"
+        },
+        {
+          "system" : "http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category",
+          "code" : "children-dental",
+          "display" : "Children's Dental Check-up"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://flexpa.com/fhir/sbc/ValueSet/sbc-plan-type",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-sbc-plan-type.html\">codesystem SBC Plan Type Code System v0.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://flexpa.com/fhir/sbc/CodeSystem/sbc-plan-type|0.1.0\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 6 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>Definition</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://flexpa.com/fhir/sbc/CodeSystem/sbc-plan-type-HMO\"> </a><code>http://flexpa.com/fhir/sbc/CodeSystem/sbc-plan-type</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-sbc-plan-type.html#sbc-plan-type-HMO\">HMO</a></td><td>Health Maintenance Organization (HMO)</td><td>A type of health insurance plan that requires members to get health care services from doctors and hospitals in the plan's network, except in an emergency</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-plan-type&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;HMO&quot;, &quot;display&quot;: &quot;Health Maintenance Organization (HMO)&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-plan-type&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;HMO&quot;&gt;&lt;display value=&quot;Health Maintenance Organization (HMO)&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://flexpa.com/fhir/sbc/CodeSystem/sbc-plan-type-PPO\"> </a><code>http://flexpa.com/fhir/sbc/CodeSystem/sbc-plan-type</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-sbc-plan-type.html#sbc-plan-type-PPO\">PPO</a></td><td>Preferred Provider Organization (PPO)</td><td>A type of health insurance plan where members pay less if they use providers in the plan's network, but can use out-of-network providers at higher cost</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-plan-type&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;PPO&quot;, &quot;display&quot;: &quot;Preferred Provider Organization (PPO)&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-plan-type&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;PPO&quot;&gt;&lt;display value=&quot;Preferred Provider Organization (PPO)&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://flexpa.com/fhir/sbc/CodeSystem/sbc-plan-type-POS\"> </a><code>http://flexpa.com/fhir/sbc/CodeSystem/sbc-plan-type</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-sbc-plan-type.html#sbc-plan-type-POS\">POS</a></td><td>Point of Service (POS)</td><td>A type of health insurance plan where members pay less if they use doctors and hospitals in the plan's network and choose a primary care doctor to coordinate care</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-plan-type&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;POS&quot;, &quot;display&quot;: &quot;Point of Service (POS)&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-plan-type&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;POS&quot;&gt;&lt;display value=&quot;Point of Service (POS)&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://flexpa.com/fhir/sbc/CodeSystem/sbc-plan-type-EPO\"> </a><code>http://flexpa.com/fhir/sbc/CodeSystem/sbc-plan-type</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-sbc-plan-type.html#sbc-plan-type-EPO\">EPO</a></td><td>Exclusive Provider Organization (EPO)</td><td>A type of health insurance plan where services are covered only if members use doctors and providers in the plan's network, except in an emergency</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-plan-type&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;EPO&quot;, &quot;display&quot;: &quot;Exclusive Provider Organization (EPO)&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-plan-type&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;EPO&quot;&gt;&lt;display value=&quot;Exclusive Provider Organization (EPO)&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://flexpa.com/fhir/sbc/CodeSystem/sbc-plan-type-HDHP\"> </a><code>http://flexpa.com/fhir/sbc/CodeSystem/sbc-plan-type</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-sbc-plan-type.html#sbc-plan-type-HDHP\">HDHP</a></td><td>High Deductible Health Plan (HDHP)</td><td>A health insurance plan with a higher deductible than traditional plans, often paired with a Health Savings Account</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-plan-type&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;HDHP&quot;, &quot;display&quot;: &quot;High Deductible Health Plan (HDHP)&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-plan-type&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;HDHP&quot;&gt;&lt;display value=&quot;High Deductible Health Plan (HDHP)&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://flexpa.com/fhir/sbc/CodeSystem/sbc-plan-type-INDEMNITY\"> </a><code>http://flexpa.com/fhir/sbc/CodeSystem/sbc-plan-type</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-sbc-plan-type.html#sbc-plan-type-INDEMNITY\">INDEMNITY</a></td><td>Indemnity Plan</td><td>A type of health insurance that allows members to see any doctor or hospital and pays a portion of the bill</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-plan-type&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;INDEMNITY&quot;, &quot;display&quot;: &quot;Indemnity Plan&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://flexpa.com/fhir/sbc/CodeSystem/sbc-plan-type&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;INDEMNITY&quot;&gt;&lt;display value=&quot;Indemnity Plan&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "http://flexpa.com/fhir/sbc/ValueSet/sbc-plan-type",
+      "version" : "0.1.0",
+      "name" : "SBCPlanTypeVS",
+      "title" : "SBC Plan Type Value Set",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2026-02-16T20:07:33+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "US",
+          "display" : "United States of America"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:5b162058-ace2-4604-8756-0c5a025db661",
+        "timestamp" : "2026-02-16T20:08:27+00:00",
+        "total" : 6,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://flexpa.com/fhir/sbc/CodeSystem/sbc-plan-type|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://flexpa.com/fhir/sbc/CodeSystem/sbc-plan-type",
+          "code" : "HMO",
+          "display" : "Health Maintenance Organization (HMO)"
+        },
+        {
+          "system" : "http://flexpa.com/fhir/sbc/CodeSystem/sbc-plan-type",
+          "code" : "PPO",
+          "display" : "Preferred Provider Organization (PPO)"
+        },
+        {
+          "system" : "http://flexpa.com/fhir/sbc/CodeSystem/sbc-plan-type",
+          "code" : "POS",
+          "display" : "Point of Service (POS)"
+        },
+        {
+          "system" : "http://flexpa.com/fhir/sbc/CodeSystem/sbc-plan-type",
+          "code" : "EPO",
+          "display" : "Exclusive Provider Organization (EPO)"
+        },
+        {
+          "system" : "http://flexpa.com/fhir/sbc/CodeSystem/sbc-plan-type",
+          "code" : "HDHP",
+          "display" : "High Deductible Health Plan (HDHP)"
+        },
+        {
+          "system" : "http://flexpa.com/fhir/sbc/CodeSystem/sbc-plan-type",
+          "code" : "INDEMNITY",
+          "display" : "Indemnity Plan"
+        }]
+      }
+    }
+  }]
+}

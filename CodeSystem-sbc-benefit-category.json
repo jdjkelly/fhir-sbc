@@ -1,0 +1,188 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "sbc-benefit-category",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem sbc-benefit-category</b></p><a name=\"sbc-benefit-category\"> </a><a name=\"hcsbc-benefit-category\"> </a><p>This case-sensitive code system <code>http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">primary-care-visit<a name=\"sbc-benefit-category-primary-care-visit\"> </a></td><td>Primary Care Visit to Treat an Injury or Illness</td><td>Visits to primary care physicians to treat illness or injury</td></tr><tr><td style=\"white-space:nowrap\">specialist-visit<a name=\"sbc-benefit-category-specialist-visit\"> </a></td><td>Specialist Visit</td><td>Visits to specialist physicians</td></tr><tr><td style=\"white-space:nowrap\">preventive-care<a name=\"sbc-benefit-category-preventive-care\"> </a></td><td>Preventive Care/Screening/Immunization</td><td>Preventive care services, health screenings, and immunizations</td></tr><tr><td style=\"white-space:nowrap\">diagnostic-test<a name=\"sbc-benefit-category-diagnostic-test\"> </a></td><td>Diagnostic Test (X-ray, Blood Work)</td><td>X-rays, blood work, and other diagnostic tests</td></tr><tr><td style=\"white-space:nowrap\">imaging<a name=\"sbc-benefit-category-imaging\"> </a></td><td>Imaging (CT/PET Scans, MRIs)</td><td>Advanced imaging services including CT scans, PET scans, and MRIs</td></tr><tr><td style=\"white-space:nowrap\">generic-drugs<a name=\"sbc-benefit-category-generic-drugs\"> </a></td><td>Generic Drugs</td><td>Generic prescription medications</td></tr><tr><td style=\"white-space:nowrap\">preferred-brand-drugs<a name=\"sbc-benefit-category-preferred-brand-drugs\"> </a></td><td>Preferred Brand Drugs</td><td>Brand-name prescription medications on the preferred drug list</td></tr><tr><td style=\"white-space:nowrap\">non-preferred-brand-drugs<a name=\"sbc-benefit-category-non-preferred-brand-drugs\"> </a></td><td>Non-Preferred Brand Drugs</td><td>Brand-name prescription medications not on the preferred drug list</td></tr><tr><td style=\"white-space:nowrap\">specialty-drugs<a name=\"sbc-benefit-category-specialty-drugs\"> </a></td><td>Specialty Drugs</td><td>High-cost or specialty prescription medications</td></tr><tr><td style=\"white-space:nowrap\">outpatient-facility-fee<a name=\"sbc-benefit-category-outpatient-facility-fee\"> </a></td><td>Facility Fee (e.g., Ambulatory Surgery Center)</td><td>Facility charges for outpatient surgery</td></tr><tr><td style=\"white-space:nowrap\">outpatient-physician-fee<a name=\"sbc-benefit-category-outpatient-physician-fee\"> </a></td><td>Physician/Surgeon Fees (Outpatient Surgery)</td><td>Professional fees for physicians and surgeons for outpatient surgery</td></tr><tr><td style=\"white-space:nowrap\">emergency-room-care<a name=\"sbc-benefit-category-emergency-room-care\"> </a></td><td>Emergency Room Care</td><td>Emergency department services</td></tr><tr><td style=\"white-space:nowrap\">emergency-medical-transport<a name=\"sbc-benefit-category-emergency-medical-transport\"> </a></td><td>Emergency Medical Transportation</td><td>Ambulance and emergency medical transport services</td></tr><tr><td style=\"white-space:nowrap\">urgent-care<a name=\"sbc-benefit-category-urgent-care\"> </a></td><td>Urgent Care</td><td>Urgent care facility services</td></tr><tr><td style=\"white-space:nowrap\">hospital-facility-fee<a name=\"sbc-benefit-category-hospital-facility-fee\"> </a></td><td>Facility Fee (e.g., Hospital Room)</td><td>Facility charges for hospital inpatient stays</td></tr><tr><td style=\"white-space:nowrap\">hospital-physician-fee<a name=\"sbc-benefit-category-hospital-physician-fee\"> </a></td><td>Physician/Surgeon Fees (Hospital Stay)</td><td>Professional fees for physicians and surgeons during hospital stays</td></tr><tr><td style=\"white-space:nowrap\">mental-health-outpatient<a name=\"sbc-benefit-category-mental-health-outpatient\"> </a></td><td>Mental/Behavioral Health Outpatient Services</td><td>Outpatient mental health and substance abuse services</td></tr><tr><td style=\"white-space:nowrap\">mental-health-inpatient<a name=\"sbc-benefit-category-mental-health-inpatient\"> </a></td><td>Mental/Behavioral Health Inpatient Services</td><td>Inpatient mental health and substance abuse services</td></tr><tr><td style=\"white-space:nowrap\">pregnancy-office-visits<a name=\"sbc-benefit-category-pregnancy-office-visits\"> </a></td><td>Office Visits (Pregnancy)</td><td>Prenatal and postnatal office visits</td></tr><tr><td style=\"white-space:nowrap\">pregnancy-delivery-professional<a name=\"sbc-benefit-category-pregnancy-delivery-professional\"> </a></td><td>Childbirth/Delivery Professional Services</td><td>Professional services for childbirth and delivery</td></tr><tr><td style=\"white-space:nowrap\">pregnancy-delivery-facility<a name=\"sbc-benefit-category-pregnancy-delivery-facility\"> </a></td><td>Childbirth/Delivery Facility Services</td><td>Facility services for childbirth and delivery</td></tr><tr><td style=\"white-space:nowrap\">home-health-care<a name=\"sbc-benefit-category-home-health-care\"> </a></td><td>Home Health Care</td><td>Home health care services</td></tr><tr><td style=\"white-space:nowrap\">rehabilitation<a name=\"sbc-benefit-category-rehabilitation\"> </a></td><td>Rehabilitation Services</td><td>Outpatient physical, occupational, and speech therapy</td></tr><tr><td style=\"white-space:nowrap\">habilitation<a name=\"sbc-benefit-category-habilitation\"> </a></td><td>Habilitation Services</td><td>Health care services that help develop or maintain daily living skills</td></tr><tr><td style=\"white-space:nowrap\">skilled-nursing<a name=\"sbc-benefit-category-skilled-nursing\"> </a></td><td>Skilled Nursing Care</td><td>Skilled nursing facility services</td></tr><tr><td style=\"white-space:nowrap\">durable-medical-equipment<a name=\"sbc-benefit-category-durable-medical-equipment\"> </a></td><td>Durable Medical Equipment</td><td>Medical equipment for home use such as wheelchairs, oxygen equipment</td></tr><tr><td style=\"white-space:nowrap\">hospice<a name=\"sbc-benefit-category-hospice\"> </a></td><td>Hospice Services</td><td>End-of-life care services</td></tr><tr><td style=\"white-space:nowrap\">children-eye-exam<a name=\"sbc-benefit-category-children-eye-exam\"> </a></td><td>Children's Eye Exam</td><td>Eye examinations for children</td></tr><tr><td style=\"white-space:nowrap\">children-glasses<a name=\"sbc-benefit-category-children-glasses\"> </a></td><td>Children's Glasses</td><td>Eyeglasses for children</td></tr><tr><td style=\"white-space:nowrap\">children-dental<a name=\"sbc-benefit-category-children-dental\"> </a></td><td>Children's Dental Check-up</td><td>Routine dental care for children</td></tr></table></div>"
+  },
+  "url" : "http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category",
+  "version" : "0.1.0",
+  "name" : "SBCBenefitCategoryCS",
+  "title" : "SBC Benefit Category Code System",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-02-16T20:07:33+00:00",
+  "publisher" : "SBC FHIR Project",
+  "contact" : [{
+    "name" : "SBC FHIR Project",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://flexpa.com"
+    },
+    {
+      "system" : "email",
+      "value" : "contact@flexpa.com"
+    }]
+  }],
+  "description" : "Code system for the 30 benefit service rows required in Summary of Benefits and Coverage (SBC) documents per ACA Section 2715 regulations",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US",
+      "display" : "United States of America"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 30,
+  "concept" : [{
+    "code" : "primary-care-visit",
+    "display" : "Primary Care Visit to Treat an Injury or Illness",
+    "definition" : "Visits to primary care physicians to treat illness or injury"
+  },
+  {
+    "code" : "specialist-visit",
+    "display" : "Specialist Visit",
+    "definition" : "Visits to specialist physicians"
+  },
+  {
+    "code" : "preventive-care",
+    "display" : "Preventive Care/Screening/Immunization",
+    "definition" : "Preventive care services, health screenings, and immunizations"
+  },
+  {
+    "code" : "diagnostic-test",
+    "display" : "Diagnostic Test (X-ray, Blood Work)",
+    "definition" : "X-rays, blood work, and other diagnostic tests"
+  },
+  {
+    "code" : "imaging",
+    "display" : "Imaging (CT/PET Scans, MRIs)",
+    "definition" : "Advanced imaging services including CT scans, PET scans, and MRIs"
+  },
+  {
+    "code" : "generic-drugs",
+    "display" : "Generic Drugs",
+    "definition" : "Generic prescription medications"
+  },
+  {
+    "code" : "preferred-brand-drugs",
+    "display" : "Preferred Brand Drugs",
+    "definition" : "Brand-name prescription medications on the preferred drug list"
+  },
+  {
+    "code" : "non-preferred-brand-drugs",
+    "display" : "Non-Preferred Brand Drugs",
+    "definition" : "Brand-name prescription medications not on the preferred drug list"
+  },
+  {
+    "code" : "specialty-drugs",
+    "display" : "Specialty Drugs",
+    "definition" : "High-cost or specialty prescription medications"
+  },
+  {
+    "code" : "outpatient-facility-fee",
+    "display" : "Facility Fee (e.g., Ambulatory Surgery Center)",
+    "definition" : "Facility charges for outpatient surgery"
+  },
+  {
+    "code" : "outpatient-physician-fee",
+    "display" : "Physician/Surgeon Fees (Outpatient Surgery)",
+    "definition" : "Professional fees for physicians and surgeons for outpatient surgery"
+  },
+  {
+    "code" : "emergency-room-care",
+    "display" : "Emergency Room Care",
+    "definition" : "Emergency department services"
+  },
+  {
+    "code" : "emergency-medical-transport",
+    "display" : "Emergency Medical Transportation",
+    "definition" : "Ambulance and emergency medical transport services"
+  },
+  {
+    "code" : "urgent-care",
+    "display" : "Urgent Care",
+    "definition" : "Urgent care facility services"
+  },
+  {
+    "code" : "hospital-facility-fee",
+    "display" : "Facility Fee (e.g., Hospital Room)",
+    "definition" : "Facility charges for hospital inpatient stays"
+  },
+  {
+    "code" : "hospital-physician-fee",
+    "display" : "Physician/Surgeon Fees (Hospital Stay)",
+    "definition" : "Professional fees for physicians and surgeons during hospital stays"
+  },
+  {
+    "code" : "mental-health-outpatient",
+    "display" : "Mental/Behavioral Health Outpatient Services",
+    "definition" : "Outpatient mental health and substance abuse services"
+  },
+  {
+    "code" : "mental-health-inpatient",
+    "display" : "Mental/Behavioral Health Inpatient Services",
+    "definition" : "Inpatient mental health and substance abuse services"
+  },
+  {
+    "code" : "pregnancy-office-visits",
+    "display" : "Office Visits (Pregnancy)",
+    "definition" : "Prenatal and postnatal office visits"
+  },
+  {
+    "code" : "pregnancy-delivery-professional",
+    "display" : "Childbirth/Delivery Professional Services",
+    "definition" : "Professional services for childbirth and delivery"
+  },
+  {
+    "code" : "pregnancy-delivery-facility",
+    "display" : "Childbirth/Delivery Facility Services",
+    "definition" : "Facility services for childbirth and delivery"
+  },
+  {
+    "code" : "home-health-care",
+    "display" : "Home Health Care",
+    "definition" : "Home health care services"
+  },
+  {
+    "code" : "rehabilitation",
+    "display" : "Rehabilitation Services",
+    "definition" : "Outpatient physical, occupational, and speech therapy"
+  },
+  {
+    "code" : "habilitation",
+    "display" : "Habilitation Services",
+    "definition" : "Health care services that help develop or maintain daily living skills"
+  },
+  {
+    "code" : "skilled-nursing",
+    "display" : "Skilled Nursing Care",
+    "definition" : "Skilled nursing facility services"
+  },
+  {
+    "code" : "durable-medical-equipment",
+    "display" : "Durable Medical Equipment",
+    "definition" : "Medical equipment for home use such as wheelchairs, oxygen equipment"
+  },
+  {
+    "code" : "hospice",
+    "display" : "Hospice Services",
+    "definition" : "End-of-life care services"
+  },
+  {
+    "code" : "children-eye-exam",
+    "display" : "Children's Eye Exam",
+    "definition" : "Eye examinations for children"
+  },
+  {
+    "code" : "children-glasses",
+    "display" : "Children's Glasses",
+    "definition" : "Eyeglasses for children"
+  },
+  {
+    "code" : "children-dental",
+    "display" : "Children's Dental Check-up",
+    "definition" : "Routine dental care for children"
+  }]
+}

@@ -1,0 +1,3 @@
+URL,Version,Status,OIDs,Name,Title,Description,Used
+http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category,0.1.0,draft,,SBCBenefitCategoryCS,SBC Benefit Category Code System,"Code system for the 30 benefit service rows required in Summary of Benefits and Coverage (SBC) documents per ACA Section 2715 regulations","ValueSet/sbc-benefit-category"
+http://flexpa.com/fhir/sbc/CodeSystem/sbc-plan-type,0.1.0,draft,,SBCPlanTypeCS,SBC Plan Type Code System,"Code system for health insurance plan types displayed in Summary of Benefits and Coverage documents","ValueSet/sbc-plan-type"

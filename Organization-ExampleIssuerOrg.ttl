@@ -1,0 +1,26 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://flexpa.com/fhir/sbc/Organization/ExampleIssuerOrg> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ExampleIssuerOrg"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization ExampleIssuerOrg</b></p><a name=\"ExampleIssuerOrg\"> </a><a name=\"hcExampleIssuerOrg\"> </a><p><b>name</b>: Sample Health Insurance Company</p><p><b>telecom</b>: ph: 1-800-123-4567, <a href=\"https://www.samplehealth.com\">https://www.samplehealth.com</a></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:name [ fhir:v "Sample Health Insurance Company"] ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "1-800-123-4567" ]
+  ] [
+     fhir:system [ fhir:v "url" ] ;
+     fhir:value [ fhir:v "https://www.samplehealth.com" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

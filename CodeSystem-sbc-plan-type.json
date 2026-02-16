@@ -1,0 +1,68 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "sbc-plan-type",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem sbc-plan-type</b></p><a name=\"sbc-plan-type\"> </a><a name=\"hcsbc-plan-type\"> </a><p>This case-sensitive code system <code>http://flexpa.com/fhir/sbc/CodeSystem/sbc-plan-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">HMO<a name=\"sbc-plan-type-HMO\"> </a></td><td>Health Maintenance Organization (HMO)</td><td>A type of health insurance plan that requires members to get health care services from doctors and hospitals in the plan's network, except in an emergency</td></tr><tr><td style=\"white-space:nowrap\">PPO<a name=\"sbc-plan-type-PPO\"> </a></td><td>Preferred Provider Organization (PPO)</td><td>A type of health insurance plan where members pay less if they use providers in the plan's network, but can use out-of-network providers at higher cost</td></tr><tr><td style=\"white-space:nowrap\">POS<a name=\"sbc-plan-type-POS\"> </a></td><td>Point of Service (POS)</td><td>A type of health insurance plan where members pay less if they use doctors and hospitals in the plan's network and choose a primary care doctor to coordinate care</td></tr><tr><td style=\"white-space:nowrap\">EPO<a name=\"sbc-plan-type-EPO\"> </a></td><td>Exclusive Provider Organization (EPO)</td><td>A type of health insurance plan where services are covered only if members use doctors and providers in the plan's network, except in an emergency</td></tr><tr><td style=\"white-space:nowrap\">HDHP<a name=\"sbc-plan-type-HDHP\"> </a></td><td>High Deductible Health Plan (HDHP)</td><td>A health insurance plan with a higher deductible than traditional plans, often paired with a Health Savings Account</td></tr><tr><td style=\"white-space:nowrap\">INDEMNITY<a name=\"sbc-plan-type-INDEMNITY\"> </a></td><td>Indemnity Plan</td><td>A type of health insurance that allows members to see any doctor or hospital and pays a portion of the bill</td></tr></table></div>"
+  },
+  "url" : "http://flexpa.com/fhir/sbc/CodeSystem/sbc-plan-type",
+  "version" : "0.1.0",
+  "name" : "SBCPlanTypeCS",
+  "title" : "SBC Plan Type Code System",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-02-16T20:07:33+00:00",
+  "publisher" : "SBC FHIR Project",
+  "contact" : [{
+    "name" : "SBC FHIR Project",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://flexpa.com"
+    },
+    {
+      "system" : "email",
+      "value" : "contact@flexpa.com"
+    }]
+  }],
+  "description" : "Code system for health insurance plan types displayed in Summary of Benefits and Coverage documents",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US",
+      "display" : "United States of America"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 6,
+  "concept" : [{
+    "code" : "HMO",
+    "display" : "Health Maintenance Organization (HMO)",
+    "definition" : "A type of health insurance plan that requires members to get health care services from doctors and hospitals in the plan's network, except in an emergency"
+  },
+  {
+    "code" : "PPO",
+    "display" : "Preferred Provider Organization (PPO)",
+    "definition" : "A type of health insurance plan where members pay less if they use providers in the plan's network, but can use out-of-network providers at higher cost"
+  },
+  {
+    "code" : "POS",
+    "display" : "Point of Service (POS)",
+    "definition" : "A type of health insurance plan where members pay less if they use doctors and hospitals in the plan's network and choose a primary care doctor to coordinate care"
+  },
+  {
+    "code" : "EPO",
+    "display" : "Exclusive Provider Organization (EPO)",
+    "definition" : "A type of health insurance plan where services are covered only if members use doctors and providers in the plan's network, except in an emergency"
+  },
+  {
+    "code" : "HDHP",
+    "display" : "High Deductible Health Plan (HDHP)",
+    "definition" : "A health insurance plan with a higher deductible than traditional plans, often paired with a Health Savings Account"
+  },
+  {
+    "code" : "INDEMNITY",
+    "display" : "Indemnity Plan",
+    "definition" : "A type of health insurance that allows members to see any doctor or hospital and pays a portion of the bill"
+  }]
+}

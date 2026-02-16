@@ -1,0 +1,56 @@
+SBCFHIRImplementationGuide : Validation Results
+=========================================
+
+err = 10, warn = 5, info = 10
+$--
+Generated $--. FHIR version $-- for sbc-fhir-ig#$-- (canonical = http://flexpa.com/fhir/sbc)
+ Build Errors : 1 / 4 / 0
+ /home/runner/work/fhir-sbc/fhir-sbc/fsh-generated/resources/CodeSystem-sbc-benefit-category : 1 / 0 / 2
+ /home/runner/work/fhir-sbc/fhir-sbc/fsh-generated/resources/CodeSystem-sbc-plan-type : 1 / 0 / 2
+ /home/runner/work/fhir-sbc/fhir-sbc/fsh-generated/resources/ImplementationGuide-sbc-fhir-ig : 1 / 0 / 2
+ /home/runner/work/fhir-sbc/fhir-sbc/fsh-generated/resources/InsurancePlan-SBCExampleHMO : 0 / 1 / 1
+ /home/runner/work/fhir-sbc/fhir-sbc/fsh-generated/resources/Organization-ExampleIssuerOrg : 0 / 0 / 1
+ /home/runner/work/fhir-sbc/fhir-sbc/fsh-generated/resources/StructureDefinition-benefit-limitation : 1 / 0 / 2
+ /home/runner/work/fhir-sbc/fhir-sbc/fsh-generated/resources/StructureDefinition-excluded-services : 1 / 0 / 2
+ /home/runner/work/fhir-sbc/fhir-sbc/fsh-generated/resources/StructureDefinition-sbc-insurance-plan : 1 / 0 / 3
+ /home/runner/work/fhir-sbc/fhir-sbc/fsh-generated/resources/StructureDefinition-sbc-metadata : 1 / 0 / 2
+ /home/runner/work/fhir-sbc/fhir-sbc/fsh-generated/resources/ValueSet-sbc-benefit-category : 1 / 0 / 2
+ /home/runner/work/fhir-sbc/fhir-sbc/fsh-generated/resources/ValueSet-sbc-plan-type : 1 / 0 / 2
+</table>
+== n/a ==
+ERROR: ImplementationGuide.definition.parameter[27].value: Supressed messages file not found
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/CodeSystem-sbc-benefit-category.json ==
+INFORMATION: CodeSystem/sbc-benefit-category: CodeSystem.jurisdiction[0]: Reference to draft CodeSystem urn:iso:std:iso:3166|20210120
+ERROR: CodeSystem/sbc-benefit-category: CodeSystem.jurisdiction[0].coding[0].display: Wrong Display Name 'United States of America' for urn:iso:std:iso:3166#US. Valid display is 'United States of America (the)' (for the language(s) 'en-US')
+== fsh-generated/resources/CodeSystem-sbc-plan-type.json ==
+INFORMATION: CodeSystem/sbc-plan-type: CodeSystem.jurisdiction[0]: Reference to draft CodeSystem urn:iso:std:iso:3166|20210120
+ERROR: CodeSystem/sbc-plan-type: CodeSystem.jurisdiction[0].coding[0].display: Wrong Display Name 'United States of America' for urn:iso:std:iso:3166#US. Valid display is 'United States of America (the)' (for the language(s) 'en-US')
+== fsh-generated/resources/ImplementationGuide-sbc-fhir-ig.json ==
+INFORMATION: ImplementationGuide/sbc-fhir-ig: ImplementationGuide.jurisdiction[0]: Reference to draft CodeSystem urn:iso:std:iso:3166|20210120
+ERROR: ImplementationGuide/sbc-fhir-ig: ImplementationGuide.jurisdiction[0].coding[0].display: Wrong Display Name 'United States of America' for urn:iso:std:iso:3166#US. Valid display is 'United States of America (the)' (for the language(s) 'en-US')
+== fsh-generated/resources/InsurancePlan-SBCExampleHMO.json ==
+WARNING: InsurancePlan/SBCExampleHMO: InsurancePlan.identifier[0].system: No definition could be found for URL value 'https://www.cms.gov/CCIIO/Resources/Data-Resources/hios'
+== fsh-generated/resources/Organization-ExampleIssuerOrg.json ==
+== fsh-generated/resources/StructureDefinition-benefit-limitation.json ==
+INFORMATION: StructureDefinition/benefit-limitation: StructureDefinition.jurisdiction[0]: Reference to draft CodeSystem urn:iso:std:iso:3166|20210120
+ERROR: StructureDefinition/benefit-limitation: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'United States of America' for urn:iso:std:iso:3166#US. Valid display is 'United States of America (the)' (for the language(s) 'en-US')
+== fsh-generated/resources/StructureDefinition-excluded-services.json ==
+INFORMATION: StructureDefinition/excluded-services: StructureDefinition.jurisdiction[0]: Reference to draft CodeSystem urn:iso:std:iso:3166|20210120
+ERROR: StructureDefinition/excluded-services: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'United States of America' for urn:iso:std:iso:3166#US. Valid display is 'United States of America (the)' (for the language(s) 'en-US')
+== fsh-generated/resources/StructureDefinition-sbc-insurance-plan.json ==
+INFORMATION: StructureDefinition/sbc-insurance-plan: StructureDefinition.jurisdiction[0]: Reference to draft CodeSystem urn:iso:std:iso:3166|20210120
+ERROR: StructureDefinition/sbc-insurance-plan: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'United States of America' for urn:iso:std:iso:3166#US. Valid display is 'United States of America (the)' (for the language(s) 'en-US')
+INFORMATION: StructureDefinition/sbc-insurance-plan: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
+== fsh-generated/resources/StructureDefinition-sbc-metadata.json ==
+INFORMATION: StructureDefinition/sbc-metadata: StructureDefinition.jurisdiction[0]: Reference to draft CodeSystem urn:iso:std:iso:3166|20210120
+ERROR: StructureDefinition/sbc-metadata: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'United States of America' for urn:iso:std:iso:3166#US. Valid display is 'United States of America (the)' (for the language(s) 'en-US')
+== fsh-generated/resources/ValueSet-sbc-benefit-category.json ==
+INFORMATION: ValueSet/sbc-benefit-category: ValueSet.jurisdiction[0]: Reference to draft CodeSystem urn:iso:std:iso:3166|20210120
+ERROR: ValueSet/sbc-benefit-category: ValueSet.jurisdiction[0].coding[0].display: Wrong Display Name 'United States of America' for urn:iso:std:iso:3166#US. Valid display is 'United States of America (the)' (for the language(s) 'en-US')
+== fsh-generated/resources/ValueSet-sbc-plan-type.json ==
+INFORMATION: ValueSet/sbc-plan-type: ValueSet.jurisdiction[0]: Reference to draft CodeSystem urn:iso:std:iso:3166|20210120
+ERROR: ValueSet/sbc-plan-type: ValueSet.jurisdiction[0].coding[0].display: Wrong Display Name 'United States of America' for urn:iso:std:iso:3166#US. Valid display is 'United States of America (the)' (for the language(s) 'en-US')

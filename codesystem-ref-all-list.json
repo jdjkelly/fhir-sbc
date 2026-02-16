@@ -1,0 +1,74 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "SBCBenefitCategoryCS",
+      "title" : "SBC Benefit Category Code System",
+      "description" : "Code system for the 30 benefit service rows required in Summary of Benefits and Coverage (SBC) documents per ACA Section 2715 regulations",
+      "uses" : {
+      },
+      "ValueSet-sbc-benefit-category.html" : "SBC Benefit Category Value Set"
+    },
+    {
+      "url" : "http://flexpa.com/fhir/sbc/CodeSystem/sbc-plan-type",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "SBCPlanTypeCS",
+      "title" : "SBC Plan Type Code System",
+      "description" : "Code system for health insurance plan types displayed in Summary of Benefits and Coverage documents",
+      "uses" : {
+      },
+      "ValueSet-sbc-plan-type.html" : "SBC Plan Type Value Set"
+    },
+    {
+      "url" : "http://hl7.org/fhir/publication-status",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "PublicationStatus",
+      "title" : "PublicationStatus",
+      "description" : "The lifecycle status of an artifact.",
+      "oids" : ["2.16.840.1.113883.4.642.4.4"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-publication-status.html" : "PublicationStatus"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/applicability",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "BenefitCostApplicability",
+      "title" : "Benefit cost applicability",
+      "description" : "Whether the cost applies to in-network or out-of-network providers.",
+      "oids" : ["2.16.840.1.113883.4.642.1.0"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-insuranceplan-applicability.html" : "Benefit cost applicability"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/contactentity-type",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "ContactEntityType",
+      "title" : "Contact entity type",
+      "description" : "This example value set defines a set of codes that can be used to indicate the purpose for which you would contact a contact party.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1129"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-contactentity-type.html" : "Contact entity type"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/insurance-plan-type",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "InsurancePlanType",
+      "title" : "Insurance plan type",
+      "description" : "This example value set defines a set of codes that can be used to indicate a type of insurance plan.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1261"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-insuranceplan-type.html" : "Insurance plan type"
+    }
+  ]
+}

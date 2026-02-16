@@ -1,0 +1,40 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "sbc-benefit-category",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet sbc-benefit-category</b></p><a name=\"sbc-benefit-category\"> </a><a name=\"hcsbc-benefit-category\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-sbc-benefit-category.html\"><code>http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.1.0</span></li></ul></div>"
+  },
+  "url" : "http://flexpa.com/fhir/sbc/ValueSet/sbc-benefit-category",
+  "version" : "0.1.0",
+  "name" : "SBCBenefitCategoryVS",
+  "title" : "SBC Benefit Category Value Set",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-02-16T20:07:33+00:00",
+  "publisher" : "SBC FHIR Project",
+  "contact" : [{
+    "name" : "SBC FHIR Project",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://flexpa.com"
+    },
+    {
+      "system" : "email",
+      "value" : "contact@flexpa.com"
+    }]
+  }],
+  "description" : "Value set containing all 30 benefit service categories required in Summary of Benefits and Coverage (SBC) documents",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US",
+      "display" : "United States of America"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category"
+    }]
+  }
+}

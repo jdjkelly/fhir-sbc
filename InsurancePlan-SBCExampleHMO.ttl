@@ -1,0 +1,665 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://flexpa.com/fhir/sbc/InsurancePlan/SBCExampleHMO> a fhir:InsurancePlan ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "SBCExampleHMO"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://flexpa.com/fhir/sbc/StructureDefinition/sbc-insurance-plan"^^xsd:anyURI ;
+       fhir:l <http://flexpa.com/fhir/sbc/StructureDefinition/sbc-insurance-plan>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: InsurancePlan SBCExampleHMO</b></p><a name=\"SBCExampleHMO\"> </a><a name=\"hcSBCExampleHMO\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-sbc-insurance-plan.html\">SBC Insurance Plan Profile</a></p></div><blockquote><p><b>SBC Metadata Extension</b></p><ul><li>sbcVersionDate: 2021-01-01</li><li>minimumEssentialCoverage: true</li><li>minimumValue: true</li></ul></blockquote><blockquote><p><b>Excluded Services Extension</b></p><p><b>serviceType</b>: <span title=\"Codes:\">Cosmetic surgery</span></p><p><b>description</b>: Services for cosmetic purposes are not covered</p><blockquote><p><b>url</b></p>service</blockquote><p><b>serviceType</b>: <span title=\"Codes:\">Weight loss programs</span></p><p><b>description</b>: Weight loss programs except when medically necessary</p><blockquote><p><b>url</b></p>service</blockquote></blockquote><p><b>identifier</b>: <code>https://www.cms.gov/CCIIO/Resources/Data-Resources/hios</code>/12345CA001000101</p><p><b>status</b>: Active</p><p><b>name</b>: Sample Health HMO Gold Plan</p><p><b>period</b>: 2025-01-01 --&gt; 2025-12-31</p><p><b>ownedBy</b>: <a href=\"Organization-ExampleIssuerOrg.html\">Sample Health Insurance Company</a></p><p><b>administeredBy</b>: <a href=\"Organization-ExampleIssuerOrg.html\">Organization Sample Health Insurance Company</a></p><blockquote><p><b>contact</b></p><p><b>purpose</b>: <span title=\"Codes:\">General Questions</span></p><p><b>telecom</b>: ph: 1-800-123-4567, <a href=\"https://www.samplehealth.com\">https://www.samplehealth.com</a></p></blockquote><blockquote><p><b>contact</b></p><p><b>purpose</b>: <span title=\"Codes:\">Uniform Glossary</span></p><p><b>telecom</b>: <a href=\"https://www.healthcare.gov/sbc-glossary/\">https://www.healthcare.gov/sbc-glossary/</a></p></blockquote><blockquote><p><b>coverage</b></p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ActCode HIP}\">health insurance plan policy</span></p><blockquote><p><b>benefit</b></p><p><b>type</b>: <span title=\"Codes:{http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category preventive-care}\">Preventive Care/Screening/Immunization</span></p><p><b>requirement</b>: No prior authorization required for in-network preventive services</p></blockquote><blockquote><p><b>benefit</b></p><p><b>type</b>: <span title=\"Codes:{http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category primary-care-visit}\">Primary Care Visit to Treat an Injury or Illness</span></p><p><b>requirement</b>: No referral required</p></blockquote><blockquote><p><b>benefit</b></p><p><b>Benefit Limitation Extension</b>: Limited to network specialists only; out-of-network not covered except in emergencies</p><p><b>type</b>: <span title=\"Codes:{http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category specialist-visit}\">Specialist Visit</span></p><p><b>requirement</b>: Referral required from primary care physician</p></blockquote><blockquote><p><b>benefit</b></p><p><b>Benefit Limitation Extension</b>: Copay waived if admitted to hospital</p><p><b>type</b>: <span title=\"Codes:{http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category emergency-room-care}\">Emergency Room Care</span></p></blockquote><blockquote><p><b>benefit</b></p><p><b>type</b>: <span title=\"Codes:{http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category generic-drugs}\">Generic Drugs</span></p></blockquote><blockquote><p><b>benefit</b></p><p><b>type</b>: <span title=\"Codes:{http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category hospital-facility-fee}\">Facility Fee (e.g., Hospital Room)</span></p><p><b>requirement</b>: Prior authorization required for non-emergency admissions</p></blockquote></blockquote><blockquote><p><b>plan</b></p><p><b>type</b>: <span title=\"Codes:{http://flexpa.com/fhir/sbc/CodeSystem/sbc-plan-type HMO}\">Health Maintenance Organization (HMO)</span></p><blockquote><p><b>generalCost</b></p><p><b>type</b>: <span title=\"Codes:\">Individual Deductible</span></p><h3>Costs</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td style=\"display: none\">*</td><td>1500</td><td>United States dollar</td></tr></table><p><b>comment</b>: Individual in-network deductible</p></blockquote><blockquote><p><b>generalCost</b></p><p><b>type</b>: <span title=\"Codes:\">Family Deductible</span></p><h3>Costs</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td style=\"display: none\">*</td><td>3000</td><td>United States dollar</td></tr></table></blockquote><blockquote><p><b>generalCost</b></p><p><b>type</b>: <span title=\"Codes:\">Individual Out-of-Pocket Maximum</span></p><h3>Costs</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td style=\"display: none\">*</td><td>6000</td><td>United States dollar</td></tr></table></blockquote><blockquote><p><b>generalCost</b></p><p><b>type</b>: <span title=\"Codes:\">Family Out-of-Pocket Maximum</span></p><h3>Costs</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td style=\"display: none\">*</td><td>12000</td><td>United States dollar</td></tr></table></blockquote><blockquote><p><b>specificCost</b></p><p><b>category</b>: <span title=\"Codes:{http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category preventive-care}\">Preventive Care/Screening/Immunization</span></p><blockquote><p><b>benefit</b></p><p><b>type</b>: <span title=\"Codes:{http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category preventive-care}\">Preventive Care/Screening/Immunization</span></p><blockquote><p><b>cost</b></p><p><b>type</b>: <span title=\"Codes:\">No charge</span></p><p><b>applicability</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/applicability in-network}\">In Network</span></p><p><b>value</b>: 0 USD</p></blockquote><blockquote><p><b>cost</b></p><p><b>type</b>: <span title=\"Codes:\">Not covered</span></p><p><b>applicability</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/applicability out-of-network}\">Out of Network</span></p><p><b>value</b>: 0 USD</p></blockquote></blockquote></blockquote><blockquote><p><b>specificCost</b></p><p><b>category</b>: <span title=\"Codes:{http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category primary-care-visit}\">Primary Care Visit to Treat an Injury or Illness</span></p><blockquote><p><b>benefit</b></p><p><b>type</b>: <span title=\"Codes:{http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category primary-care-visit}\">Primary Care Visit to Treat an Injury or Illness</span></p><blockquote><p><b>cost</b></p><p><b>type</b>: <span title=\"Codes:\">Copayment</span></p><p><b>applicability</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/applicability in-network}\">In Network</span></p><p><b>value</b>: 25 USD</p></blockquote><blockquote><p><b>cost</b></p><p><b>type</b>: <span title=\"Codes:\">Not covered</span></p><p><b>applicability</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/applicability out-of-network}\">Out of Network</span></p><p><b>value</b>: 0 USD</p></blockquote></blockquote></blockquote><blockquote><p><b>specificCost</b></p><p><b>category</b>: <span title=\"Codes:{http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category specialist-visit}\">Specialist Visit</span></p><blockquote><p><b>benefit</b></p><p><b>type</b>: <span title=\"Codes:{http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category specialist-visit}\">Specialist Visit</span></p><blockquote><p><b>cost</b></p><p><b>type</b>: <span title=\"Codes:\">Copayment</span></p><p><b>applicability</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/applicability in-network}\">In Network</span></p><p><b>value</b>: 50 USD</p></blockquote><blockquote><p><b>cost</b></p><p><b>type</b>: <span title=\"Codes:\">Not covered</span></p><p><b>applicability</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/applicability out-of-network}\">Out of Network</span></p><p><b>value</b>: 0 USD</p></blockquote></blockquote></blockquote><blockquote><p><b>specificCost</b></p><p><b>category</b>: <span title=\"Codes:{http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category emergency-room-care}\">Emergency Room Care</span></p><blockquote><p><b>benefit</b></p><p><b>Benefit Limitation Extension</b>: Copay waived if admitted</p><p><b>type</b>: <span title=\"Codes:{http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category emergency-room-care}\">Emergency Room Care</span></p><blockquote><p><b>cost</b></p><p><b>type</b>: <span title=\"Codes:\">Copayment</span></p><p><b>applicability</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/applicability in-network}\">In Network</span></p><p><b>value</b>: 350 USD</p></blockquote><blockquote><p><b>cost</b></p><p><b>type</b>: <span title=\"Codes:\">Copayment</span></p><p><b>applicability</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/applicability out-of-network}\">Out of Network</span></p><p><b>value</b>: 350 USD</p></blockquote></blockquote></blockquote><blockquote><p><b>specificCost</b></p><p><b>category</b>: <span title=\"Codes:{http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category generic-drugs}\">Generic Drugs</span></p><blockquote><p><b>benefit</b></p><p><b>type</b>: <span title=\"Codes:{http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category generic-drugs}\">Generic Drugs</span></p><blockquote><p><b>cost</b></p><p><b>type</b>: <span title=\"Codes:\">Copayment</span></p><p><b>applicability</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/applicability in-network}\">In Network</span></p><p><b>value</b>: 10 USD</p></blockquote><blockquote><p><b>cost</b></p><p><b>type</b>: <span title=\"Codes:\">Not covered</span></p><p><b>applicability</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/applicability out-of-network}\">Out of Network</span></p><p><b>value</b>: 0 USD</p></blockquote></blockquote></blockquote><blockquote><p><b>specificCost</b></p><p><b>category</b>: <span title=\"Codes:{http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category hospital-facility-fee}\">Facility Fee (e.g., Hospital Room)</span></p><blockquote><p><b>benefit</b></p><p><b>Benefit Limitation Extension</b>: Prior authorization required</p><p><b>type</b>: <span title=\"Codes:{http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category hospital-facility-fee}\">Facility Fee (e.g., Hospital Room)</span></p><blockquote><p><b>cost</b></p><p><b>type</b>: <span title=\"Codes:\">Coinsurance</span></p><p><b>applicability</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/applicability in-network}\">In Network</span></p><p><b>value</b>: 20 %</p></blockquote><blockquote><p><b>cost</b></p><p><b>type</b>: <span title=\"Codes:\">Not covered</span></p><p><b>applicability</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/applicability out-of-network}\">Out of Network</span></p><p><b>value</b>: 0 %</p></blockquote></blockquote></blockquote></blockquote></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "sbcVersionDate"^^xsd:anyURI ;
+         fhir:l fhir:sbcVersionDate
+       ] ;
+       fhir:value [
+         a fhir:Date ;
+         fhir:v "2021-01-01"^^xsd:date
+       ]
+     ] [
+       fhir:url [
+         fhir:v "minimumEssentialCoverage"^^xsd:anyURI ;
+         fhir:l fhir:minimumEssentialCoverage
+       ] ;
+       fhir:value [
+         a fhir:Boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:url [
+         fhir:v "minimumValue"^^xsd:anyURI ;
+         fhir:l fhir:minimumValue
+       ] ;
+       fhir:value [
+         a fhir:Boolean ;
+         fhir:v true
+       ]
+     ] ) ;
+     fhir:url [
+       fhir:v "http://flexpa.com/fhir/sbc/StructureDefinition/sbc-metadata"^^xsd:anyURI ;
+       fhir:l <http://flexpa.com/fhir/sbc/StructureDefinition/sbc-metadata>
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "serviceType"^^xsd:anyURI ;
+           fhir:l fhir:serviceType
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Cosmetic surgery" ]
+         ]
+       ] [
+         fhir:url [
+           fhir:v "description"^^xsd:anyURI ;
+           fhir:l fhir:description
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Services for cosmetic purposes are not covered"
+         ]
+       ] ) ;
+       fhir:url [
+         fhir:v "service"^^xsd:anyURI ;
+         fhir:l fhir:service
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "serviceType"^^xsd:anyURI ;
+           fhir:l fhir:serviceType
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:text [ fhir:v "Weight loss programs" ]
+         ]
+       ] [
+         fhir:url [
+           fhir:v "description"^^xsd:anyURI ;
+           fhir:l fhir:description
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Weight loss programs except when medically necessary"
+         ]
+       ] ) ;
+       fhir:url [
+         fhir:v "service"^^xsd:anyURI ;
+         fhir:l fhir:service
+       ]
+     ] ) ;
+     fhir:url [
+       fhir:v "http://flexpa.com/fhir/sbc/StructureDefinition/excluded-services"^^xsd:anyURI ;
+       fhir:l <http://flexpa.com/fhir/sbc/StructureDefinition/excluded-services>
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [
+       fhir:v "https://www.cms.gov/CCIIO/Resources/Data-Resources/hios"^^xsd:anyURI ;
+       fhir:l <https://www.cms.gov/CCIIO/Resources/Data-Resources/hios>
+     ] ;
+     fhir:value [ fhir:v "12345CA001000101" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:name [ fhir:v "Sample Health HMO Gold Plan"] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2025-01-01"^^xsd:date ] ;
+     fhir:end [ fhir:v "2025-12-31"^^xsd:date ]
+  ] ; # 
+  fhir:ownedBy [
+     fhir:l <http://flexpa.com/fhir/sbc/Organization/ExampleIssuerOrg> ;
+     fhir:reference [ fhir:v "Organization/ExampleIssuerOrg" ] ;
+     fhir:display [ fhir:v "Sample Health Insurance Company" ]
+  ] ; # 
+  fhir:administeredBy [
+     fhir:l <http://flexpa.com/fhir/sbc/Organization/ExampleIssuerOrg> ;
+     fhir:reference [ fhir:v "Organization/ExampleIssuerOrg" ]
+  ] ; # 
+  fhir:contact ( [
+     fhir:purpose [
+       fhir:text [ fhir:v "General Questions" ]
+     ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "phone" ] ;
+       fhir:value [ fhir:v "1-800-123-4567" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.samplehealth.com" ]
+     ] )
+  ] [
+     fhir:purpose [
+       fhir:text [ fhir:v "Uniform Glossary" ]
+     ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.healthcare.gov/sbc-glossary/" ]
+     ] )
+  ] ) ; # 
+  fhir:coverage ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActCode>
+         ] ;
+         fhir:code [ fhir:v "HIP" ] ;
+         fhir:display [ fhir:v "health insurance plan policy" ]
+       ] )
+     ] ;
+     fhir:benefit ( [
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [
+             fhir:v "http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category"^^xsd:anyURI ;
+             fhir:l <http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category>
+           ] ;
+           fhir:code [ fhir:v "preventive-care" ]
+         ] )
+       ] ;
+       fhir:requirement [ fhir:v "No prior authorization required for in-network preventive services" ]
+     ] [
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [
+             fhir:v "http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category"^^xsd:anyURI ;
+             fhir:l <http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category>
+           ] ;
+           fhir:code [ fhir:v "primary-care-visit" ]
+         ] )
+       ] ;
+       fhir:requirement [ fhir:v "No referral required" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://flexpa.com/fhir/sbc/StructureDefinition/benefit-limitation"^^xsd:anyURI ;
+           fhir:l <http://flexpa.com/fhir/sbc/StructureDefinition/benefit-limitation>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Limited to network specialists only; out-of-network not covered except in emergencies"
+         ]
+       ] ) ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [
+             fhir:v "http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category"^^xsd:anyURI ;
+             fhir:l <http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category>
+           ] ;
+           fhir:code [ fhir:v "specialist-visit" ]
+         ] )
+       ] ;
+       fhir:requirement [ fhir:v "Referral required from primary care physician" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://flexpa.com/fhir/sbc/StructureDefinition/benefit-limitation"^^xsd:anyURI ;
+           fhir:l <http://flexpa.com/fhir/sbc/StructureDefinition/benefit-limitation>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Copay waived if admitted to hospital"
+         ]
+       ] ) ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [
+             fhir:v "http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category"^^xsd:anyURI ;
+             fhir:l <http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category>
+           ] ;
+           fhir:code [ fhir:v "emergency-room-care" ]
+         ] )
+       ]
+     ] [
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [
+             fhir:v "http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category"^^xsd:anyURI ;
+             fhir:l <http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category>
+           ] ;
+           fhir:code [ fhir:v "generic-drugs" ]
+         ] )
+       ]
+     ] [
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [
+             fhir:v "http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category"^^xsd:anyURI ;
+             fhir:l <http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category>
+           ] ;
+           fhir:code [ fhir:v "hospital-facility-fee" ]
+         ] )
+       ] ;
+       fhir:requirement [ fhir:v "Prior authorization required for non-emergency admissions" ]
+     ] )
+  ] ) ; # 
+  fhir:plan ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://flexpa.com/fhir/sbc/CodeSystem/sbc-plan-type"^^xsd:anyURI ;
+           fhir:l <http://flexpa.com/fhir/sbc/CodeSystem/sbc-plan-type>
+         ] ;
+         fhir:code [ fhir:v "HMO" ]
+       ] )
+     ] ;
+     fhir:generalCost ( [
+       fhir:type [
+         fhir:text [ fhir:v "Individual Deductible" ]
+       ] ;
+       fhir:cost [
+         fhir:value [ fhir:v "1500"^^xsd:decimal ] ;
+         fhir:currency [ fhir:v "USD" ]
+       ] ;
+       fhir:comment [ fhir:v "Individual in-network deductible" ]
+     ] [
+       fhir:type [
+         fhir:text [ fhir:v "Family Deductible" ]
+       ] ;
+       fhir:cost [
+         fhir:value [ fhir:v "3000"^^xsd:decimal ] ;
+         fhir:currency [ fhir:v "USD" ]
+       ]
+     ] [
+       fhir:type [
+         fhir:text [ fhir:v "Individual Out-of-Pocket Maximum" ]
+       ] ;
+       fhir:cost [
+         fhir:value [ fhir:v "6000"^^xsd:decimal ] ;
+         fhir:currency [ fhir:v "USD" ]
+       ]
+     ] [
+       fhir:type [
+         fhir:text [ fhir:v "Family Out-of-Pocket Maximum" ]
+       ] ;
+       fhir:cost [
+         fhir:value [ fhir:v "12000"^^xsd:decimal ] ;
+         fhir:currency [ fhir:v "USD" ]
+       ]
+     ] ) ;
+     fhir:specificCost ( [
+       fhir:category [
+         fhir:coding ( [
+           fhir:system [
+             fhir:v "http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category"^^xsd:anyURI ;
+             fhir:l <http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category>
+           ] ;
+           fhir:code [ fhir:v "preventive-care" ]
+         ] )
+       ] ;
+       fhir:benefit ( [
+         fhir:type [
+           fhir:coding ( [
+             fhir:system [
+               fhir:v "http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category"^^xsd:anyURI ;
+               fhir:l <http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category>
+             ] ;
+             fhir:code [ fhir:v "preventive-care" ]
+           ] )
+         ] ;
+         fhir:cost ( [
+           fhir:type [
+             fhir:text [ fhir:v "No charge" ]
+           ] ;
+           fhir:applicability [
+             fhir:coding ( [
+               fhir:system [
+                 fhir:v "http://terminology.hl7.org/CodeSystem/applicability"^^xsd:anyURI ;
+                 fhir:l <http://terminology.hl7.org/CodeSystem/applicability>
+               ] ;
+               fhir:code [ fhir:v "in-network" ] ;
+               fhir:display [ fhir:v "In Network" ]
+             ] )
+           ] ;
+           fhir:value [
+             fhir:value [ fhir:v "0"^^xsd:decimal ] ;
+             fhir:unit [ fhir:v "USD" ]
+           ]
+         ] [
+           fhir:type [
+             fhir:text [ fhir:v "Not covered" ]
+           ] ;
+           fhir:applicability [
+             fhir:coding ( [
+               fhir:system [
+                 fhir:v "http://terminology.hl7.org/CodeSystem/applicability"^^xsd:anyURI ;
+                 fhir:l <http://terminology.hl7.org/CodeSystem/applicability>
+               ] ;
+               fhir:code [ fhir:v "out-of-network" ] ;
+               fhir:display [ fhir:v "Out of Network" ]
+             ] )
+           ] ;
+           fhir:value [
+             fhir:value [ fhir:v "0"^^xsd:decimal ] ;
+             fhir:unit [ fhir:v "USD" ]
+           ]
+         ] )
+       ] )
+     ] [
+       fhir:category [
+         fhir:coding ( [
+           fhir:system [
+             fhir:v "http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category"^^xsd:anyURI ;
+             fhir:l <http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category>
+           ] ;
+           fhir:code [ fhir:v "primary-care-visit" ]
+         ] )
+       ] ;
+       fhir:benefit ( [
+         fhir:type [
+           fhir:coding ( [
+             fhir:system [
+               fhir:v "http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category"^^xsd:anyURI ;
+               fhir:l <http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category>
+             ] ;
+             fhir:code [ fhir:v "primary-care-visit" ]
+           ] )
+         ] ;
+         fhir:cost ( [
+           fhir:type [
+             fhir:text [ fhir:v "Copayment" ]
+           ] ;
+           fhir:applicability [
+             fhir:coding ( [
+               fhir:system [
+                 fhir:v "http://terminology.hl7.org/CodeSystem/applicability"^^xsd:anyURI ;
+                 fhir:l <http://terminology.hl7.org/CodeSystem/applicability>
+               ] ;
+               fhir:code [ fhir:v "in-network" ] ;
+               fhir:display [ fhir:v "In Network" ]
+             ] )
+           ] ;
+           fhir:value [
+             fhir:value [ fhir:v "25"^^xsd:decimal ] ;
+             fhir:unit [ fhir:v "USD" ]
+           ]
+         ] [
+           fhir:type [
+             fhir:text [ fhir:v "Not covered" ]
+           ] ;
+           fhir:applicability [
+             fhir:coding ( [
+               fhir:system [
+                 fhir:v "http://terminology.hl7.org/CodeSystem/applicability"^^xsd:anyURI ;
+                 fhir:l <http://terminology.hl7.org/CodeSystem/applicability>
+               ] ;
+               fhir:code [ fhir:v "out-of-network" ] ;
+               fhir:display [ fhir:v "Out of Network" ]
+             ] )
+           ] ;
+           fhir:value [
+             fhir:value [ fhir:v "0"^^xsd:decimal ] ;
+             fhir:unit [ fhir:v "USD" ]
+           ]
+         ] )
+       ] )
+     ] [
+       fhir:category [
+         fhir:coding ( [
+           fhir:system [
+             fhir:v "http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category"^^xsd:anyURI ;
+             fhir:l <http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category>
+           ] ;
+           fhir:code [ fhir:v "specialist-visit" ]
+         ] )
+       ] ;
+       fhir:benefit ( [
+         fhir:type [
+           fhir:coding ( [
+             fhir:system [
+               fhir:v "http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category"^^xsd:anyURI ;
+               fhir:l <http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category>
+             ] ;
+             fhir:code [ fhir:v "specialist-visit" ]
+           ] )
+         ] ;
+         fhir:cost ( [
+           fhir:type [
+             fhir:text [ fhir:v "Copayment" ]
+           ] ;
+           fhir:applicability [
+             fhir:coding ( [
+               fhir:system [
+                 fhir:v "http://terminology.hl7.org/CodeSystem/applicability"^^xsd:anyURI ;
+                 fhir:l <http://terminology.hl7.org/CodeSystem/applicability>
+               ] ;
+               fhir:code [ fhir:v "in-network" ] ;
+               fhir:display [ fhir:v "In Network" ]
+             ] )
+           ] ;
+           fhir:value [
+             fhir:value [ fhir:v "50"^^xsd:decimal ] ;
+             fhir:unit [ fhir:v "USD" ]
+           ]
+         ] [
+           fhir:type [
+             fhir:text [ fhir:v "Not covered" ]
+           ] ;
+           fhir:applicability [
+             fhir:coding ( [
+               fhir:system [
+                 fhir:v "http://terminology.hl7.org/CodeSystem/applicability"^^xsd:anyURI ;
+                 fhir:l <http://terminology.hl7.org/CodeSystem/applicability>
+               ] ;
+               fhir:code [ fhir:v "out-of-network" ] ;
+               fhir:display [ fhir:v "Out of Network" ]
+             ] )
+           ] ;
+           fhir:value [
+             fhir:value [ fhir:v "0"^^xsd:decimal ] ;
+             fhir:unit [ fhir:v "USD" ]
+           ]
+         ] )
+       ] )
+     ] [
+       fhir:category [
+         fhir:coding ( [
+           fhir:system [
+             fhir:v "http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category"^^xsd:anyURI ;
+             fhir:l <http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category>
+           ] ;
+           fhir:code [ fhir:v "emergency-room-care" ]
+         ] )
+       ] ;
+       fhir:benefit ( [
+         fhir:extension ( [
+           fhir:url [
+             fhir:v "http://flexpa.com/fhir/sbc/StructureDefinition/benefit-limitation"^^xsd:anyURI ;
+             fhir:l <http://flexpa.com/fhir/sbc/StructureDefinition/benefit-limitation>
+           ] ;
+           fhir:value [
+             a fhir:String ;
+             fhir:v "Copay waived if admitted"
+           ]
+         ] ) ;
+         fhir:type [
+           fhir:coding ( [
+             fhir:system [
+               fhir:v "http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category"^^xsd:anyURI ;
+               fhir:l <http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category>
+             ] ;
+             fhir:code [ fhir:v "emergency-room-care" ]
+           ] )
+         ] ;
+         fhir:cost ( [
+           fhir:type [
+             fhir:text [ fhir:v "Copayment" ]
+           ] ;
+           fhir:applicability [
+             fhir:coding ( [
+               fhir:system [
+                 fhir:v "http://terminology.hl7.org/CodeSystem/applicability"^^xsd:anyURI ;
+                 fhir:l <http://terminology.hl7.org/CodeSystem/applicability>
+               ] ;
+               fhir:code [ fhir:v "in-network" ] ;
+               fhir:display [ fhir:v "In Network" ]
+             ] )
+           ] ;
+           fhir:value [
+             fhir:value [ fhir:v "350"^^xsd:decimal ] ;
+             fhir:unit [ fhir:v "USD" ]
+           ]
+         ] [
+           fhir:type [
+             fhir:text [ fhir:v "Copayment" ]
+           ] ;
+           fhir:applicability [
+             fhir:coding ( [
+               fhir:system [
+                 fhir:v "http://terminology.hl7.org/CodeSystem/applicability"^^xsd:anyURI ;
+                 fhir:l <http://terminology.hl7.org/CodeSystem/applicability>
+               ] ;
+               fhir:code [ fhir:v "out-of-network" ] ;
+               fhir:display [ fhir:v "Out of Network" ]
+             ] )
+           ] ;
+           fhir:value [
+             fhir:value [ fhir:v "350"^^xsd:decimal ] ;
+             fhir:unit [ fhir:v "USD" ]
+           ]
+         ] )
+       ] )
+     ] [
+       fhir:category [
+         fhir:coding ( [
+           fhir:system [
+             fhir:v "http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category"^^xsd:anyURI ;
+             fhir:l <http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category>
+           ] ;
+           fhir:code [ fhir:v "generic-drugs" ]
+         ] )
+       ] ;
+       fhir:benefit ( [
+         fhir:type [
+           fhir:coding ( [
+             fhir:system [
+               fhir:v "http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category"^^xsd:anyURI ;
+               fhir:l <http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category>
+             ] ;
+             fhir:code [ fhir:v "generic-drugs" ]
+           ] )
+         ] ;
+         fhir:cost ( [
+           fhir:type [
+             fhir:text [ fhir:v "Copayment" ]
+           ] ;
+           fhir:applicability [
+             fhir:coding ( [
+               fhir:system [
+                 fhir:v "http://terminology.hl7.org/CodeSystem/applicability"^^xsd:anyURI ;
+                 fhir:l <http://terminology.hl7.org/CodeSystem/applicability>
+               ] ;
+               fhir:code [ fhir:v "in-network" ] ;
+               fhir:display [ fhir:v "In Network" ]
+             ] )
+           ] ;
+           fhir:value [
+             fhir:value [ fhir:v "10"^^xsd:decimal ] ;
+             fhir:unit [ fhir:v "USD" ]
+           ]
+         ] [
+           fhir:type [
+             fhir:text [ fhir:v "Not covered" ]
+           ] ;
+           fhir:applicability [
+             fhir:coding ( [
+               fhir:system [
+                 fhir:v "http://terminology.hl7.org/CodeSystem/applicability"^^xsd:anyURI ;
+                 fhir:l <http://terminology.hl7.org/CodeSystem/applicability>
+               ] ;
+               fhir:code [ fhir:v "out-of-network" ] ;
+               fhir:display [ fhir:v "Out of Network" ]
+             ] )
+           ] ;
+           fhir:value [
+             fhir:value [ fhir:v "0"^^xsd:decimal ] ;
+             fhir:unit [ fhir:v "USD" ]
+           ]
+         ] )
+       ] )
+     ] [
+       fhir:category [
+         fhir:coding ( [
+           fhir:system [
+             fhir:v "http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category"^^xsd:anyURI ;
+             fhir:l <http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category>
+           ] ;
+           fhir:code [ fhir:v "hospital-facility-fee" ]
+         ] )
+       ] ;
+       fhir:benefit ( [
+         fhir:extension ( [
+           fhir:url [
+             fhir:v "http://flexpa.com/fhir/sbc/StructureDefinition/benefit-limitation"^^xsd:anyURI ;
+             fhir:l <http://flexpa.com/fhir/sbc/StructureDefinition/benefit-limitation>
+           ] ;
+           fhir:value [
+             a fhir:String ;
+             fhir:v "Prior authorization required"
+           ]
+         ] ) ;
+         fhir:type [
+           fhir:coding ( [
+             fhir:system [
+               fhir:v "http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category"^^xsd:anyURI ;
+               fhir:l <http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category>
+             ] ;
+             fhir:code [ fhir:v "hospital-facility-fee" ]
+           ] )
+         ] ;
+         fhir:cost ( [
+           fhir:type [
+             fhir:text [ fhir:v "Coinsurance" ]
+           ] ;
+           fhir:applicability [
+             fhir:coding ( [
+               fhir:system [
+                 fhir:v "http://terminology.hl7.org/CodeSystem/applicability"^^xsd:anyURI ;
+                 fhir:l <http://terminology.hl7.org/CodeSystem/applicability>
+               ] ;
+               fhir:code [ fhir:v "in-network" ] ;
+               fhir:display [ fhir:v "In Network" ]
+             ] )
+           ] ;
+           fhir:value [
+             fhir:value [ fhir:v "20"^^xsd:decimal ] ;
+             fhir:unit [ fhir:v "%" ]
+           ]
+         ] [
+           fhir:type [
+             fhir:text [ fhir:v "Not covered" ]
+           ] ;
+           fhir:applicability [
+             fhir:coding ( [
+               fhir:system [
+                 fhir:v "http://terminology.hl7.org/CodeSystem/applicability"^^xsd:anyURI ;
+                 fhir:l <http://terminology.hl7.org/CodeSystem/applicability>
+               ] ;
+               fhir:code [ fhir:v "out-of-network" ] ;
+               fhir:display [ fhir:v "Out of Network" ]
+             ] )
+           ] ;
+           fhir:value [
+             fhir:value [ fhir:v "0"^^xsd:decimal ] ;
+             fhir:unit [ fhir:v "%" ]
+           ]
+         ] )
+       ] )
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

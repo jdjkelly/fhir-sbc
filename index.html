@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Home - Summary of Benefits and Coverage (SBC) FHIR Implementation Guide v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"1"}
+    h3,h4,h5,h6{--heading-prefix:"1"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Summary of Benefits and Coverage (SBC) FHIR Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+
+  United States of America
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="mapping.html">Mapping</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="profiles.html">Profiles</a>
+      </li>
+      <li>
+        <a href="terminology.html">Terminology</a>
+      </li>
+      <li>
+        <a href="examples.html">Examples</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="http://hl7.org/fhir/R4/">FHIR Spec</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Home</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Summary of Benefits and Coverage (SBC) FHIR Implementation Guide - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://flexpa.com/fhir/sbc/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Home</h2>
+  
+
+
+
+
+
+
+  <table class="colsd">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://flexpa.com/fhir/sbc/ImplementationGuide/sbc-fhir-ig<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://flexpa.com/fhir/sbc/ImplementationGuide/sbc-fhir-ig"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://flexpa.com/fhir/sbc/ImplementationGuide/sbc-fhir-ig|0.1.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Draft
+          
+            as of 2026-02-16
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">SBCFHIRImplementationGuide</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#summary-of-benefits-and-coverage-sbc-fhir-implementation-guide" id="markdown-toc-summary-of-benefits-and-coverage-sbc-fhir-implementation-guide">Summary of Benefits and Coverage (SBC) FHIR Implementation Guide</a>    <ul>
+      <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
+      <li><a href="#purpose" id="markdown-toc-purpose">Purpose</a></li>
+      <li><a href="#regulatory-context" id="markdown-toc-regulatory-context">Regulatory Context</a></li>
+      <li><a href="#key-features" id="markdown-toc-key-features">Key Features</a>        <ul>
+          <li><a href="#30-required-benefit-service-categories" id="markdown-toc-30-required-benefit-service-categories">30 Required Benefit Service Categories</a></li>
+          <li><a href="#cost-sharing-representation" id="markdown-toc-cost-sharing-representation">Cost-Sharing Representation</a></li>
+          <li><a href="#sbc-specific-extensions" id="markdown-toc-sbc-specific-extensions">SBC-Specific Extensions</a></li>
+        </ul>
+      </li>
+      <li><a href="#scope" id="markdown-toc-scope">Scope</a></li>
+      <li><a href="#target-audience" id="markdown-toc-target-audience">Target Audience</a></li>
+      <li><a href="#getting-started" id="markdown-toc-getting-started">Getting Started</a></li>
+      <li><a href="#authors-and-contributors" id="markdown-toc-authors-and-contributors">Authors and Contributors</a></li>
+      <li><a href="#license-and-legal" id="markdown-toc-license-and-legal">License and Legal</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+<h1 id="summary-of-benefits-and-coverage-sbc-fhir-implementation-guide">Summary of Benefits and Coverage (SBC) FHIR Implementation Guide</h1>
+
+<h2 id="overview">Overview</h2>
+
+<p>This Implementation Guide (IG) defines a FHIR profile for representing Summary of Benefits and Coverage (SBC) documents as structured data using the InsurancePlan resource. The SBC is a standardized disclosure document required under the Affordable Care Act (ACA) Section 2715 and implementing regulations.</p>
+
+<h2 id="purpose">Purpose</h2>
+
+<p>The SBC framework was established to provide consumers with clear, standardized information about health insurance benefits and costs. While SBC regulations prescribe detailed content requirements, they do not specify machine-readable data formats. This IG addresses that gap by:</p>
+
+<ul>
+  <li>Defining a structured FHIR representation of SBC documents</li>
+  <li>Enabling machine-readable representation of the 30 required benefit service categories</li>
+  <li>Supporting programmatic access to cost-sharing information (copays, coinsurance, deductibles)</li>
+  <li>Preserving network distinctions (in-network vs. out-of-network)</li>
+  <li>Maintaining regulatory compliance with SBC content requirements</li>
+</ul>
+
+<h2 id="regulatory-context">Regulatory Context</h2>
+
+<p>The SBC is jointly regulated by three federal agencies:</p>
+
+<ul>
+  <li><strong>Department of Health and Human Services (HHS)</strong> through CMS and CCIIO - enforces requirements for health insurance issuers (45 CFR 147.200)</li>
+  <li><strong>Department of Labor (DOL)</strong> through EBSA - enforces requirements for ERISA-covered group health plans (29 CFR 2590.715-2715)</li>
+  <li><strong>Department of the Treasury</strong> through IRS - enforces via excise taxes (26 CFR 54.9815-2715)</li>
+</ul>
+
+<p>The statutory authority stems from Section 2715 of the Public Health Service Act, added by ACA Section 1001(5), codified at 42 U.S.C. § 300gg-15.</p>
+
+<h2 id="key-features">Key Features</h2>
+
+<h3 id="30-required-benefit-service-categories">30 Required Benefit Service Categories</h3>
+
+<p>The profile supports all 30 benefit service rows from the SBC template, organized by Common Medical Event:</p>
+
+<p><strong>If you visit a health care provider's office or clinic:</strong></p>
+<ol>
+  <li>Primary care visit to treat an injury or illness</li>
+  <li>Specialist visit</li>
+  <li>Preventive care/screening/immunization</li>
+</ol>
+
+<p><strong>If you have a test:</strong></p>
+<ol>
+  <li>Diagnostic test (x-ray, blood work)</li>
+  <li>Imaging (CT/PET scans, MRIs)</li>
+</ol>
+
+<p><strong>If you need drugs to treat your illness or condition:</strong></p>
+<ol>
+  <li>Generic drugs</li>
+  <li>Preferred brand drugs</li>
+  <li>Non-preferred brand drugs</li>
+  <li>Specialty drugs</li>
+</ol>
+
+<p><strong>If you have outpatient surgery:</strong></p>
+<ol>
+  <li>Facility fee (e.g., ambulatory surgery center)</li>
+  <li>Physician/surgeon fees</li>
+</ol>
+
+<p><strong>If you need immediate medical attention:</strong></p>
+<ol>
+  <li>Emergency room care</li>
+  <li>Emergency medical transportation</li>
+  <li>Urgent care</li>
+</ol>
+
+<p><strong>If you have a hospital stay:</strong></p>
+<ol>
+  <li>Facility fee (e.g., hospital room)</li>
+  <li>Physician/surgeon fees</li>
+</ol>
+
+<p><strong>If you need mental health, behavioral health, or substance abuse services:</strong></p>
+<ol>
+  <li>Outpatient services</li>
+  <li>Inpatient services</li>
+</ol>
+
+<p><strong>If you are pregnant:</strong></p>
+<ol>
+  <li>Office visits</li>
+  <li>Childbirth/delivery professional services</li>
+  <li>Childbirth/delivery facility services</li>
+</ol>
+
+<p><strong>If you need help recovering or have other special health needs:</strong></p>
+<ol>
+  <li>Home health care</li>
+  <li>Rehabilitation services</li>
+  <li>Habilitation services</li>
+  <li>Skilled nursing care</li>
+  <li>Durable medical equipment</li>
+  <li>Hospice services</li>
+</ol>
+
+<p><strong>If your child needs dental or eye care:</strong></p>
+<ol>
+  <li>Children's eye exam</li>
+  <li>Children's glasses</li>
+  <li>Children's dental check-up</li>
+</ol>
+
+<h3 id="cost-sharing-representation">Cost-Sharing Representation</h3>
+
+<p>The profile represents cost-sharing through the InsurancePlan <code class="language-plaintext highlighter-rouge">plan.specificCost</code> structure:</p>
+
+<ul>
+  <li><strong>Copayments</strong> - Fixed dollar amounts per service</li>
+  <li><strong>Coinsurance</strong> - Percentage of costs paid by the member</li>
+  <li><strong>Deductibles</strong> - Amounts to be paid before benefits apply</li>
+  <li><strong>Network distinctions</strong> - Separate costs for in-network and out-of-network services</li>
+</ul>
+
+<h3 id="sbc-specific-extensions">SBC-Specific Extensions</h3>
+
+<p>While the profile prioritizes using base InsurancePlan elements, it defines minimal extensions for SBC-specific content:</p>
+
+<ul>
+  <li><strong>SBC Metadata Extension</strong> - Minimum essential coverage indicator, minimum value indicator, abortion coverage disclosure</li>
+  <li><strong>Excluded Services Extension</strong> - Services not covered by the plan</li>
+  <li><strong>Benefit Limitation Extension</strong> - Limitations and exceptions for specific benefits</li>
+</ul>
+
+<h2 id="scope">Scope</h2>
+
+<p>This IG currently focuses on the core benefit and cost-sharing structure of SBC documents. Future versions may include:</p>
+
+<ul>
+  <li>Coverage examples (standardized scenarios: having a baby, managing diabetes, simple fracture)</li>
+  <li>Additional regulatory disclosures</li>
+  <li>Language access and translation metadata</li>
+  <li>Links to uniform glossary definitions</li>
+</ul>
+
+<h2 id="target-audience">Target Audience</h2>
+
+<ul>
+  <li>Health insurance issuers creating SBC documents</li>
+  <li>Health plan administrators</li>
+  <li>Consumer-facing health applications</li>
+  <li>Health IT vendors building plan comparison tools</li>
+  <li>Researchers analyzing health plan benefits</li>
+</ul>
+
+<h2 id="getting-started">Getting Started</h2>
+
+<ul>
+  <li>Review the <a href="mapping.html">SBC to FHIR Mapping</a> to understand how SBC elements map to FHIR</li>
+  <li>Explore the <a href="StructureDefinition-sbc-insurance-plan.html">SBC InsurancePlan Profile</a></li>
+  <li>Examine the <a href="InsurancePlan-SBCExampleHMO.html">Example SBC</a> for a complete implementation</li>
+  <li>Browse the <a href="terminology.html">Terminology</a> for benefit category codes</li>
+</ul>
+
+<h2 id="authors-and-contributors">Authors and Contributors</h2>
+
+<p>This IG is maintained by the SBC FHIR Project.</p>
+
+<h2 id="license-and-legal">License and Legal</h2>
+
+<p>This implementation guide is provided for educational and interoperability purposes. Organizations using this IG remain responsible for compliance with all applicable SBC regulations at 45 CFR 147.200, 29 CFR 2590.715-2715, and 26 CFR 54.9815-2715.</p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://flexpa.com">SBC FHIR Project</a>.  Package sbc-fhir-ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Feb 16, 2026 20:07+0000">2026-02-16</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

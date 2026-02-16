@@ -1,0 +1,174 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "sbc-benefit-category"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem sbc-benefit-category</b></p><a name=\"sbc-benefit-category\"> </a><a name=\"hcsbc-benefit-category\"> </a><p>This case-sensitive code system <code>http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">primary-care-visit<a name=\"sbc-benefit-category-primary-care-visit\"> </a></td><td>Primary Care Visit to Treat an Injury or Illness</td><td>Visits to primary care physicians to treat illness or injury</td></tr><tr><td style=\"white-space:nowrap\">specialist-visit<a name=\"sbc-benefit-category-specialist-visit\"> </a></td><td>Specialist Visit</td><td>Visits to specialist physicians</td></tr><tr><td style=\"white-space:nowrap\">preventive-care<a name=\"sbc-benefit-category-preventive-care\"> </a></td><td>Preventive Care/Screening/Immunization</td><td>Preventive care services, health screenings, and immunizations</td></tr><tr><td style=\"white-space:nowrap\">diagnostic-test<a name=\"sbc-benefit-category-diagnostic-test\"> </a></td><td>Diagnostic Test (X-ray, Blood Work)</td><td>X-rays, blood work, and other diagnostic tests</td></tr><tr><td style=\"white-space:nowrap\">imaging<a name=\"sbc-benefit-category-imaging\"> </a></td><td>Imaging (CT/PET Scans, MRIs)</td><td>Advanced imaging services including CT scans, PET scans, and MRIs</td></tr><tr><td style=\"white-space:nowrap\">generic-drugs<a name=\"sbc-benefit-category-generic-drugs\"> </a></td><td>Generic Drugs</td><td>Generic prescription medications</td></tr><tr><td style=\"white-space:nowrap\">preferred-brand-drugs<a name=\"sbc-benefit-category-preferred-brand-drugs\"> </a></td><td>Preferred Brand Drugs</td><td>Brand-name prescription medications on the preferred drug list</td></tr><tr><td style=\"white-space:nowrap\">non-preferred-brand-drugs<a name=\"sbc-benefit-category-non-preferred-brand-drugs\"> </a></td><td>Non-Preferred Brand Drugs</td><td>Brand-name prescription medications not on the preferred drug list</td></tr><tr><td style=\"white-space:nowrap\">specialty-drugs<a name=\"sbc-benefit-category-specialty-drugs\"> </a></td><td>Specialty Drugs</td><td>High-cost or specialty prescription medications</td></tr><tr><td style=\"white-space:nowrap\">outpatient-facility-fee<a name=\"sbc-benefit-category-outpatient-facility-fee\"> </a></td><td>Facility Fee (e.g., Ambulatory Surgery Center)</td><td>Facility charges for outpatient surgery</td></tr><tr><td style=\"white-space:nowrap\">outpatient-physician-fee<a name=\"sbc-benefit-category-outpatient-physician-fee\"> </a></td><td>Physician/Surgeon Fees (Outpatient Surgery)</td><td>Professional fees for physicians and surgeons for outpatient surgery</td></tr><tr><td style=\"white-space:nowrap\">emergency-room-care<a name=\"sbc-benefit-category-emergency-room-care\"> </a></td><td>Emergency Room Care</td><td>Emergency department services</td></tr><tr><td style=\"white-space:nowrap\">emergency-medical-transport<a name=\"sbc-benefit-category-emergency-medical-transport\"> </a></td><td>Emergency Medical Transportation</td><td>Ambulance and emergency medical transport services</td></tr><tr><td style=\"white-space:nowrap\">urgent-care<a name=\"sbc-benefit-category-urgent-care\"> </a></td><td>Urgent Care</td><td>Urgent care facility services</td></tr><tr><td style=\"white-space:nowrap\">hospital-facility-fee<a name=\"sbc-benefit-category-hospital-facility-fee\"> </a></td><td>Facility Fee (e.g., Hospital Room)</td><td>Facility charges for hospital inpatient stays</td></tr><tr><td style=\"white-space:nowrap\">hospital-physician-fee<a name=\"sbc-benefit-category-hospital-physician-fee\"> </a></td><td>Physician/Surgeon Fees (Hospital Stay)</td><td>Professional fees for physicians and surgeons during hospital stays</td></tr><tr><td style=\"white-space:nowrap\">mental-health-outpatient<a name=\"sbc-benefit-category-mental-health-outpatient\"> </a></td><td>Mental/Behavioral Health Outpatient Services</td><td>Outpatient mental health and substance abuse services</td></tr><tr><td style=\"white-space:nowrap\">mental-health-inpatient<a name=\"sbc-benefit-category-mental-health-inpatient\"> </a></td><td>Mental/Behavioral Health Inpatient Services</td><td>Inpatient mental health and substance abuse services</td></tr><tr><td style=\"white-space:nowrap\">pregnancy-office-visits<a name=\"sbc-benefit-category-pregnancy-office-visits\"> </a></td><td>Office Visits (Pregnancy)</td><td>Prenatal and postnatal office visits</td></tr><tr><td style=\"white-space:nowrap\">pregnancy-delivery-professional<a name=\"sbc-benefit-category-pregnancy-delivery-professional\"> </a></td><td>Childbirth/Delivery Professional Services</td><td>Professional services for childbirth and delivery</td></tr><tr><td style=\"white-space:nowrap\">pregnancy-delivery-facility<a name=\"sbc-benefit-category-pregnancy-delivery-facility\"> </a></td><td>Childbirth/Delivery Facility Services</td><td>Facility services for childbirth and delivery</td></tr><tr><td style=\"white-space:nowrap\">home-health-care<a name=\"sbc-benefit-category-home-health-care\"> </a></td><td>Home Health Care</td><td>Home health care services</td></tr><tr><td style=\"white-space:nowrap\">rehabilitation<a name=\"sbc-benefit-category-rehabilitation\"> </a></td><td>Rehabilitation Services</td><td>Outpatient physical, occupational, and speech therapy</td></tr><tr><td style=\"white-space:nowrap\">habilitation<a name=\"sbc-benefit-category-habilitation\"> </a></td><td>Habilitation Services</td><td>Health care services that help develop or maintain daily living skills</td></tr><tr><td style=\"white-space:nowrap\">skilled-nursing<a name=\"sbc-benefit-category-skilled-nursing\"> </a></td><td>Skilled Nursing Care</td><td>Skilled nursing facility services</td></tr><tr><td style=\"white-space:nowrap\">durable-medical-equipment<a name=\"sbc-benefit-category-durable-medical-equipment\"> </a></td><td>Durable Medical Equipment</td><td>Medical equipment for home use such as wheelchairs, oxygen equipment</td></tr><tr><td style=\"white-space:nowrap\">hospice<a name=\"sbc-benefit-category-hospice\"> </a></td><td>Hospice Services</td><td>End-of-life care services</td></tr><tr><td style=\"white-space:nowrap\">children-eye-exam<a name=\"sbc-benefit-category-children-eye-exam\"> </a></td><td>Children's Eye Exam</td><td>Eye examinations for children</td></tr><tr><td style=\"white-space:nowrap\">children-glasses<a name=\"sbc-benefit-category-children-glasses\"> </a></td><td>Children's Glasses</td><td>Eyeglasses for children</td></tr><tr><td style=\"white-space:nowrap\">children-dental<a name=\"sbc-benefit-category-children-dental\"> </a></td><td>Children's Dental Check-up</td><td>Routine dental care for children</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category"^^xsd:anyURI ;
+     fhir:l <http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category>
+  ] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "SBCBenefitCategoryCS"] ; # 
+  fhir:title [ fhir:v "SBC Benefit Category Code System"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-02-16T20:07:33+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "SBC FHIR Project"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "SBC FHIR Project" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://flexpa.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "contact@flexpa.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Code system for the 30 benefit service rows required in Summary of Benefits and Coverage (SBC) documents per ACA Section 2715 regulations"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "US" ] ;
+       fhir:display [ fhir:v "United States of America" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "30"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "primary-care-visit" ] ;
+     fhir:display [ fhir:v "Primary Care Visit to Treat an Injury or Illness" ] ;
+     fhir:definition [ fhir:v "Visits to primary care physicians to treat illness or injury" ]
+  ] [
+     fhir:code [ fhir:v "specialist-visit" ] ;
+     fhir:display [ fhir:v "Specialist Visit" ] ;
+     fhir:definition [ fhir:v "Visits to specialist physicians" ]
+  ] [
+     fhir:code [ fhir:v "preventive-care" ] ;
+     fhir:display [ fhir:v "Preventive Care/Screening/Immunization" ] ;
+     fhir:definition [ fhir:v "Preventive care services, health screenings, and immunizations" ]
+  ] [
+     fhir:code [ fhir:v "diagnostic-test" ] ;
+     fhir:display [ fhir:v "Diagnostic Test (X-ray, Blood Work)" ] ;
+     fhir:definition [ fhir:v "X-rays, blood work, and other diagnostic tests" ]
+  ] [
+     fhir:code [ fhir:v "imaging" ] ;
+     fhir:display [ fhir:v "Imaging (CT/PET Scans, MRIs)" ] ;
+     fhir:definition [ fhir:v "Advanced imaging services including CT scans, PET scans, and MRIs" ]
+  ] [
+     fhir:code [ fhir:v "generic-drugs" ] ;
+     fhir:display [ fhir:v "Generic Drugs" ] ;
+     fhir:definition [ fhir:v "Generic prescription medications" ]
+  ] [
+     fhir:code [ fhir:v "preferred-brand-drugs" ] ;
+     fhir:display [ fhir:v "Preferred Brand Drugs" ] ;
+     fhir:definition [ fhir:v "Brand-name prescription medications on the preferred drug list" ]
+  ] [
+     fhir:code [ fhir:v "non-preferred-brand-drugs" ] ;
+     fhir:display [ fhir:v "Non-Preferred Brand Drugs" ] ;
+     fhir:definition [ fhir:v "Brand-name prescription medications not on the preferred drug list" ]
+  ] [
+     fhir:code [ fhir:v "specialty-drugs" ] ;
+     fhir:display [ fhir:v "Specialty Drugs" ] ;
+     fhir:definition [ fhir:v "High-cost or specialty prescription medications" ]
+  ] [
+     fhir:code [ fhir:v "outpatient-facility-fee" ] ;
+     fhir:display [ fhir:v "Facility Fee (e.g., Ambulatory Surgery Center)" ] ;
+     fhir:definition [ fhir:v "Facility charges for outpatient surgery" ]
+  ] [
+     fhir:code [ fhir:v "outpatient-physician-fee" ] ;
+     fhir:display [ fhir:v "Physician/Surgeon Fees (Outpatient Surgery)" ] ;
+     fhir:definition [ fhir:v "Professional fees for physicians and surgeons for outpatient surgery" ]
+  ] [
+     fhir:code [ fhir:v "emergency-room-care" ] ;
+     fhir:display [ fhir:v "Emergency Room Care" ] ;
+     fhir:definition [ fhir:v "Emergency department services" ]
+  ] [
+     fhir:code [ fhir:v "emergency-medical-transport" ] ;
+     fhir:display [ fhir:v "Emergency Medical Transportation" ] ;
+     fhir:definition [ fhir:v "Ambulance and emergency medical transport services" ]
+  ] [
+     fhir:code [ fhir:v "urgent-care" ] ;
+     fhir:display [ fhir:v "Urgent Care" ] ;
+     fhir:definition [ fhir:v "Urgent care facility services" ]
+  ] [
+     fhir:code [ fhir:v "hospital-facility-fee" ] ;
+     fhir:display [ fhir:v "Facility Fee (e.g., Hospital Room)" ] ;
+     fhir:definition [ fhir:v "Facility charges for hospital inpatient stays" ]
+  ] [
+     fhir:code [ fhir:v "hospital-physician-fee" ] ;
+     fhir:display [ fhir:v "Physician/Surgeon Fees (Hospital Stay)" ] ;
+     fhir:definition [ fhir:v "Professional fees for physicians and surgeons during hospital stays" ]
+  ] [
+     fhir:code [ fhir:v "mental-health-outpatient" ] ;
+     fhir:display [ fhir:v "Mental/Behavioral Health Outpatient Services" ] ;
+     fhir:definition [ fhir:v "Outpatient mental health and substance abuse services" ]
+  ] [
+     fhir:code [ fhir:v "mental-health-inpatient" ] ;
+     fhir:display [ fhir:v "Mental/Behavioral Health Inpatient Services" ] ;
+     fhir:definition [ fhir:v "Inpatient mental health and substance abuse services" ]
+  ] [
+     fhir:code [ fhir:v "pregnancy-office-visits" ] ;
+     fhir:display [ fhir:v "Office Visits (Pregnancy)" ] ;
+     fhir:definition [ fhir:v "Prenatal and postnatal office visits" ]
+  ] [
+     fhir:code [ fhir:v "pregnancy-delivery-professional" ] ;
+     fhir:display [ fhir:v "Childbirth/Delivery Professional Services" ] ;
+     fhir:definition [ fhir:v "Professional services for childbirth and delivery" ]
+  ] [
+     fhir:code [ fhir:v "pregnancy-delivery-facility" ] ;
+     fhir:display [ fhir:v "Childbirth/Delivery Facility Services" ] ;
+     fhir:definition [ fhir:v "Facility services for childbirth and delivery" ]
+  ] [
+     fhir:code [ fhir:v "home-health-care" ] ;
+     fhir:display [ fhir:v "Home Health Care" ] ;
+     fhir:definition [ fhir:v "Home health care services" ]
+  ] [
+     fhir:code [ fhir:v "rehabilitation" ] ;
+     fhir:display [ fhir:v "Rehabilitation Services" ] ;
+     fhir:definition [ fhir:v "Outpatient physical, occupational, and speech therapy" ]
+  ] [
+     fhir:code [ fhir:v "habilitation" ] ;
+     fhir:display [ fhir:v "Habilitation Services" ] ;
+     fhir:definition [ fhir:v "Health care services that help develop or maintain daily living skills" ]
+  ] [
+     fhir:code [ fhir:v "skilled-nursing" ] ;
+     fhir:display [ fhir:v "Skilled Nursing Care" ] ;
+     fhir:definition [ fhir:v "Skilled nursing facility services" ]
+  ] [
+     fhir:code [ fhir:v "durable-medical-equipment" ] ;
+     fhir:display [ fhir:v "Durable Medical Equipment" ] ;
+     fhir:definition [ fhir:v "Medical equipment for home use such as wheelchairs, oxygen equipment" ]
+  ] [
+     fhir:code [ fhir:v "hospice" ] ;
+     fhir:display [ fhir:v "Hospice Services" ] ;
+     fhir:definition [ fhir:v "End-of-life care services" ]
+  ] [
+     fhir:code [ fhir:v "children-eye-exam" ] ;
+     fhir:display [ fhir:v "Children's Eye Exam" ] ;
+     fhir:definition [ fhir:v "Eye examinations for children" ]
+  ] [
+     fhir:code [ fhir:v "children-glasses" ] ;
+     fhir:display [ fhir:v "Children's Glasses" ] ;
+     fhir:definition [ fhir:v "Eyeglasses for children" ]
+  ] [
+     fhir:code [ fhir:v "children-dental" ] ;
+     fhir:display [ fhir:v "Children's Dental Check-up" ] ;
+     fhir:definition [ fhir:v "Routine dental care for children" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,98 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://flexpa.com/fhir/sbc/ValueSet/sbc-benefit-category",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "SBCBenefitCategoryVS",
+      "title" : "SBC Benefit Category Value Set",
+      "description" : "Value set containing all 30 benefit service categories required in Summary of Benefits and Coverage (SBC) documents",
+      "systems" : ["http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category"],
+      "uses" : {
+      },
+      "StructureDefinition-sbc-insurance-plan.html" : "SBC Insurance Plan Profile"
+    },
+    {
+      "url" : "http://flexpa.com/fhir/sbc/ValueSet/sbc-plan-type",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "SBCPlanTypeVS",
+      "title" : "SBC Plan Type Value Set",
+      "description" : "Value set containing health insurance plan types for Summary of Benefits and Coverage documents",
+      "systems" : ["http://flexpa.com/fhir/sbc/CodeSystem/sbc-plan-type"],
+      "uses" : {
+      },
+      "StructureDefinition-sbc-insurance-plan.html" : "SBC Insurance Plan Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/contactentity-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ContactEntityType",
+      "title" : "Contact entity type",
+      "description" : "This example value set defines a set of codes that can be used to indicate the purpose for which you would contact a contact party.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/contactentity-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.416"],
+      "sources" : ["2.16.840.1.113883.4.642.3.416"],
+      "uses" : {
+      },
+      "StructureDefinition-sbc-insurance-plan.html" : "SBC Insurance Plan Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/insuranceplan-applicability",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "BenefitCostApplicability",
+      "title" : "Benefit cost applicability",
+      "description" : "Whether the cost applies to in-network or out-of-network providers.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/applicability"],
+      "oids" : ["2.16.840.1.113883.4.642.3.0"],
+      "sources" : ["2.16.840.1.113883.4.642.3.0"],
+      "uses" : {
+      },
+      "StructureDefinition-sbc-insurance-plan.html" : "SBC Insurance Plan Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/insuranceplan-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "InsurancePlanType",
+      "title" : "Insurance plan type",
+      "description" : "This example value set defines a set of codes that can be used to indicate a type of insurance plan.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/insurance-plan-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.870"],
+      "sources" : ["2.16.840.1.113883.4.642.3.870"],
+      "uses" : {
+      },
+      "StructureDefinition-sbc-insurance-plan.html" : "SBC Insurance Plan Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/languages",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CommonLanguages",
+      "title" : "Common Languages",
+      "description" : "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)",
+      "systems" : ["urn:ietf:bcp:47"],
+      "oids" : ["2.16.840.1.113883.4.642.3.20"],
+      "sources" : ["2.16.840.1.113883.4.642.3.20"],
+      "uses" : {
+      },
+      "StructureDefinition-sbc-insurance-plan.html" : "SBC Insurance Plan Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/publication-status",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "PublicationStatus",
+      "title" : "PublicationStatus",
+      "description" : "The lifecycle status of an artifact.",
+      "systems" : ["http://hl7.org/fhir/publication-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3"],
+      "uses" : {
+      },
+      "StructureDefinition-sbc-insurance-plan.html" : "SBC Insurance Plan Profile"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://flexpa.com/fhir/sbc/ValueSet/sbc-benefit-category",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "SBCBenefitCategoryVS",
+      "title" : "SBC Benefit Category Value Set",
+      "description" : "Value set containing all 30 benefit service categories required in Summary of Benefits and Coverage (SBC) documents",
+      "systems" : ["http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category"]
+    },
+    {
+      "url" : "http://flexpa.com/fhir/sbc/ValueSet/sbc-plan-type",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "SBCPlanTypeVS",
+      "title" : "SBC Plan Type Value Set",
+      "description" : "Value set containing health insurance plan types for Summary of Benefits and Coverage documents",
+      "systems" : ["http://flexpa.com/fhir/sbc/CodeSystem/sbc-plan-type"]
+    }
+  ]
+}

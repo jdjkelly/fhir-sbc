@@ -1,0 +1,19 @@
+{
+  "url" : "http://flexpa.com/fhir/sbc/ImplementationGuide/sbc-fhir-ig",
+  "name" : "SBCFHIRImplementationGuide",
+  "title" : "Summary of Benefits and Coverage (SBC) FHIR Implementation Guide",
+  "description" : "FHIR Implementation Guide for representing Summary of Benefits and Coverage (SBC) documents using the InsurancePlan resource",
+  "status" : "draft",
+  "package-id" : "sbc-fhir-ig",
+  "ig-ver" : "0.1.0",
+  "date" : "Mon, 16 Feb, 2026 20:07:33 +0000",
+  "dateISO8601" : "2026-02-16T20:07:33+00:00",
+  "errs" : 10,
+  "warnings" : 5,
+  "hints" : 10,
+  "suppressed-hints" : 0,
+  "suppressed-warnings" : 0,
+  "version" : "4.0.1",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 1033789120
+}

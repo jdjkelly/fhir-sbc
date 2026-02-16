@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Examples - Summary of Benefits and Coverage (SBC) FHIR Implementation Guide v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"5"}
+    h3,h4,h5,h6{--heading-prefix:"5"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Summary of Benefits and Coverage (SBC) FHIR Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+
+  United States of America
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="mapping.html">Mapping</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="profiles.html">Profiles</a>
+      </li>
+      <li>
+        <a href="terminology.html">Terminology</a>
+      </li>
+      <li>
+        <a href="examples.html">Examples</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="http://hl7.org/fhir/R4/">FHIR Spec</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Examples</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Summary of Benefits and Coverage (SBC) FHIR Implementation Guide - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://flexpa.com/fhir/sbc/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Examples</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#examples" id="markdown-toc-examples">Examples</a>    <ul>
+      <li><a href="#example-sample-hmo-health-plan" id="markdown-toc-example-sample-hmo-health-plan">Example: Sample HMO Health Plan</a>        <ul>
+          <li><a href="#plan-identification" id="markdown-toc-plan-identification">Plan Identification</a></li>
+          <li><a href="#general-plan-costs" id="markdown-toc-general-plan-costs">General Plan Costs</a></li>
+          <li><a href="#benefit-categories-with-cost-sharing" id="markdown-toc-benefit-categories-with-cost-sharing">Benefit Categories with Cost-Sharing</a></li>
+          <li><a href="#excluded-services" id="markdown-toc-excluded-services">Excluded Services</a></li>
+          <li><a href="#regulatory-metadata" id="markdown-toc-regulatory-metadata">Regulatory Metadata</a></li>
+          <li><a href="#contact-information" id="markdown-toc-contact-information">Contact Information</a></li>
+        </ul>
+      </li>
+      <li><a href="#example-patterns" id="markdown-toc-example-patterns">Example Patterns</a>        <ul>
+          <li><a href="#pattern-1-no-charge-for-preventive-care" id="markdown-toc-pattern-1-no-charge-for-preventive-care">Pattern 1: No Charge for Preventive Care</a></li>
+          <li><a href="#pattern-2-fixed-copayment" id="markdown-toc-pattern-2-fixed-copayment">Pattern 2: Fixed Copayment</a></li>
+          <li><a href="#pattern-3-percentage-coinsurance" id="markdown-toc-pattern-3-percentage-coinsurance">Pattern 3: Percentage Coinsurance</a></li>
+          <li><a href="#pattern-4-not-covered-services" id="markdown-toc-pattern-4-not-covered-services">Pattern 4: Not Covered Services</a></li>
+          <li><a href="#pattern-5-same-cost-in-and-out-of-network" id="markdown-toc-pattern-5-same-cost-in-and-out-of-network">Pattern 5: Same Cost In and Out of Network</a></li>
+          <li><a href="#pattern-6-adding-limitations" id="markdown-toc-pattern-6-adding-limitations">Pattern 6: Adding Limitations</a></li>
+        </ul>
+      </li>
+      <li><a href="#additional-example-scenarios" id="markdown-toc-additional-example-scenarios">Additional Example Scenarios</a>        <ul>
+          <li><a href="#ppo-plan-example" id="markdown-toc-ppo-plan-example">PPO Plan Example</a></li>
+          <li><a href="#high-deductible-health-plan-hdhp-example" id="markdown-toc-high-deductible-health-plan-hdhp-example">High Deductible Health Plan (HDHP) Example</a></li>
+          <li><a href="#pharmacy-benefits-example" id="markdown-toc-pharmacy-benefits-example">Pharmacy Benefits Example</a></li>
+        </ul>
+      </li>
+      <li><a href="#complete-sbc-representation" id="markdown-toc-complete-sbc-representation">Complete SBC Representation</a></li>
+      <li><a href="#testing-and-validation" id="markdown-toc-testing-and-validation">Testing and Validation</a></li>
+      <li><a href="#next-steps" id="markdown-toc-next-steps">Next Steps</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+<h1 id="examples">Examples</h1>
+
+<p>This page provides examples of how to use the SBC InsurancePlan profile to represent Summary of Benefits and Coverage documents.</p>
+
+<h2 id="example-sample-hmo-health-plan">Example: Sample HMO Health Plan</h2>
+
+<p><strong>Resource:</strong> <a href="InsurancePlan-SBCExampleHMO.html">SBCExampleHMO</a></p>
+
+<p>This example demonstrates a Health Maintenance Organization (HMO) plan with typical SBC content including:</p>
+
+<h3 id="plan-identification">Plan Identification</h3>
+<ul>
+  <li><strong>Plan Name:</strong> Sample Health HMO Gold Plan</li>
+  <li><strong>Plan Type:</strong> HMO</li>
+  <li><strong>Coverage Period:</strong> January 1, 2025 - December 31, 2025</li>
+  <li><strong>HIOS ID:</strong> 12345CA001000101</li>
+  <li><strong>Issuer:</strong> Sample Health Insurance Company</li>
+</ul>
+
+<h3 id="general-plan-costs">General Plan Costs</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Cost Type</th>
+      <th>Individual</th>
+      <th>Family</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Deductible</td>
+      <td>$1,500</td>
+      <td>$3,000</td>
+    </tr>
+    <tr>
+      <td>Out-of-Pocket Maximum</td>
+      <td>$6,000</td>
+      <td>$12,000</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="benefit-categories-with-cost-sharing">Benefit Categories with Cost-Sharing</h3>
+
+<p>The example includes six representative benefit categories demonstrating different cost-sharing patterns:</p>
+
+<h4 id="1-preventive-care">1. Preventive Care</h4>
+<ul>
+  <li><strong>In-Network:</strong> No charge</li>
+  <li><strong>Out-of-Network:</strong> Not covered</li>
+  <li><strong>Requirement:</strong> No prior authorization required for in-network preventive services</li>
+</ul>
+
+<h4 id="2-primary-care-visit">2. Primary Care Visit</h4>
+<ul>
+  <li><strong>In-Network:</strong> $25 copay</li>
+  <li><strong>Out-of-Network:</strong> Not covered</li>
+  <li><strong>Requirement:</strong> No referral required</li>
+</ul>
+
+<h4 id="3-specialist-visit">3. Specialist Visit</h4>
+<ul>
+  <li><strong>In-Network:</strong> $50 copay</li>
+  <li><strong>Out-of-Network:</strong> Not covered</li>
+  <li><strong>Requirement:</strong> Referral required from primary care physician</li>
+  <li><strong>Limitation:</strong> Limited to network specialists only; out-of-network not covered except in emergencies</li>
+</ul>
+
+<h4 id="4-emergency-room-care">4. Emergency Room Care</h4>
+<ul>
+  <li><strong>In-Network:</strong> $350 copay</li>
+  <li><strong>Out-of-Network:</strong> $350 copay (same as in-network)</li>
+  <li><strong>Limitation:</strong> Copay waived if admitted to hospital</li>
+</ul>
+
+<h4 id="5-generic-drugs">5. Generic Drugs</h4>
+<ul>
+  <li><strong>In-Network:</strong> $10 copay</li>
+  <li><strong>Out-of-Network:</strong> Not covered</li>
+</ul>
+
+<h4 id="6-hospital-stay-facility-fee">6. Hospital Stay Facility Fee</h4>
+<ul>
+  <li><strong>In-Network:</strong> 20% coinsurance</li>
+  <li><strong>Out-of-Network:</strong> Not covered</li>
+  <li><strong>Requirement:</strong> Prior authorization required for non-emergency admissions</li>
+  <li><strong>Limitation:</strong> Prior authorization required</li>
+</ul>
+
+<h3 id="excluded-services">Excluded Services</h3>
+
+<p>The example demonstrates how to document services not covered:</p>
+<ul>
+  <li><strong>Cosmetic surgery</strong> - Services for cosmetic purposes are not covered</li>
+  <li><strong>Weight loss programs</strong> - Weight loss programs except when medically necessary</li>
+</ul>
+
+<h3 id="regulatory-metadata">Regulatory Metadata</h3>
+
+<p>The example includes SBC-specific regulatory disclosures:</p>
+<ul>
+  <li><strong>SBC Version Date:</strong> January 1, 2021 (current template version)</li>
+  <li><strong>Minimum Essential Coverage:</strong> Yes</li>
+  <li><strong>Minimum Value:</strong> Yes</li>
+</ul>
+
+<h3 id="contact-information">Contact Information</h3>
+
+<p>Multiple contact points are provided:</p>
+<ul>
+  <li><strong>General Questions:</strong> 1-800-123-4567, https://www.samplehealth.com</li>
+  <li><strong>Uniform Glossary:</strong> https://www.healthcare.gov/sbc-glossary/</li>
+</ul>
+
+<h2 id="example-patterns">Example Patterns</h2>
+
+<h3 id="pattern-1-no-charge-for-preventive-care">Pattern 1: No Charge for Preventive Care</h3>
+
+<p>Preventive care is typically covered at no cost for in-network services under ACA requirements:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"category"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+      </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"preventive-care"</span><span class="w">
+    </span><span class="p">}]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"benefit"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+    </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+        </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"preventive-care"</span><span class="w">
+      </span><span class="p">}]</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"cost"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"No charge"</span><span class="w"> </span><span class="p">},</span><span class="w">
+        </span><span class="nl">"applicability"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+            </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://terminology.hl7.org/CodeSystem/applicability"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"in-network"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"In Network"</span><span class="w">
+          </span><span class="p">}]</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="nl">"unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"USD"</span><span class="w"> </span><span class="p">}</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Not covered"</span><span class="w"> </span><span class="p">},</span><span class="w">
+        </span><span class="nl">"applicability"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+            </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://terminology.hl7.org/CodeSystem/applicability"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"out-of-network"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Out of Network"</span><span class="w">
+          </span><span class="p">}]</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="nl">"unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"USD"</span><span class="w"> </span><span class="p">}</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">}]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="pattern-2-fixed-copayment">Pattern 2: Fixed Copayment</h3>
+
+<p>Most office visits use fixed copayment amounts:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"cost"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+    </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Copayment"</span><span class="w"> </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"applicability"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+        </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://terminology.hl7.org/CodeSystem/applicability"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"in-network"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"In Network"</span><span class="w">
+      </span><span class="p">}]</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">25</span><span class="p">,</span><span class="w"> </span><span class="nl">"unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"USD"</span><span class="w"> </span><span class="p">}</span><span class="w">
+  </span><span class="p">}]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="pattern-3-percentage-coinsurance">Pattern 3: Percentage Coinsurance</h3>
+
+<p>Hospital services often use coinsurance (percentage):</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"cost"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+    </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Coinsurance"</span><span class="w"> </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"applicability"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+        </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://terminology.hl7.org/CodeSystem/applicability"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"in-network"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"In Network"</span><span class="w">
+      </span><span class="p">}]</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span><span class="w"> </span><span class="nl">"unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"%"</span><span class="w"> </span><span class="p">}</span><span class="w">
+  </span><span class="p">}]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="pattern-4-not-covered-services">Pattern 4: Not Covered Services</h3>
+
+<p>HMO plans typically don't cover out-of-network except emergencies:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"cost"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+    </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Not covered"</span><span class="w"> </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"applicability"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+        </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://terminology.hl7.org/CodeSystem/applicability"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"out-of-network"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Out of Network"</span><span class="w">
+      </span><span class="p">}]</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="nl">"unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"USD"</span><span class="w"> </span><span class="p">}</span><span class="w">
+  </span><span class="p">}]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="pattern-5-same-cost-in-and-out-of-network">Pattern 5: Same Cost In and Out of Network</h3>
+
+<p>Emergency services must be covered equally regardless of network:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"cost"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Copayment"</span><span class="w"> </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"applicability"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+          </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://terminology.hl7.org/CodeSystem/applicability"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"in-network"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"In Network"</span><span class="w">
+        </span><span class="p">}]</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">350</span><span class="p">,</span><span class="w"> </span><span class="nl">"unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"USD"</span><span class="w"> </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Copayment"</span><span class="w"> </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"applicability"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+          </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://terminology.hl7.org/CodeSystem/applicability"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"out-of-network"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Out of Network"</span><span class="w">
+        </span><span class="p">}]</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">350</span><span class="p">,</span><span class="w"> </span><span class="nl">"unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"USD"</span><span class="w"> </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="pattern-6-adding-limitations">Pattern 6: Adding Limitations</h3>
+
+<p>Use the BenefitLimitation extension for requirements and restrictions:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"benefit"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+    </span><span class="nl">"extension"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+      </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://flexpa.com/fhir/sbc/StructureDefinition/benefit-limitation"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"valueString"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Prior authorization required"</span><span class="w">
+    </span><span class="p">}]</span><span class="w">
+  </span><span class="p">}]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h2 id="additional-example-scenarios">Additional Example Scenarios</h2>
+
+<h3 id="ppo-plan-example">PPO Plan Example</h3>
+
+<p>A PPO plan would differ from the HMO example by:</p>
+<ul>
+  <li><strong>Plan Type:</strong> <code class="language-plaintext highlighter-rouge">#PPO</code> instead of <code class="language-plaintext highlighter-rouge">#HMO</code></li>
+  <li><strong>Out-of-Network Coverage:</strong> Typically covered but at higher cost</li>
+  <li><strong>No Referral Requirements:</strong> Usually not required for specialists</li>
+  <li><strong>Different Cost Structure:</strong></li>
+</ul>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Specialist Visit"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"cost"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"applicability"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+          </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://terminology.hl7.org/CodeSystem/applicability"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"in-network"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"In Network"</span><span class="w">
+        </span><span class="p">}]</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">50</span><span class="p">,</span><span class="w"> </span><span class="nl">"unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"USD"</span><span class="w"> </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"applicability"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+          </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://terminology.hl7.org/CodeSystem/applicability"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"out-of-network"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Out of Network"</span><span class="w">
+        </span><span class="p">}]</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w"> </span><span class="nl">"unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"USD"</span><span class="w"> </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="high-deductible-health-plan-hdhp-example">High Deductible Health Plan (HDHP) Example</h3>
+
+<p>An HDHP would feature:</p>
+<ul>
+  <li><strong>Plan Type:</strong> <code class="language-plaintext highlighter-rouge">#HDHP</code></li>
+  <li><strong>Higher Deductibles:</strong> $3,000+ individual</li>
+  <li><strong>Lower Premiums:</strong> (not shown in SBC)</li>
+  <li><strong>HSA Eligibility:</strong> Noted in metadata</li>
+  <li><strong>Different Cost-Sharing Pattern:</strong></li>
+</ul>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"generalCost"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Individual Deductible"</span><span class="w"> </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"cost"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">3000</span><span class="p">,</span><span class="w"> </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"USD"</span><span class="w"> </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"specificCost"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+    </span><span class="nl">"benefit"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+      </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"primary-care-visit"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"cost"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+        </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Subject to deductible, then coinsurance"</span><span class="w"> </span><span class="p">},</span><span class="w">
+        </span><span class="nl">"applicability"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+            </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://terminology.hl7.org/CodeSystem/applicability"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"in-network"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"In Network"</span><span class="w">
+          </span><span class="p">}]</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">}]</span><span class="w">
+    </span><span class="p">}]</span><span class="w">
+  </span><span class="p">}]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="pharmacy-benefits-example">Pharmacy Benefits Example</h3>
+
+<p>Drug coverage typically has tiered cost-sharing:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"specificCost"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"generic-drugs"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"benefit"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+        </span><span class="nl">"cost"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+          </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Copayment"</span><span class="w"> </span><span class="p">},</span><span class="w">
+          </span><span class="nl">"applicability"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+              </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://terminology.hl7.org/CodeSystem/applicability"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"in-network"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"In Network"</span><span class="w">
+            </span><span class="p">}]</span><span class="w">
+          </span><span class="p">},</span><span class="w">
+          </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="nl">"unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"USD"</span><span class="w"> </span><span class="p">}</span><span class="w">
+        </span><span class="p">}]</span><span class="w">
+      </span><span class="p">}]</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"preferred-brand-drugs"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"benefit"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+        </span><span class="nl">"cost"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+          </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Copayment"</span><span class="w"> </span><span class="p">},</span><span class="w">
+          </span><span class="nl">"applicability"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+              </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://terminology.hl7.org/CodeSystem/applicability"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"in-network"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"In Network"</span><span class="w">
+            </span><span class="p">}]</span><span class="w">
+          </span><span class="p">},</span><span class="w">
+          </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">40</span><span class="p">,</span><span class="w"> </span><span class="nl">"unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"USD"</span><span class="w"> </span><span class="p">}</span><span class="w">
+        </span><span class="p">}]</span><span class="w">
+      </span><span class="p">}]</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"non-preferred-brand-drugs"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"benefit"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+        </span><span class="nl">"cost"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+          </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Copayment"</span><span class="w"> </span><span class="p">},</span><span class="w">
+          </span><span class="nl">"applicability"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+              </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://terminology.hl7.org/CodeSystem/applicability"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"in-network"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"In Network"</span><span class="w">
+            </span><span class="p">}]</span><span class="w">
+          </span><span class="p">},</span><span class="w">
+          </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">70</span><span class="p">,</span><span class="w"> </span><span class="nl">"unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"USD"</span><span class="w"> </span><span class="p">}</span><span class="w">
+        </span><span class="p">}]</span><span class="w">
+      </span><span class="p">}]</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"specialty-drugs"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"benefit"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+        </span><span class="nl">"cost"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+          </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Coinsurance"</span><span class="w"> </span><span class="p">},</span><span class="w">
+          </span><span class="nl">"applicability"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+              </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://terminology.hl7.org/CodeSystem/applicability"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"in-network"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"In Network"</span><span class="w">
+            </span><span class="p">}]</span><span class="w">
+          </span><span class="p">},</span><span class="w">
+          </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span><span class="w"> </span><span class="nl">"unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"%"</span><span class="w"> </span><span class="p">}</span><span class="w">
+        </span><span class="p">}]</span><span class="w">
+      </span><span class="p">}]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h2 id="complete-sbc-representation">Complete SBC Representation</h2>
+
+<p>A production-ready SBC representation should include:</p>
+
+<ol>
+  <li><strong>All 30 benefit categories</strong> in <code class="language-plaintext highlighter-rouge">plan.specificCost</code></li>
+  <li><strong>Both network applicabilities</strong> (in-network and out-of-network) for each benefit</li>
+  <li><strong>General costs</strong> (deductibles, OOP maximums) in <code class="language-plaintext highlighter-rouge">plan.generalCost</code></li>
+  <li><strong>Contact information</strong> for questions, provider lists, formulary, glossary</li>
+  <li><strong>Regulatory metadata</strong> (minimum essential coverage, minimum value)</li>
+  <li><strong>Excluded services</strong> list</li>
+  <li><strong>Requirements and limitations</strong> for each benefit as applicable</li>
+  <li><strong>Plan identification</strong> (name, type, period, HIOS ID)</li>
+</ol>
+
+<p>The example provided demonstrates the structure with 6 benefit categories. A complete implementation would expand this to all 30 categories with appropriate cost-sharing for each.</p>
+
+<h2 id="testing-and-validation">Testing and Validation</h2>
+
+<p>When creating SBC InsurancePlan instances, validate:</p>
+
+<ol>
+  <li>✓ Status is "active"</li>
+  <li>✓ Name, period, and ownedBy are populated</li>
+  <li>✓ At least one contact with phone and URL</li>
+  <li>✓ Plan type is from SBC Plan Type ValueSet</li>
+  <li>✓ All 30 benefit categories present in specificCost</li>
+  <li>✓ Each benefit has at least 2 cost entries (in/out of network)</li>
+  <li>✓ Cost applicability is specified for each cost</li>
+  <li>✓ Currency is consistent (e.g., all USD)</li>
+  <li>✓ Percentage values use "%" unit</li>
+  <li>✓ Dollar amounts use currency code</li>
+</ol>
+
+<h2 id="next-steps">Next Steps</h2>
+
+<p>After reviewing these examples:</p>
+<ul>
+  <li>Explore the <a href="StructureDefinition-sbc-insurance-plan.html">SBC InsurancePlan Profile</a> for detailed element definitions</li>
+  <li>Review the <a href="mapping.html">SBC to FHIR Mapping</a> for comprehensive mapping guidance</li>
+  <li>Check the <a href="terminology.html">Terminology</a> page for all 30 benefit category codes</li>
+</ul>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://flexpa.com">SBC FHIR Project</a>.  Package sbc-fhir-ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Feb 16, 2026 20:07+0000">2026-02-16</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

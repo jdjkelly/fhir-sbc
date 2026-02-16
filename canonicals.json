@@ -1,0 +1,65 @@
+[
+  {
+    "id" : "sbc-benefit-category",
+    "type" : "CodeSystem",
+    "url" : "http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category",
+    "version" : "0.1.0",
+    "name" : "SBCBenefitCategoryCS"
+  },
+  {
+    "id" : "sbc-plan-type",
+    "type" : "CodeSystem",
+    "url" : "http://flexpa.com/fhir/sbc/CodeSystem/sbc-plan-type",
+    "version" : "0.1.0",
+    "name" : "SBCPlanTypeCS"
+  },
+  {
+    "id" : "sbc-fhir-ig",
+    "type" : "ImplementationGuide",
+    "url" : "http://flexpa.com/fhir/sbc/ImplementationGuide/sbc-fhir-ig",
+    "version" : "0.1.0",
+    "name" : "SBCFHIRImplementationGuide"
+  },
+  {
+    "id" : "benefit-limitation",
+    "type" : "StructureDefinition",
+    "url" : "http://flexpa.com/fhir/sbc/StructureDefinition/benefit-limitation",
+    "version" : "0.1.0",
+    "name" : "BenefitLimitation"
+  },
+  {
+    "id" : "excluded-services",
+    "type" : "StructureDefinition",
+    "url" : "http://flexpa.com/fhir/sbc/StructureDefinition/excluded-services",
+    "version" : "0.1.0",
+    "name" : "ExcludedServices"
+  },
+  {
+    "id" : "sbc-insurance-plan",
+    "type" : "StructureDefinition",
+    "url" : "http://flexpa.com/fhir/sbc/StructureDefinition/sbc-insurance-plan",
+    "version" : "0.1.0",
+    "name" : "SBCInsurancePlan"
+  },
+  {
+    "id" : "sbc-metadata",
+    "type" : "StructureDefinition",
+    "url" : "http://flexpa.com/fhir/sbc/StructureDefinition/sbc-metadata",
+    "version" : "0.1.0",
+    "name" : "SBCMetadata"
+  },
+  {
+    "id" : "sbc-benefit-category",
+    "type" : "ValueSet",
+    "url" : "http://flexpa.com/fhir/sbc/ValueSet/sbc-benefit-category",
+    "version" : "0.1.0",
+    "name" : "SBCBenefitCategoryVS"
+  },
+  {
+    "id" : "sbc-plan-type",
+    "type" : "ValueSet",
+    "url" : "http://flexpa.com/fhir/sbc/ValueSet/sbc-plan-type",
+    "version" : "0.1.0",
+    "name" : "SBCPlanTypeVS"
+  }
+]

@@ -1,0 +1,78 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://flexpa.com/fhir/sbc/CodeSystem/sbc-plan-type> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "sbc-plan-type"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem sbc-plan-type</b></p><a name=\"sbc-plan-type\"> </a><a name=\"hcsbc-plan-type\"> </a><p>This case-sensitive code system <code>http://flexpa.com/fhir/sbc/CodeSystem/sbc-plan-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">HMO<a name=\"sbc-plan-type-HMO\"> </a></td><td>Health Maintenance Organization (HMO)</td><td>A type of health insurance plan that requires members to get health care services from doctors and hospitals in the plan's network, except in an emergency</td></tr><tr><td style=\"white-space:nowrap\">PPO<a name=\"sbc-plan-type-PPO\"> </a></td><td>Preferred Provider Organization (PPO)</td><td>A type of health insurance plan where members pay less if they use providers in the plan's network, but can use out-of-network providers at higher cost</td></tr><tr><td style=\"white-space:nowrap\">POS<a name=\"sbc-plan-type-POS\"> </a></td><td>Point of Service (POS)</td><td>A type of health insurance plan where members pay less if they use doctors and hospitals in the plan's network and choose a primary care doctor to coordinate care</td></tr><tr><td style=\"white-space:nowrap\">EPO<a name=\"sbc-plan-type-EPO\"> </a></td><td>Exclusive Provider Organization (EPO)</td><td>A type of health insurance plan where services are covered only if members use doctors and providers in the plan's network, except in an emergency</td></tr><tr><td style=\"white-space:nowrap\">HDHP<a name=\"sbc-plan-type-HDHP\"> </a></td><td>High Deductible Health Plan (HDHP)</td><td>A health insurance plan with a higher deductible than traditional plans, often paired with a Health Savings Account</td></tr><tr><td style=\"white-space:nowrap\">INDEMNITY<a name=\"sbc-plan-type-INDEMNITY\"> </a></td><td>Indemnity Plan</td><td>A type of health insurance that allows members to see any doctor or hospital and pays a portion of the bill</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://flexpa.com/fhir/sbc/CodeSystem/sbc-plan-type"^^xsd:anyURI ;
+     fhir:l <http://flexpa.com/fhir/sbc/CodeSystem/sbc-plan-type>
+  ] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "SBCPlanTypeCS"] ; # 
+  fhir:title [ fhir:v "SBC Plan Type Code System"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-02-16T20:07:33+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "SBC FHIR Project"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "SBC FHIR Project" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://flexpa.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "contact@flexpa.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Code system for health insurance plan types displayed in Summary of Benefits and Coverage documents"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "US" ] ;
+       fhir:display [ fhir:v "United States of America" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "6"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "HMO" ] ;
+     fhir:display [ fhir:v "Health Maintenance Organization (HMO)" ] ;
+     fhir:definition [ fhir:v "A type of health insurance plan that requires members to get health care services from doctors and hospitals in the plan's network, except in an emergency" ]
+  ] [
+     fhir:code [ fhir:v "PPO" ] ;
+     fhir:display [ fhir:v "Preferred Provider Organization (PPO)" ] ;
+     fhir:definition [ fhir:v "A type of health insurance plan where members pay less if they use providers in the plan's network, but can use out-of-network providers at higher cost" ]
+  ] [
+     fhir:code [ fhir:v "POS" ] ;
+     fhir:display [ fhir:v "Point of Service (POS)" ] ;
+     fhir:definition [ fhir:v "A type of health insurance plan where members pay less if they use doctors and hospitals in the plan's network and choose a primary care doctor to coordinate care" ]
+  ] [
+     fhir:code [ fhir:v "EPO" ] ;
+     fhir:display [ fhir:v "Exclusive Provider Organization (EPO)" ] ;
+     fhir:definition [ fhir:v "A type of health insurance plan where services are covered only if members use doctors and providers in the plan's network, except in an emergency" ]
+  ] [
+     fhir:code [ fhir:v "HDHP" ] ;
+     fhir:display [ fhir:v "High Deductible Health Plan (HDHP)" ] ;
+     fhir:definition [ fhir:v "A health insurance plan with a higher deductible than traditional plans, often paired with a Health Savings Account" ]
+  ] [
+     fhir:code [ fhir:v "INDEMNITY" ] ;
+     fhir:display [ fhir:v "Indemnity Plan" ] ;
+     fhir:definition [ fhir:v "A type of health insurance that allows members to see any doctor or hospital and pays a portion of the bill" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

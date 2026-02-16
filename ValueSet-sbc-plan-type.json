@@ -1,0 +1,40 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "sbc-plan-type",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet sbc-plan-type</b></p><a name=\"sbc-plan-type\"> </a><a name=\"hcsbc-plan-type\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-sbc-plan-type.html\"><code>http://flexpa.com/fhir/sbc/CodeSystem/sbc-plan-type</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.1.0</span></li></ul></div>"
+  },
+  "url" : "http://flexpa.com/fhir/sbc/ValueSet/sbc-plan-type",
+  "version" : "0.1.0",
+  "name" : "SBCPlanTypeVS",
+  "title" : "SBC Plan Type Value Set",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-02-16T20:07:33+00:00",
+  "publisher" : "SBC FHIR Project",
+  "contact" : [{
+    "name" : "SBC FHIR Project",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://flexpa.com"
+    },
+    {
+      "system" : "email",
+      "value" : "contact@flexpa.com"
+    }]
+  }],
+  "description" : "Value set containing health insurance plan types for Summary of Benefits and Coverage documents",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US",
+      "display" : "United States of America"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://flexpa.com/fhir/sbc/CodeSystem/sbc-plan-type"
+    }]
+  }
+}

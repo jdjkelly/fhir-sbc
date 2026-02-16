@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="ExampleIssuerOrg"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Organization ExampleIssuerOrg</b></p><a name="ExampleIssuerOrg"> </a><a name="hcExampleIssuerOrg"> </a><p><b>name</b>: Sample Health Insurance Company</p><p><b>telecom</b>: ph: 1-800-123-4567, <a href="https://www.samplehealth.com">https://www.samplehealth.com</a></p></div>
+  </text>
+  <name value="Sample Health Insurance Company"/>
+  <telecom>
+    <system value="phone"/>
+    <value value="1-800-123-4567"/>
+  </telecom>
+  <telecom>
+    <system value="url"/>
+    <value value="https://www.samplehealth.com"/>
+  </telecom>
+</Organization>

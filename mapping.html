@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>SBC to FHIR Mapping - Summary of Benefits and Coverage (SBC) FHIR Implementation Guide v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"2"}
+    h3,h4,h5,h6{--heading-prefix:"2"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Summary of Benefits and Coverage (SBC) FHIR Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+
+  United States of America
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="mapping.html">Mapping</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="profiles.html">Profiles</a>
+      </li>
+      <li>
+        <a href="terminology.html">Terminology</a>
+      </li>
+      <li>
+        <a href="examples.html">Examples</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="http://hl7.org/fhir/R4/">FHIR Spec</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>SBC to FHIR Mapping</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Summary of Benefits and Coverage (SBC) FHIR Implementation Guide - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://flexpa.com/fhir/sbc/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>SBC to FHIR Mapping</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#sbc-to-fhir-mapping" id="markdown-toc-sbc-to-fhir-mapping">SBC to FHIR Mapping</a>    <ul>
+      <li><a href="#document-header-and-plan-information" id="markdown-toc-document-header-and-plan-information">Document Header and Plan Information</a></li>
+      <li><a href="#important-questions-section" id="markdown-toc-important-questions-section">Important Questions Section</a></li>
+      <li><a href="#benefit-categories-30-required-categories" id="markdown-toc-benefit-categories-30-required-categories">Benefit Categories (30 Required Categories)</a>        <ul>
+          <li><a href="#coverage-section" id="markdown-toc-coverage-section">Coverage Section</a></li>
+          <li><a href="#plan-cost-section" id="markdown-toc-plan-cost-section">Plan Cost Section</a></li>
+          <li><a href="#example-mapping-primary-care-visit" id="markdown-toc-example-mapping-primary-care-visit">Example Mapping: Primary Care Visit</a></li>
+        </ul>
+      </li>
+      <li><a href="#excluded-services--other-covered-services" id="markdown-toc-excluded-services--other-covered-services">Excluded Services &amp; Other Covered Services</a></li>
+      <li><a href="#limitations-and-exceptions" id="markdown-toc-limitations-and-exceptions">Limitations and Exceptions</a></li>
+      <li><a href="#contact-information" id="markdown-toc-contact-information">Contact Information</a></li>
+      <li><a href="#regulatory-disclosures" id="markdown-toc-regulatory-disclosures">Regulatory Disclosures</a></li>
+      <li><a href="#coverage-examples-not-yet-implemented" id="markdown-toc-coverage-examples-not-yet-implemented">Coverage Examples (Not Yet Implemented)</a></li>
+      <li><a href="#important-design-principles" id="markdown-toc-important-design-principles">Important Design Principles</a></li>
+      <li><a href="#unmapped-sbc-elements" id="markdown-toc-unmapped-sbc-elements">Unmapped SBC Elements</a></li>
+      <li><a href="#validation-considerations" id="markdown-toc-validation-considerations">Validation Considerations</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+<h1 id="sbc-to-fhir-mapping">SBC to FHIR Mapping</h1>
+
+<p>This page documents the detailed mapping from Summary of Benefits and Coverage (SBC) document sections to FHIR InsurancePlan elements.</p>
+
+<h2 id="document-header-and-plan-information">Document Header and Plan Information</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>SBC Element</th>
+      <th>FHIR Element</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Plan Name</td>
+      <td><code class="language-plaintext highlighter-rouge">InsurancePlan.name</code></td>
+      <td>Official plan name as it appears on SBC</td>
+    </tr>
+    <tr>
+      <td>Plan Type (HMO, PPO, etc.)</td>
+      <td><code class="language-plaintext highlighter-rouge">InsurancePlan.plan.type</code></td>
+      <td>Uses SBC Plan Type ValueSet</td>
+    </tr>
+    <tr>
+      <td>Coverage Period</td>
+      <td><code class="language-plaintext highlighter-rouge">InsurancePlan.period</code></td>
+      <td>Start and end dates</td>
+    </tr>
+    <tr>
+      <td>Plan Issuer</td>
+      <td><code class="language-plaintext highlighter-rouge">InsurancePlan.ownedBy</code></td>
+      <td>Reference to Organization</td>
+    </tr>
+    <tr>
+      <td>HIOS ID</td>
+      <td><code class="language-plaintext highlighter-rouge">InsurancePlan.identifier</code></td>
+      <td>14-16 digit CMS identifier</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="important-questions-section">Important Questions Section</h2>
+
+<p>The SBC "Important Questions" section contains seven mandatory Q&amp;A items. These map to various FHIR elements:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>SBC Question</th>
+      <th>FHIR Element</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>What is the overall deductible?</td>
+      <td><code class="language-plaintext highlighter-rouge">InsurancePlan.plan.generalCost</code> (type: "Individual Deductible")</td>
+      <td>Separate entries for individual and family</td>
+    </tr>
+    <tr>
+      <td>Are there services covered before you meet your deductible?</td>
+      <td><code class="language-plaintext highlighter-rouge">InsurancePlan.plan.specificCost.benefit.cost</code></td>
+      <td>Benefits with $0 deductible or specific exceptions</td>
+    </tr>
+    <tr>
+      <td>Are there other deductibles for specific services?</td>
+      <td><code class="language-plaintext highlighter-rouge">InsurancePlan.plan.specificCost</code></td>
+      <td>Service-specific deductibles in cost array</td>
+    </tr>
+    <tr>
+      <td>What is the out-of-pocket limit?</td>
+      <td><code class="language-plaintext highlighter-rouge">InsurancePlan.plan.generalCost</code> (type: "Out-of-Pocket Maximum")</td>
+      <td>Individual and family OOP limits</td>
+    </tr>
+    <tr>
+      <td>What is not included in the out-of-pocket limit?</td>
+      <td><code class="language-plaintext highlighter-rouge">InsurancePlan.plan.generalCost.comment</code> or extension</td>
+      <td>Descriptive text</td>
+    </tr>
+    <tr>
+      <td>Will you pay less if you use a network provider?</td>
+      <td><code class="language-plaintext highlighter-rouge">InsurancePlan.plan.specificCost.benefit.cost.applicability</code></td>
+      <td>in-network vs out-of-network cost variations</td>
+    </tr>
+    <tr>
+      <td>Do you need a referral to see a specialist?</td>
+      <td><code class="language-plaintext highlighter-rouge">InsurancePlan.coverage.benefit.requirement</code></td>
+      <td>Text on specialist benefit</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="benefit-categories-30-required-categories">Benefit Categories (30 Required Categories)</h2>
+
+<p>All 30 SBC benefit categories map to the <code class="language-plaintext highlighter-rouge">InsurancePlan</code> structure through two interconnected sections. The 30 codes correspond to the actual rows in the CMS SBC template per 45 CFR § 147.200, including:</p>
+
+<p><strong>Key structural changes from previous versions:</strong></p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">facility-fee</code> split into <code class="language-plaintext highlighter-rouge">outpatient-facility-fee</code> and <code class="language-plaintext highlighter-rouge">hospital-facility-fee</code></li>
+  <li><code class="language-plaintext highlighter-rouge">physician-surgeon-fee</code> split into <code class="language-plaintext highlighter-rouge">outpatient-physician-fee</code> and <code class="language-plaintext highlighter-rouge">hospital-physician-fee</code></li>
+  <li>Generic <code class="language-plaintext highlighter-rouge">hospital-outpatient</code> and <code class="language-plaintext highlighter-rouge">hospital-inpatient</code> removed (not actual SBC template rows)</li>
+  <li><code class="language-plaintext highlighter-rouge">pregnancy</code> renamed to <code class="language-plaintext highlighter-rouge">pregnancy-office-visits</code></li>
+  <li><code class="language-plaintext highlighter-rouge">pregnancy-delivery</code> renamed to <code class="language-plaintext highlighter-rouge">pregnancy-delivery-professional</code></li>
+  <li><code class="language-plaintext highlighter-rouge">pregnancy-home-health</code> replaced with <code class="language-plaintext highlighter-rouge">pregnancy-delivery-facility</code> (delivery-specific facility fee)</li>
+  <li><code class="language-plaintext highlighter-rouge">home-health-care</code> added as a separate benefit (under recovery, not pregnancy-related)</li>
+</ul>
+
+<h3 id="coverage-section">Coverage Section</h3>
+<p>Maps to <code class="language-plaintext highlighter-rouge">InsurancePlan.coverage.benefit</code>:</p>
+<ul>
+  <li>Each benefit category is represented</li>
+  <li>Includes requirements (e.g., "referral required", "prior authorization required")</li>
+  <li>Uses BenefitLimitation extension for limitations and exceptions</li>
+</ul>
+
+<p><strong>Note on coverage.type:</strong> The <code class="language-plaintext highlighter-rouge">InsurancePlan.coverage.type</code> element is NOT bound to SBCBenefitCategory. Instead, it's used for high-level coverage type classification (e.g., v3-ActCode#HIP for "health insurance plan"). The specific SBC benefit categories are represented in the <code class="language-plaintext highlighter-rouge">coverage.benefit.type</code> and <code class="language-plaintext highlighter-rouge">plan.specificCost.category</code> elements.</p>
+
+<h3 id="plan-cost-section">Plan Cost Section</h3>
+<p>Maps to <code class="language-plaintext highlighter-rouge">InsurancePlan.plan.specificCost</code>:</p>
+<ul>
+  <li>Each benefit category has associated costs</li>
+  <li>Separate cost entries for in-network and out-of-network</li>
+  <li>Cost types: copayment, coinsurance, deductible</li>
+</ul>
+
+<h3 id="example-mapping-primary-care-visit">Example Mapping: Primary Care Visit</h3>
+
+<p><strong>SBC Display:</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Primary Care Visit to Treat an Illness or Injury
+In-Network: $25 copay
+Out-of-Network: Not covered
+</code></pre></div></div>
+
+<p><strong>FHIR Representation:</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>coverage.benefit[x]
+  .type = #primary-care-visit
+  .requirement = "No referral required"
+
+plan.specificCost[x]
+  .category = #primary-care-visit
+  .benefit[0]
+    .type = #primary-care-visit
+    .cost[0]
+      .type.text = "Copayment"
+      .applicability.text = "in-network"
+      .value = 25 USD
+    .cost[1]
+      .type.text = "Not covered"
+      .applicability.text = "out-of-network"
+      .value = 0 USD
+</code></pre></div></div>
+
+<h2 id="excluded-services--other-covered-services">Excluded Services &amp; Other Covered Services</h2>
+
+<p>The SBC includes a two-column section listing excluded services and other covered services beyond the main categories.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>SBC Element</th>
+      <th>FHIR Element</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Excluded Services</td>
+      <td><code class="language-plaintext highlighter-rouge">ExcludedServices</code> extension</td>
+      <td>Array of services not covered</td>
+    </tr>
+    <tr>
+      <td>Each excluded service</td>
+      <td><code class="language-plaintext highlighter-rouge">extension.service.serviceType</code> and <code class="language-plaintext highlighter-rouge">.description</code></td>
+      <td>CodeableConcept + descriptive text</td>
+    </tr>
+    <tr>
+      <td>Other Covered Services</td>
+      <td>Additional <code class="language-plaintext highlighter-rouge">coverage.benefit</code> entries</td>
+      <td>Services beyond the 30 required categories</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="limitations-and-exceptions">Limitations and Exceptions</h2>
+
+<p>Throughout the SBC, limitations and exceptions are noted for specific benefits:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>SBC Element</th>
+      <th>FHIR Element</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Benefit-specific limitations</td>
+      <td><code class="language-plaintext highlighter-rouge">BenefitLimitation</code> extension on <code class="language-plaintext highlighter-rouge">coverage.benefit</code></td>
+      <td>E.g., "Preauthorization required"</td>
+    </tr>
+    <tr>
+      <td>Cost-specific limitations</td>
+      <td><code class="language-plaintext highlighter-rouge">BenefitLimitation</code> extension on <code class="language-plaintext highlighter-rouge">plan.specificCost.benefit</code></td>
+      <td>E.g., "Copay waived if admitted"</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="contact-information">Contact Information</h2>
+
+<p>The SBC requires multiple contact points for consumers:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>SBC Element</th>
+      <th>FHIR Element</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Questions phone number</td>
+      <td><code class="language-plaintext highlighter-rouge">InsurancePlan.contact[0].telecom</code> (purpose: "General Questions")</td>
+      <td>Primary contact</td>
+    </tr>
+    <tr>
+      <td>Website</td>
+      <td><code class="language-plaintext highlighter-rouge">InsurancePlan.contact[0].telecom</code> (system: url)</td>
+      <td>Plan website</td>
+    </tr>
+    <tr>
+      <td>Provider list location</td>
+      <td><code class="language-plaintext highlighter-rouge">InsurancePlan.contact.telecom</code></td>
+      <td>URL or phone for network directory</td>
+    </tr>
+    <tr>
+      <td>Formulary location</td>
+      <td><code class="language-plaintext highlighter-rouge">InsurancePlan.contact.telecom</code></td>
+      <td>URL or phone for drug list</td>
+    </tr>
+    <tr>
+      <td>Uniform glossary</td>
+      <td><code class="language-plaintext highlighter-rouge">InsurancePlan.contact.telecom</code></td>
+      <td>Typically healthcare.gov/sbc-glossary/</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="regulatory-disclosures">Regulatory Disclosures</h2>
+
+<p>Several SBC-specific regulatory disclosures use the SBC Metadata extension:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>SBC Element</th>
+      <th>FHIR Element</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Minimum Essential Coverage statement</td>
+      <td><code class="language-plaintext highlighter-rouge">SBCMetadata</code> extension <code class="language-plaintext highlighter-rouge">.minimumEssentialCoverage</code></td>
+      <td>Boolean indicator</td>
+    </tr>
+    <tr>
+      <td>Minimum Value statement</td>
+      <td><code class="language-plaintext highlighter-rouge">SBCMetadata</code> extension <code class="language-plaintext highlighter-rouge">.minimumValue</code></td>
+      <td>Boolean indicator</td>
+    </tr>
+    <tr>
+      <td>Abortion coverage disclosure (QHP only)</td>
+      <td><code class="language-plaintext highlighter-rouge">SBCMetadata</code> extension <code class="language-plaintext highlighter-rouge">.abortionCoverage</code></td>
+      <td>CodeableConcept</td>
+    </tr>
+    <tr>
+      <td>SBC template version date</td>
+      <td><code class="language-plaintext highlighter-rouge">SBCMetadata</code> extension <code class="language-plaintext highlighter-rouge">.sbcVersionDate</code></td>
+      <td>Date (e.g., 2021-01-01)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="coverage-examples-not-yet-implemented">Coverage Examples (Not Yet Implemented)</h2>
+
+<p>The SBC requires three standardized coverage examples:</p>
+<ol>
+  <li>Having a baby (normal delivery)</li>
+  <li>Managing type 2 diabetes (routine maintenance)</li>
+  <li>Simple fracture (emergency room visit)</li>
+</ol>
+
+<p><strong>Future Implementation Options:</strong></p>
+<ul>
+  <li>Custom extension on InsurancePlan</li>
+  <li>Separate Claim or ExplanationOfBenefit profile</li>
+  <li>Referenced example resources</li>
+</ul>
+
+<p><em>Note: Coverage examples are not included in the current version of this IG</em></p>
+
+<h2 id="important-design-principles">Important Design Principles</h2>
+
+<ol>
+  <li><strong>Maximize use of base InsurancePlan elements</strong> - Extensions only where truly necessary</li>
+  <li><strong>Network distinctions are critical</strong> - Always include both in-network and out-of-network costs via <code class="language-plaintext highlighter-rouge">.applicability</code></li>
+  <li><strong>All 30 benefit categories should be represented</strong> - Even if "Not covered" or "$0"</li>
+  <li><strong>Consumer-readable text is important</strong> - Use <code class="language-plaintext highlighter-rouge">.requirement</code>, <code class="language-plaintext highlighter-rouge">.comment</code>, and extension strings for explanations</li>
+  <li><strong>Regulatory compliance</strong> - Map all mandatory SBC elements to maintain compliance</li>
+</ol>
+
+<h2 id="unmapped-sbc-elements">Unmapped SBC Elements</h2>
+
+<p>Some SBC elements are better represented in IG documentation than in instance data:</p>
+
+<ul>
+  <li><strong>Disclaimers</strong> ("This is only a summary…")</li>
+  <li><strong>Continuation rights descriptions</strong> (COBRA, state continuation)</li>
+  <li><strong>Grievance and appeals processes</strong></li>
+  <li><strong>Language access taglines</strong> (for non-English speakers)</li>
+  <li><strong>"Why This Matters" language</strong> (consumer education text from template)</li>
+</ul>
+
+<p>These elements provide important consumer information but are standardized boilerplate that doesn't vary by plan.</p>
+
+<h2 id="validation-considerations">Validation Considerations</h2>
+
+<p>Implementations should validate:</p>
+<ul>
+  <li>All 30 benefit categories are present in <code class="language-plaintext highlighter-rouge">plan.specificCost</code></li>
+  <li>Each benefit has at least 2 cost entries (in-network and out-of-network)</li>
+  <li>Required metadata elements are populated (name, period, ownedBy)</li>
+  <li>Contact information includes at minimum a phone number and website</li>
+  <li>Cost values use appropriate units (USD for copays, % for coinsurance)</li>
+</ul>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://flexpa.com">SBC FHIR Project</a>.  Package sbc-fhir-ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Feb 16, 2026 20:07+0000">2026-02-16</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

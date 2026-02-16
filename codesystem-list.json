@@ -1,0 +1,20 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://flexpa.com/fhir/sbc/CodeSystem/sbc-benefit-category",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "SBCBenefitCategoryCS",
+      "title" : "SBC Benefit Category Code System",
+      "description" : "Code system for the 30 benefit service rows required in Summary of Benefits and Coverage (SBC) documents per ACA Section 2715 regulations"
+    },
+    {
+      "url" : "http://flexpa.com/fhir/sbc/CodeSystem/sbc-plan-type",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "SBCPlanTypeCS",
+      "title" : "SBC Plan Type Code System",
+      "description" : "Code system for health insurance plan types displayed in Summary of Benefits and Coverage documents"
+    }
+  ]
+}
